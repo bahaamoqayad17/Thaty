@@ -432,6 +432,677 @@ html {
   }
 }
 
+/* What We Offer Section */
+.what-we-offer-section {
+  padding: 4rem 0;
+  background-color: #fafafa;
+  position: relative;
+  overflow: hidden;
+}
+
+.what-we-offer-section .section-title {
+  font-size: 6.5rem;
+  font-weight: bold;
+  color: #8da04a;
+  margin: 0;
+  position: relative;
+}
+
+/* Service Cards */
+.service-card {
+  background: white;
+  border-radius: 25px;
+  padding: 0;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: visible;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-top: 2.5rem;
+  z-index: 5;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.12);
+}
+
+.service-category {
+  background: #8da04a;
+  color: white;
+  padding: 0.8rem 1.5rem;
+  font-weight: bold;
+  font-size: 1rem;
+  border-radius: 20px;
+  position: absolute;
+  width: 250px;
+  top: -13.5%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  z-index: 2;
+  box-shadow: 0 6px 20px rgba(56, 60, 44, 0.6);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.service-image {
+  padding: 2rem 1.5rem 1rem 1.5rem;
+  text-align: center;
+}
+
+.service-image img {
+  border-radius: 15px;
+  max-height: 180px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.service-description {
+  padding: 0 1.5rem 1rem 1.5rem;
+  flex-grow: 1;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: #333;
+  text-align: right;
+}
+
+.service-action {
+  padding: 0 1.5rem 1.5rem 1.5rem;
+  text-align: center;
+}
+
+.right-arrow {
+  position: absolute;
+  top: 50%;
+  right: 10%;
+  transform: translateY(-50%);
+  width: 100px;
+  height: 200px;
+  object-fit: contain;
+  cursor: pointer;
+  z-index: 10;
+  transition: all 0.3s ease;
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.1));
+}
+
+.right-arrow:hover {
+  filter: drop-shadow(0 6px 12px rgba(0, 0, 0, 0.2));
+}
+
+.left-arrow {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  transform: translateY(-50%);
+  width: 100px;
+  height: 200px;
+  object-fit: contain;
+  cursor: pointer;
+  z-index: 10;
+  transition: all 0.3s ease;
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.1));
+}
+
+.left-arrow:hover {
+  filter: drop-shadow(0 6px 12px rgba(0, 0, 0, 0.2));
+}
+
+.service-btn {
+  background: #f5f5f5;
+  color: #666;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 500;
+  padding: 0.6rem 1.5rem;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  display: inline-block;
+  border: 1px solid #e0e0e0;
+}
+
+.service-btn:hover {
+  background: #8da04a;
+  color: white;
+  text-decoration: none;
+  border-color: #8da04a;
+}
+
+/* Custom Carousel Indicators */
+.custom-indicators {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: center;
+}
+
+.indicator-container {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.custom-indicator {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  transition: all 0.3s ease;
+}
+
+.custom-indicator:focus {
+  outline: none;
+}
+
+.indicator-line {
+  width: 40px;
+  height: 3px;
+  background: #ddd;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+.custom-indicator.active .indicator-dot {
+  background: linear-gradient(135deg, #7a8f42 0%, #8da04a 50%, #9bb052 100%);
+  transform: scale(1.1);
+  box-shadow: 0 4px 12px rgba(141, 160, 74, 0.4);
+}
+
+.custom-indicator.active .indicator-line {
+  background: #8da04a;
+  height: 4px;
+}
+
+.custom-indicator:hover .indicator-dot {
+  background: linear-gradient(135deg, #7a8f42 0%, #8da04a 50%, #9bb052 100%);
+  transform: scale(1.05);
+  box-shadow: 0 3px 10px rgba(141, 160, 74, 0.35);
+}
+
+.custom-indicator:hover .indicator-line {
+  background: #8da04a;
+}
+
+/* Responsive What We Offer Section */
+@media (max-width: 992px) {
+  .what-we-offer-section {
+    padding: 3rem 0;
+  }
+
+  .what-we-offer-section .section-title {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .what-we-offer-section {
+    padding: 2rem 0;
+  }
+
+  .what-we-offer-section .section-title {
+    font-size: 2.5rem;
+  }
+
+  .service-category {
+    font-size: 0.9rem;
+    padding: 0.6rem 1rem;
+    width: 160px;
+    top: -18px;
+    box-shadow: 0 5px 18px rgba(141, 160, 74, 0.4);
+  }
+
+  .service-image {
+    padding: 1.5rem 1rem 0.8rem 1rem;
+  }
+
+  .service-image img {
+    max-height: 150px;
+  }
+
+  .service-description {
+    font-size: 0.85rem;
+    padding: 0 1rem 0.8rem 1rem;
+  }
+
+  .service-action {
+    padding: 0 1rem 1rem 1rem;
+  }
+
+  .service-btn {
+    padding: 0.5rem 1.2rem;
+    font-size: 0.85rem;
+  }
+
+  .right-arrow,
+  .left-arrow {
+    width: 80px;
+    height: 160px;
+  }
+
+  .right-arrow {
+    right: 8%;
+  }
+
+  .left-arrow {
+    left: 8%;
+  }
+}
+
+@media (max-width: 576px) {
+  .what-we-offer-section .section-title {
+    font-size: 2rem;
+  }
+
+  .service-category {
+    font-size: 0.8rem;
+    padding: 0.5rem 0.8rem;
+    width: 140px;
+    top: -16px;
+    box-shadow: 0 4px 16px rgba(141, 160, 74, 0.4);
+  }
+
+  .service-image {
+    padding: 1.2rem 0.8rem 0.6rem 0.8rem;
+  }
+
+  .service-image img {
+    max-height: 120px;
+  }
+
+  .service-description {
+    font-size: 0.8rem;
+    padding: 0 0.8rem 0.6rem 0.8rem;
+  }
+
+  .service-action {
+    padding: 0 0.8rem 0.8rem 0.8rem;
+  }
+
+  .service-btn {
+    padding: 0.4rem 1rem;
+    font-size: 0.8rem;
+  }
+
+  .right-arrow,
+  .left-arrow {
+    width: 60px;
+    height: 120px;
+  }
+
+  .right-arrow {
+    right: 5%;
+  }
+
+  .left-arrow {
+    left: 5%;
+  }
+}
+
+/* About Us Page Styles */
+.about-hero-section {
+  padding: 8rem 0 4rem 0;
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.about-hero-title {
+  font-size: 4rem;
+  font-weight: bold;
+  color: #8da04a;
+  margin-bottom: 2rem;
+  line-height: 1.2;
+}
+
+.about-hero-description {
+  font-size: 1.3rem;
+  line-height: 1.8;
+  color: #666;
+  margin-bottom: 3rem;
+}
+
+.about-hero-buttons {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.about-hero-btn {
+  background-color: #8da04a;
+  color: white;
+  border: none;
+  padding: 0.8rem 2rem;
+  border-radius: 25px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.about-hero-btn:hover {
+  background-color: #7a8f42;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(141, 160, 74, 0.3);
+}
+
+.about-hero-image {
+  text-align: center;
+}
+
+.about-hero-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Mission Section */
+.mission-section {
+  padding: 4rem 0;
+  background-color: white;
+}
+
+.mission-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #8da04a;
+  margin-bottom: 1.5rem;
+}
+
+.mission-description {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #666;
+  margin-bottom: 2rem;
+}
+
+.mission-list {
+  list-style: none;
+  padding: 0;
+}
+
+.mission-list li {
+  padding: 0.5rem 0;
+  font-size: 1rem;
+  color: #555;
+  position: relative;
+  padding-right: 1.5rem;
+}
+
+.mission-list li::before {
+  content: "✓";
+  position: absolute;
+  right: 0;
+  color: #8da04a;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.mission-image img {
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Vision Section */
+.vision-section {
+  padding: 4rem 0;
+  background-color: #f8f9fa;
+}
+
+.vision-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #8da04a;
+  margin-bottom: 1.5rem;
+}
+
+.vision-description {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #666;
+  margin-bottom: 2rem;
+}
+
+.vision-goals {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.goal-item {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+}
+
+.goal-item:hover {
+  transform: translateY(-3px);
+}
+
+.goal-item h4 {
+  color: #8da04a;
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+}
+
+.goal-item p {
+  color: #666;
+  margin: 0;
+}
+
+.vision-image img {
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Values Detailed Section */
+.values-detailed-section {
+  padding: 4rem 0;
+  background-color: white;
+}
+
+.value-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
+  border: 2px solid transparent;
+}
+
+.value-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+  border-color: #8da04a;
+}
+
+.value-icon {
+  margin-bottom: 1.5rem;
+}
+
+.value-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #8da04a;
+  margin-bottom: 1rem;
+}
+
+.value-description {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #666;
+  margin: 0;
+}
+
+/* Team Section */
+.team-section {
+  padding: 4rem 0;
+  background-color: #f8f9fa;
+}
+
+.team-card {
+  background: white;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
+}
+
+.team-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+}
+
+.team-image {
+  height: 250px;
+  overflow: hidden;
+}
+
+.team-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.team-info {
+  padding: 1.5rem;
+}
+
+.team-name {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #8da04a;
+  margin-bottom: 0.5rem;
+}
+
+.team-position {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+
+.team-description {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: #555;
+  margin: 0;
+}
+
+/* Section Titles */
+.section-title {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #8da04a;
+  margin-bottom: 1rem;
+}
+
+.section-subtitle {
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 0;
+}
+
+/* Responsive About Us */
+@media (max-width: 992px) {
+  .about-hero-title {
+    font-size: 3rem;
+  }
+
+  .about-hero-description {
+    font-size: 1.1rem;
+  }
+
+  .mission-title,
+  .vision-title {
+    font-size: 2rem;
+  }
+
+  .section-title {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-hero-section {
+    padding: 6rem 0 3rem 0;
+  }
+
+  .about-hero-title {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+
+  .about-hero-description {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .about-hero-buttons {
+    justify-content: center;
+  }
+
+  .mission-title,
+  .vision-title {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .section-subtitle {
+    font-size: 1rem;
+  }
+
+  .value-card,
+  .team-card {
+    margin-bottom: 2rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .about-hero-title {
+    font-size: 2rem;
+  }
+
+  .about-hero-description {
+    font-size: 0.95rem;
+  }
+
+  .about-hero-btn {
+    padding: 0.6rem 1.5rem;
+    font-size: 1rem;
+  }
+
+  .mission-title,
+  .vision-title {
+    font-size: 1.6rem;
+  }
+
+  .section-title {
+    font-size: 1.8rem;
+  }
+
+  .value-card,
+  .team-card {
+    padding: 1.5rem;
+  }
+}
+
 /* Stats Section */
 .stats-section {
   padding: 4rem 0;

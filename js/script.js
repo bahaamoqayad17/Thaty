@@ -1,14 +1,62 @@
 // Wait for DOM to be fully loaded
 document.addEventListener("DOMContentLoaded", function () {
-  // Initialize carousel with custom settings
-  const carousel = document.getElementById("heroCarousel");
-  if (carousel) {
-    const bsCarousel = new bootstrap.Carousel(carousel, {
+  // Initialize hero carousel with custom settings
+  const heroCarousel = document.getElementById("heroCarousel");
+  if (heroCarousel) {
+    const bsCarousel = new bootstrap.Carousel(heroCarousel, {
       interval: 5000, // Auto-slide every 5 seconds
       wrap: true,
       touch: true,
       keyboard: true,
     });
+  }
+
+  // Initialize services carousel with custom settings
+  const servicesCarousel = document.getElementById("servicesCarousel");
+  if (servicesCarousel) {
+    const bsServicesCarousel = new bootstrap.Carousel(servicesCarousel, {
+      interval: 6000, // Auto-slide every 6 seconds
+      wrap: true,
+      touch: true,
+      keyboard: true,
+    });
+
+    // Left arrow functionality
+    const leftArrow = document.querySelector(".left-arrow");
+    if (leftArrow) {
+      leftArrow.addEventListener("click", function () {
+        bsServicesCarousel.prev();
+      });
+    }
+
+    // Right arrow functionality
+    const rightArrow = document.querySelector(".right-arrow");
+    if (rightArrow) {
+      rightArrow.addEventListener("click", function () {
+        bsServicesCarousel.next();
+      });
+    }
+
+    // Add hover effects for arrows
+    if (leftArrow) {
+      leftArrow.addEventListener("mouseenter", function () {
+        this.style.transform = "translateY(-50%) scale(1.1)";
+        this.style.transition = "transform 0.3s ease";
+      });
+      leftArrow.addEventListener("mouseleave", function () {
+        this.style.transform = "translateY(-50%) scale(1)";
+      });
+    }
+
+    if (rightArrow) {
+      rightArrow.addEventListener("mouseenter", function () {
+        this.style.transform = "translateY(-50%) scale(1.1)";
+        this.style.transition = "transform 0.3s ease";
+      });
+      rightArrow.addEventListener("mouseleave", function () {
+        this.style.transform = "translateY(-50%) scale(1)";
+      });
+    }
   }
 
   // Smooth scroll for navigation links
@@ -60,6 +108,17 @@ document.addEventListener("DOMContentLoaded", function () {
         console.log("Browse new content clicked");
         // You can add navigation logic here
       }
+    });
+  });
+
+  // Add click handlers for service buttons
+  const serviceButtons = document.querySelectorAll(".service-btn");
+  serviceButtons.forEach((button) => {
+    button.addEventListener("click", function (e) {
+      e.preventDefault();
+      const buttonText = this.textContent.trim();
+      console.log(`Service button clicked: ${buttonText}`);
+      // You can add service-specific logic here
     });
   });
 });
