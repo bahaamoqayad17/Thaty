@@ -1103,6 +1103,238 @@ html {
   }
 }
 
+/* About Us Page Styles */
+.who-we-are-section {
+  padding: 4rem 0;
+  background-color: #fafafa;
+  position: relative;
+}
+
+.who-we-are-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 45%;
+  z-index: 1;
+}
+
+.who-we-are-image img {
+  border-radius: 20px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.who-we-are-content {
+  padding: 2rem 0;
+}
+
+.who-we-are-title {
+  font-size: 10rem;
+  font-weight: bold;
+  color: #8da04a;
+  margin-bottom: 2rem;
+  line-height: 1.2;
+}
+
+.who-we-are-description {
+  font-size: 1.6rem;
+  line-height: 1.8;
+  color: #333;
+  margin: 0;
+}
+
+/* Elements Section */
+.elements-section {
+  padding: 4rem 0;
+  background-color: white;
+}
+
+.elements-diagram {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.elements-diagram img {
+  border-radius: 15px;
+}
+
+/* Vision Section */
+.vision-section {
+  padding: 4rem 0;
+  background-color: #f8f9fa;
+}
+
+.section-header-image {
+  margin-bottom: 2rem;
+}
+
+.section-header-image img {
+  max-width: 300px;
+  height: auto;
+  border-radius: 15px;
+}
+
+.vision-content,
+.message-content,
+.values-content {
+  margin-bottom: 2rem;
+}
+
+.vision-description,
+.message-description {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #333;
+  margin: 0;
+  text-align: center;
+}
+
+/* Message Section */
+.message-section {
+  padding: 4rem 0;
+  background-color: white;
+}
+
+/* Values Section */
+.values-section {
+  padding: 4rem 0;
+  background-color: #f8f9fa;
+}
+
+.values-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.value-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  background: white;
+  border-radius: 15px;
+  transition: transform 0.3s ease;
+}
+
+.value-item:hover {
+  transform: translateY(-3px);
+}
+
+.value-icon {
+  color: #ffd700;
+  font-size: 1.5rem;
+  margin-left: 1rem;
+  font-weight: bold;
+}
+
+.value-text {
+  font-size: 1.2rem;
+  color: #333;
+  font-weight: 500;
+}
+
+/* Responsive About Us */
+@media (max-width: 992px) {
+  .who-we-are-title {
+    font-size: 3rem;
+  }
+
+  .who-we-are-description {
+    font-size: 1.1rem;
+  }
+
+  .section-header-image img {
+    max-width: 250px;
+  }
+
+  .vision-description,
+  .message-description {
+    font-size: 1rem;
+  }
+
+  .value-text {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .who-we-are-section,
+  .elements-section,
+  .vision-section,
+  .message-section,
+  .values-section {
+    padding: 3rem 0;
+  }
+
+  .who-we-are-title {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+
+  .who-we-are-description {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .section-header-image img {
+    max-width: 200px;
+  }
+
+  .vision-description,
+  .message-description {
+    font-size: 0.95rem;
+  }
+
+  .value-item {
+    margin-bottom: 1rem;
+    padding: 0.8rem;
+  }
+
+  .value-text {
+    font-size: 1rem;
+  }
+
+  .value-icon {
+    font-size: 1.3rem;
+    margin-left: 0.8rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .who-we-are-title {
+    font-size: 2rem;
+  }
+
+  .who-we-are-description {
+    font-size: 0.9rem;
+  }
+
+  .section-header-image img {
+    max-width: 180px;
+  }
+
+  .vision-description,
+  .message-description {
+    font-size: 0.9rem;
+  }
+
+  .value-item {
+    padding: 0.6rem;
+  }
+
+  .value-text {
+    font-size: 0.9rem;
+  }
+
+  .value-icon {
+    font-size: 1.2rem;
+    margin-left: 0.6rem;
+  }
+}
+
 /* Stats Section */
 .stats-section {
   padding: 4rem 0;
