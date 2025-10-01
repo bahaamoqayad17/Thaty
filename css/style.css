@@ -2409,6 +2409,287 @@ html {
   }
 }
 
+/* Subscription Plans Section */
+.subscription-plans-section {
+  padding: 4rem 0;
+  background-color: #f8f9fa;
+}
+
+.plans-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.plan-card {
+  position: relative;
+  background: white;
+  border-radius: 25px;
+  overflow: hidden;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+}
+
+.plan-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+}
+
+.plan-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  overflow: hidden;
+  border-radius: 25px;
+}
+
+.plan-bg-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.plan-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+}
+
+.plan-header {
+  position: relative;
+  z-index: 3;
+  padding: 1.2rem 2rem;
+  border-radius: 25px 25px 0 0;
+  margin-bottom: 0;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+}
+
+.plan-title {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin: 0;
+  color: white;
+  text-align: center;
+  line-height: 1.2;
+}
+
+.plan-content {
+  position: relative;
+  z-index: 3;
+  flex: 1;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.plan-duration {
+  margin-bottom: 1.5rem;
+}
+
+.duration-label {
+  display: block;
+  font-size: 1.5rem;
+  color: white;
+  margin-bottom: 0.5rem;
+  opacity: 0.9;
+}
+
+.duration-value {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+}
+
+.plan-divider {
+  width: 100%;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.4);
+  margin: 1.5rem 0;
+}
+
+.plan-pricing {
+  width: 100%;
+}
+
+.original-price {
+  margin-bottom: 0.5rem;
+}
+
+.original-price .price-text {
+  font-size: 1.5rem;
+  color: white;
+  text-decoration: line-through;
+  text-decoration-color: #dc3545;
+  text-decoration-thickness: 4px;
+  text-underline-offset: 4px;
+  font-weight: bold;
+  opacity: 0.9;
+}
+
+.current-price .price-text {
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+}
+
+.plan-footer {
+  position: relative;
+  z-index: 2;
+  padding: 1.5rem 2rem;
+  text-align: center;
+}
+
+.subscribe-btn {
+  color: #dc3545;
+  border: none;
+  border-radius: 15px;
+  padding: 0.75rem 2rem;
+  font-weight: bold;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 100%;
+}
+
+.subscribe-btn:hover {
+  background-color: #c82333;
+  transform: translateY(-2px);
+  color: #fff;
+  box-shadow: 0 5px 15px rgba(220, 53, 69, 0.3);
+}
+
+/* Plan Color Themes */
+.diamond-plan .plan-header {
+  background: #4a5d96;
+}
+
+.diamond-plan .plan-overlay {
+  background-color: rgba(74, 93, 150, 0.6);
+}
+
+.gold-plan .plan-header {
+  background: #f1c924;
+}
+
+.gold-plan .plan-overlay {
+  background-color: rgba(241, 201, 36, 0.6);
+}
+
+.silver-plan .plan-header {
+  background: #c38f60;
+}
+
+.silver-plan .plan-overlay {
+  background-color: rgba(195, 143, 96, 0.6);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .subscription-plans-section {
+    padding: 2rem 0;
+  }
+
+  .plans-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    padding: 0 1rem;
+  }
+
+  .plan-card {
+    min-height: 350px;
+  }
+
+  .plan-header {
+    padding: 1rem 1.5rem;
+    height: 55px;
+  }
+
+  .plan-title {
+    font-size: 1.2rem;
+  }
+
+  .plan-content {
+    padding: 1.5rem;
+  }
+
+  .duration-value {
+    font-size: 1.3rem;
+  }
+
+  .current-price .price-text {
+    font-size: 1.8rem;
+  }
+
+  .plan-footer {
+    padding: 1rem 1.5rem;
+  }
+
+  .subscribe-btn {
+    padding: 0.6rem 1.5rem;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .plans-grid {
+    padding: 0 0.5rem;
+  }
+
+  .plan-card {
+    min-height: 320px;
+  }
+
+  .plan-header {
+    padding: 0.8rem 1rem;
+    height: 50px;
+  }
+
+  .plan-title {
+    font-size: 1.1rem;
+  }
+
+  .plan-content {
+    padding: 1rem;
+  }
+
+  .duration-value {
+    font-size: 1.2rem;
+  }
+
+  .current-price .price-text {
+    font-size: 1.6rem;
+  }
+
+  .plan-footer {
+    padding: 0.8rem 1rem;
+  }
+
+  .subscribe-btn {
+    padding: 0.5rem 1rem;
+    font-size: 0.85rem;
+  }
+}
+
 /* Footer Styling */
 .footer {
   background-color: var(--primary-green);
