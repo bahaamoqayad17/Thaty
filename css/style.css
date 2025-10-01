@@ -5036,3 +5036,215 @@ html {
     font-size: 0.9rem;
   }
 }
+
+/* User Subscriptions Section */
+.user-subscriptions-section {
+  background: #f8f9fa;
+  min-height: 60vh;
+  padding: 3rem 0;
+}
+
+.subscription-section-title {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.subscription-section-title h2 {
+  background: linear-gradient(135deg, #a1b23c 0%, #8a9a35 100%);
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 15px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  display: inline-block;
+  box-shadow: 0 5px 15px rgba(161, 178, 60, 0.3);
+}
+
+.subscription-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 0;
+  background: white;
+  padding: 0;
+  border-bottom: none;
+}
+
+.subscription-tabs .tab-item {
+  flex: 1;
+  padding: 1.2rem 1rem;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 15px;
+  transition: all 0.3s ease;
+  background: white;
+  color: #a1b23c;
+  font-weight: bold;
+  font-size: 1rem;
+  position: relative;
+  border: 2px solid #a1b23c;
+}
+
+.tab-item:last-child {
+  border-right: none;
+}
+
+.tab-item:hover {
+  background: #f8f9fa;
+  color: #8a9a35;
+}
+
+.tab-item.active {
+  background: #a1b23c;
+  color: white;
+  z-index: 2;
+}
+
+.subscription-table-container {
+  overflow: hidden;
+  margin-top: 0;
+  border-radius: 30px;
+}
+
+.table-header {
+  color: #a1b23c;
+  padding: 0;
+  border-radius: 30px;
+}
+
+.table-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 0;
+  border-radius: 30px;
+  border: 2px solid #a1b23c;
+}
+
+.table-cell {
+  padding: 1.2rem 1rem;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.table-cell:last-child {
+  border-right: none;
+}
+
+.table-content {
+  min-height: 200px;
+  padding: 2rem;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 3rem 1rem;
+}
+
+.empty-state p {
+  color: #dc3545;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+/* Responsive Design for User Subscriptions */
+@media (max-width: 768px) {
+  .subscription-section-title h2 {
+    font-size: 1.3rem;
+    padding: 0.8rem 1.5rem;
+  }
+
+  .subscription-tabs {
+    flex-direction: column;
+    border-radius: 15px;
+    border-bottom: 2px solid #a1b23c;
+  }
+
+  .tab-item {
+    border-radius: 0;
+    border-right: none;
+    border-bottom: 2px solid #a1b23c;
+  }
+
+  .tab-item:first-child {
+    border-radius: 15px 15px 0 0;
+  }
+
+  .tab-item:last-child {
+    border-radius: 0 0 15px 15px;
+    border-bottom: none;
+  }
+
+  .tab-item.active {
+    border-radius: 0;
+  }
+
+  .subscription-table-container {
+    border-radius: 0 0 15px 15px;
+    border-top: 2px solid #a1b23c;
+  }
+
+  .table-row {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .table-cell {
+    border-right: none;
+    border-bottom: 2px solid #a1b23c;
+    padding: 0.8rem 1rem;
+  }
+
+  .table-cell:last-child {
+    border-bottom: none;
+  }
+
+  .table-content {
+    padding: 1.5rem;
+  }
+
+  .empty-state {
+    padding: 2rem 1rem;
+  }
+
+  .empty-state p {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .user-subscriptions-section {
+    padding: 2rem 0;
+  }
+
+  .subscription-section-title {
+    margin-bottom: 1.5rem;
+  }
+
+  .subscription-section-title h2 {
+    font-size: 1.1rem;
+    padding: 0.7rem 1.2rem;
+  }
+
+  .subscription-tabs {
+    margin-bottom: 1.5rem;
+  }
+
+  .tab-item {
+    padding: 1rem 0.8rem;
+    font-size: 0.9rem;
+  }
+
+  .table-content {
+    padding: 1rem;
+  }
+
+  .empty-state {
+    padding: 1.5rem 0.5rem;
+  }
+
+  .empty-state p {
+    font-size: 1rem;
+  }
+}
