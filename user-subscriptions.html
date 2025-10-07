@@ -11,6 +11,48 @@
 
     <link rel="stylesheet" href="css/style.css" />
 
+    <style>
+      /* Hide all table content by default */
+      .table-content {
+        display: none;
+      }
+
+      /* Show only the active tab content */
+      .table-content[data-tab="services"] {
+        display: block;
+      }
+
+      /* Hide all buttons by default */
+      .subscription-btn {
+        display: none;
+      }
+
+      /* Show only the active tab button */
+      .subscription-btn[data-tab="services"] {
+        display: block;
+      }
+
+      /* Button styling */
+      .subscription-buttons {
+        margin-top: 20px;
+        text-align: center;
+      }
+
+      .subscription-btn {
+        background: #007bff;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        margin: 0 10px;
+      }
+
+      .subscription-btn:hover {
+        background: #0056b3;
+      }
+    </style>
+
     <!-- Font Awesome -->
     <script
       src="https://kit.fontawesome.com/a93a667c1e.js"
@@ -22,9 +64,9 @@
   <body>
     <!-- Sticky Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-      <div class="container-fluid px-4">
+      <div class="container-fluid md:px-4">
         <!-- Logo -->
-        <a class="navbar-brand d-flex align-items-center" href="index.html">
+        <a class="navbar-brand d-flex align-items-center" href="#">
           <img src="assets/logo.png" alt="logo" />
         </a>
 
@@ -35,43 +77,47 @@
           data-bs-toggle="collapse"
           data-bs-target="#navbarNav"
         >
-          <span class="navbar-toggler-icon"></span>
+          <i class="fas fa-bars"></i>
         </button>
 
         <!-- Navigation Menu -->
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav m-auto align-items-center">
             <li class="nav-item">
-              <a class="nav-link text-white" href="index.html">الرئيسية</a>
+              <a class="nav-link text-white" href="/index.html">الرئيسية</a>
             </li>
             <li class="nav-item vertical-line"></li>
             <li class="nav-item">
-              <a class="nav-link text-white" href="about-us.html">من نحن</a>
+              <a class="nav-link text-white" href="/about-us.html">من نحن</a>
             </li>
             <li class="nav-item vertical-line"></li>
             <li class="nav-item">
-              <a class="nav-link text-white" href="services.html">الخدمات</a>
+              <a class="nav-link text-white" href="/services.html">الخدمات</a>
             </li>
             <li class="nav-item vertical-line"></li>
             <li class="nav-item">
-              <a class="nav-link text-white" href="courses.html">الدورات</a>
+              <a class="nav-link text-white" href="/courses.html">الدورات</a>
             </li>
             <li class="nav-item vertical-line"></li>
             <li class="nav-item">
-              <a class="nav-link text-white" href="newsletters.html">النشرات</a>
+              <a class="nav-link text-white" href="/newsletters.html"
+                >النشرات</a
+              >
             </li>
             <li class="nav-item vertical-line"></li>
             <li class="nav-item">
-              <a class="nav-link text-white" href="faq.html">الأسئلة الشائعة</a>
+              <a class="nav-link text-white" href="/faq.html"
+                >الأسئلة الشائعة</a
+              >
             </li>
             <li class="nav-item vertical-line"></li>
             <li class="nav-item">
-              <a class="nav-link text-white" href="contact.html">تواصل معنا</a>
+              <a class="nav-link text-white" href="/contact.html">تواصل معنا</a>
             </li>
           </ul>
 
           <!-- Search Icon -->
-          <div class="d-flex align-items-center me-3">
+          <div class="search-icon d-flex align-items-center me-3">
             <svg width="20" height="20" fill="white" viewBox="0 0 16 16">
               <path
                 d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"
@@ -124,12 +170,12 @@
                     <span>إشتراكاتي في دورات ذاتي</span>
                   </div>
                   <div class="tab-item active" data-tab="services">
-                    <span>إشتراكي في خدمات ذاتي</span>
+                    <span>إشتراكاتي في خدمات ذاتي</span>
                   </div>
                 </div>
 
                 <div class="subscription-section-title">
-                  <h2>إشتراكاتي في باقات ذاتي</h2>
+                  <h2>إشتراكاتي في خدمات ذاتي</h2>
                 </div>
 
                 <!-- Data Table Container -->
@@ -145,10 +191,46 @@
                   </div>
 
                   <!-- Table Content -->
-                  <div class="table-content">
+                  <div class="table-content" data-tab="packages">
                     <div class="empty-state">
-                      <p>لم يتم العثور على أي اشتراكات</p>
+                      <p>لم يتم العثور على أي باقات</p>
                     </div>
+                  </div>
+                  <!-- Table Content -->
+                  <div class="table-content" data-tab="courses">
+                    <div class="empty-state">
+                      <p>لم يتم العثور على أي دورات</p>
+                    </div>
+                  </div>
+                  <!-- Table Content -->
+                  <div class="table-content" data-tab="services">
+                    <div class="empty-state">
+                      <p>لم يتم العثور على أي خدمات</p>
+                    </div>
+                  </div>
+
+                  <div class="subscription-buttons">
+                    <button
+                      class="subscription-btn"
+                      data-tab="courses"
+                      onclick="window.location.href = 'courses.html'"
+                    >
+                      عرض الدورات
+                    </button>
+                    <button
+                      class="subscription-btn"
+                      data-tab="packages"
+                      onclick="window.location.href = 'plans.html'"
+                    >
+                      عرض الباقات
+                    </button>
+                    <button
+                      class="subscription-btn"
+                      data-tab="services"
+                      onclick="window.location.href = 'services.html'"
+                    >
+                      عرض الخدمات
+                    </button>
                   </div>
                 </div>
               </div>
@@ -262,6 +344,39 @@
         const sectionTitle = document.querySelector(
           ".subscription-section-title h2"
         );
+        const tableContents = document.querySelectorAll(".table-content");
+        const buttons = document.querySelectorAll(
+          ".subscription-buttons button"
+        );
+
+        // Function to show/hide content based on active tab
+        function showTabContent(activeTab) {
+          // Hide all table contents
+          tableContents.forEach((content) => {
+            content.style.display = "none";
+          });
+
+          // Show the active tab content
+          const activeContent = document.querySelector(
+            `.table-content[data-tab="${activeTab}"]`
+          );
+          if (activeContent) {
+            activeContent.style.display = "block";
+          }
+
+          // Hide all buttons first
+          buttons.forEach((button) => {
+            button.style.display = "none";
+          });
+
+          // Show the appropriate button based on active tab
+          const activeButton = document.querySelector(
+            `.subscription-btn[data-tab="${activeTab}"]`
+          );
+          if (activeButton) {
+            activeButton.style.display = "block";
+          }
+        }
 
         tabs.forEach((tab) => {
           tab.addEventListener("click", function () {
@@ -275,11 +390,18 @@
             const tabText = this.querySelector("span").textContent;
             sectionTitle.textContent = tabText;
 
-            // Here you can add logic to load different data based on tab
-            // For now, we'll just show the empty state
-            console.log("Switched to tab:", this.dataset.tab);
+            // Show the appropriate content and button
+            const activeTab = this.dataset.tab;
+            showTabContent(activeTab);
+
+            console.log("Switched to tab:", activeTab);
           });
         });
+
+        // Initialize with the default active tab (services)
+        const defaultActiveTab =
+          document.querySelector(".tab-item.active").dataset.tab;
+        showTabContent(defaultActiveTab);
       });
     </script>
   </body>

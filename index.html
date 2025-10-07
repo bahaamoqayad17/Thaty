@@ -22,7 +22,7 @@
   <body>
     <!-- Sticky Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-      <div class="container-fluid px-4">
+      <div class="container-fluid md:px-4">
         <!-- Logo -->
         <a class="navbar-brand d-flex align-items-center" href="#">
           <img src="assets/logo.png" alt="logo" />
@@ -35,7 +35,7 @@
           data-bs-toggle="collapse"
           data-bs-target="#navbarNav"
         >
-          <span class="navbar-toggler-icon"></span>
+          <i class="fas fa-bars"></i>
         </button>
 
         <!-- Navigation Menu -->
@@ -75,7 +75,7 @@
           </ul>
 
           <!-- Search Icon -->
-          <div class="d-flex align-items-center me-3">
+          <div class="search-icon d-flex align-items-center me-3">
             <svg width="20" height="20" fill="white" viewBox="0 0 16 16">
               <path
                 d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"
@@ -129,7 +129,12 @@
           <div class="carousel-item active">
             <div
               class="hero-background-slide"
-              style="background-image: url('assets/hero.png')"
+              style="
+                background-image: url('assets/hero.png');
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+              "
             ></div>
           </div>
 
@@ -137,7 +142,12 @@
           <div class="carousel-item">
             <div
               class="hero-background-slide"
-              style="background-image: url('assets/hero.png')"
+              style="
+                background-image: url('assets/hero.png');
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+              "
             ></div>
           </div>
 
@@ -145,7 +155,12 @@
           <div class="carousel-item">
             <div
               class="hero-background-slide"
-              style="background-image: url('assets/hero.png')"
+              style="
+                background-image: url('assets/hero.png');
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+              "
             ></div>
           </div>
 
@@ -153,7 +168,12 @@
           <div class="carousel-item">
             <div
               class="hero-background-slide"
-              style="background-image: url('assets/hero.png')"
+              style="
+                background-image: url('assets/hero.png');
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+              "
             ></div>
           </div>
         </div>
@@ -162,20 +182,14 @@
       <!-- Static Content Overlay -->
       <div class="hero-content">
         <div class="container h-100 d-flex align-items-center z-10">
-          <div class="row w-100">
-            <div class="col-12 text-center text-white">
-              <h1 class="display-3 fw-bold mb-4 hero-title">اكتف بذاتك</h1>
-              <p class="mb-5 hero-subtitle">وابدأ رحلتك نحو الاستدامة</p>
-              <div
-                class="d-flex flex-column flex-md-row gap-3 justify-content-center"
-              >
-                <button class="btn btn-lg px-5 py-1 btn-hero">
-                  سجل الآن مجانا
-                </button>
-                <button class="btn btn-lg px-5 py-1 btn-hero">
-                  تصفح جديدنا
-                </button>
-              </div>
+          <div class="text-center text-white">
+            <h1 class="display-3 fw-bold mb-4 hero-title">اكتف بذاتك</h1>
+            <p class="mb-5 hero-subtitle">وابدأ رحلتك نحو الاستدامة</p>
+            <div class="d-flex gap-3 justify-content-center">
+              <button class="btn btn-lg px-5 py-1 btn-hero">
+                سجل الآن مجانا
+              </button>
+              <button class="btn btn-lg px-5 py-1 btn-hero">تصفح جديدنا</button>
             </div>
           </div>
         </div>
@@ -587,31 +601,31 @@
           </div>
 
           <!-- Information Section -->
-          <div class="col-lg-3 col-md-6 mb-4">
+          <div class="col-lg-3 col-6 mb-4">
             <div class="footer-section">
               <h3 class="footer-title">المعلومات</h3>
               <ul class="footer-links">
-                <li><a href="/faq.html">الأسئلة الشائعة</a></li>
-                <li><a href="/about-us.html">من نحن</a></li>
-                <li><a href="/contact.html">تواصل معنا</a></li>
-                <li><a href="/privacy-policy.html">سياسة الخصوصية</a></li>
-                <li><a href="/terms-of-service.html">شروط الاستخدام</a></li>
+                <li><a href="/faq.html"> > الأسئلة الشائعة</a></li>
+                <li><a href="/about-us.html"> > من نحن</a></li>
+                <li><a href="/contact.html"> > تواصل معنا</a></li>
+                <li><a href="/privacy-policy.html"> > سياسة الخصوصية</a></li>
+                <li><a href="/terms-of-service.html"> > شروط الاستخدام</a></li>
               </ul>
             </div>
           </div>
 
           <!-- Links Section -->
-          <div class="col-lg-3 col-md-6 mb-4">
+          <div class="col-lg-3 col-6 mb-4">
             <div class="footer-section">
               <h3 class="footer-title">الروابط</h3>
               <ul class="footer-links">
-                <li><a href="/index.html">الرئيسية</a></li>
-                <li><a href="/register.html">سجل الآن</a></li>
-                <li><a href="/login.html">تسجيل الدخول</a></li>
-                <li><a href="/plans.html">الباقات</a></li>
-                <li><a href="/newsletters.html">النشرات الإخبارية</a></li>
-                <li><a href="/services.html">الخدمات</a></li>
-                <li><a href="/courses.html">الدورات</a></li>
+                <li><a href="/index.html"> > الرئيسية</a></li>
+                <li><a href="/register.html"> > سجل الآن</a></li>
+                <li><a href="/login.html"> > تسجيل الدخول</a></li>
+                <li><a href="/plans.html"> > الباقات</a></li>
+                <li><a href="/newsletters.html"> > النشرات الإخبارية</a></li>
+                <li><a href="/services.html"> > الخدمات</a></li>
+                <li><a href="/courses.html"> > الدورات</a></li>
               </ul>
             </div>
           </div>

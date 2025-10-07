@@ -192,81 +192,6 @@ main {
   margin-right: 1.5rem !important;
 }
 
-/* Responsive Navigation */
-@media (max-width: 768px) {
-  .navbar {
-    margin-top: 1rem;
-    max-width: 95%;
-    border-radius: 30px;
-    position: fixed;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    padding: 1rem 1.5rem;
-  }
-
-  .navbar-brand {
-    font-size: 1.2rem;
-  }
-
-  .navbar-brand img {
-    height: 50px;
-  }
-
-  .nav-link {
-    margin: 0 0.5rem;
-    font-size: 0.9rem;
-  }
-
-  .btn-register {
-    padding: 0.6rem 1.5rem;
-    font-size: 0.9rem;
-  }
-}
-
-/* Responsive Typography */
-@media (max-width: 768px) {
-  .display-3 {
-    font-size: 2.5rem;
-  }
-
-  .fs-4 {
-    font-size: 1.2rem !important;
-  }
-
-  .btn-lg {
-    padding: 0.75rem 2rem !important;
-    font-size: 1rem;
-  }
-
-  .hero-slide {
-    height: 80vh;
-  }
-}
-
-@media (max-width: 576px) {
-  .display-3 {
-    font-size: 2rem;
-  }
-
-  .fs-4 {
-    font-size: 1rem !important;
-  }
-
-  .btn-lg {
-    padding: 0.6rem 1.5rem !important;
-    font-size: 0.9rem;
-  }
-
-  .navbar-brand {
-    font-size: 1.2rem;
-  }
-
-  .hero-slide {
-    height: 70vh;
-  }
-}
-
 /* Smooth scrolling */
 html {
   scroll-behavior: smooth;
@@ -293,7 +218,6 @@ html {
 /* About Us Section */
 .about-us-section {
   padding: 4rem 0;
-  background-color: white;
   position: relative;
 }
 
@@ -351,89 +275,6 @@ html {
   background-color: #ffed4e;
   transform: translateY(-2px);
   box-shadow: 0 5px 15px rgba(255, 215, 0, 0.3);
-}
-
-/* Responsive About Us */
-@media (max-width: 992px) {
-  .about-us-section {
-    padding: 3rem 0;
-  }
-
-  .about-title {
-    font-size: 2.5rem;
-    margin-bottom: 1.5rem;
-  }
-
-  .about-description {
-    font-size: 1rem;
-    margin-bottom: 2rem;
-  }
-
-  .about-content {
-    padding: 1rem 0;
-    text-align: center;
-  }
-
-  .about-buttons {
-    justify-content: center;
-  }
-}
-
-@media (max-width: 768px) {
-  .about-us-section {
-    padding: 2rem 0;
-  }
-
-  .about-title {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-  }
-
-  .about-description {
-    font-size: 0.95rem;
-    margin-bottom: 1.5rem;
-    text-align: center;
-  }
-
-  .about-btn {
-    padding: 0.6rem 1.5rem;
-    font-size: 0.9rem;
-  }
-
-  .about-buttons {
-    gap: 0.75rem;
-  }
-}
-
-@media (max-width: 576px) {
-  .about-us-section {
-    padding: 1.5rem 0;
-  }
-
-  .about-title {
-    font-size: 1.8rem;
-    margin-bottom: 1rem;
-  }
-
-  .about-description {
-    font-size: 0.9rem;
-    margin-bottom: 1.5rem;
-  }
-
-  .about-btn {
-    padding: 0.5rem 1.2rem;
-    font-size: 0.85rem;
-  }
-
-  .about-buttons {
-    flex-direction: column;
-    align-items: center;
-    gap: 0.5rem;
-  }
-
-  .about-image {
-    border-radius: 8px;
-  }
 }
 
 /* What We Offer Section */
@@ -631,121 +472,6 @@ html {
 
 .custom-indicator:hover .indicator-line {
   background: #8da04a;
-}
-
-/* Responsive What We Offer Section */
-@media (max-width: 992px) {
-  .what-we-offer-section {
-    padding: 3rem 0;
-  }
-
-  .what-we-offer-section .section-title {
-    font-size: 3rem;
-  }
-}
-
-@media (max-width: 768px) {
-  .what-we-offer-section {
-    padding: 2rem 0;
-  }
-
-  .what-we-offer-section .section-title {
-    font-size: 2.5rem;
-  }
-
-  .service-category {
-    font-size: 0.9rem;
-    padding: 0.6rem 1rem;
-    width: 160px;
-    top: -18px;
-    box-shadow: 0 5px 18px rgba(141, 160, 74, 0.4);
-  }
-
-  .service-image {
-    padding: 1.5rem 1rem 0.8rem 1rem;
-  }
-
-  .service-image img {
-    max-height: 150px;
-  }
-
-  .service-description {
-    font-size: 0.85rem;
-    padding: 0 1rem 0.8rem 1rem;
-  }
-
-  .service-action {
-    padding: 0 1rem 1rem 1rem;
-  }
-
-  .service-btn {
-    padding: 0.5rem 1.2rem;
-    font-size: 0.85rem;
-  }
-
-  .right-arrow,
-  .left-arrow {
-    width: 80px;
-    height: 160px;
-  }
-
-  .right-arrow {
-    right: 8%;
-  }
-
-  .left-arrow {
-    left: 8%;
-  }
-}
-
-@media (max-width: 576px) {
-  .what-we-offer-section .section-title {
-    font-size: 2rem;
-  }
-
-  .service-category {
-    font-size: 0.8rem;
-    padding: 0.5rem 0.8rem;
-    width: 140px;
-    top: -16px;
-    box-shadow: 0 4px 16px rgba(141, 160, 74, 0.4);
-  }
-
-  .service-image {
-    padding: 1.2rem 0.8rem 0.6rem 0.8rem;
-  }
-
-  .service-image img {
-    max-height: 120px;
-  }
-
-  .service-description {
-    font-size: 0.8rem;
-    padding: 0 0.8rem 0.6rem 0.8rem;
-  }
-
-  .service-action {
-    padding: 0 0.8rem 0.8rem 0.8rem;
-  }
-
-  .service-btn {
-    padding: 0.4rem 1rem;
-    font-size: 0.8rem;
-  }
-
-  .right-arrow,
-  .left-arrow {
-    width: 60px;
-    height: 120px;
-  }
-
-  .right-arrow {
-    right: 5%;
-  }
-
-  .left-arrow {
-    left: 5%;
-  }
 }
 
 /* About Us Page Styles */
@@ -1018,95 +744,6 @@ html {
   color: #666;
   margin-bottom: 0;
 }
-
-/* Responsive About Us */
-@media (max-width: 992px) {
-  .about-hero-title {
-    font-size: 3rem;
-  }
-
-  .about-hero-description {
-    font-size: 1.1rem;
-  }
-
-  .mission-title,
-  .vision-title {
-    font-size: 2rem;
-  }
-
-  .section-title {
-    font-size: 2.5rem;
-  }
-}
-
-@media (max-width: 768px) {
-  .about-hero-section {
-    padding: 6rem 0 3rem 0;
-  }
-
-  .about-hero-title {
-    font-size: 2.5rem;
-    text-align: center;
-  }
-
-  .about-hero-description {
-    font-size: 1rem;
-    text-align: center;
-  }
-
-  .about-hero-buttons {
-    justify-content: center;
-  }
-
-  .mission-title,
-  .vision-title {
-    font-size: 1.8rem;
-    text-align: center;
-  }
-
-  .section-title {
-    font-size: 2rem;
-  }
-
-  .section-subtitle {
-    font-size: 1rem;
-  }
-
-  .value-card,
-  .team-card {
-    margin-bottom: 2rem;
-  }
-}
-
-@media (max-width: 576px) {
-  .about-hero-title {
-    font-size: 2rem;
-  }
-
-  .about-hero-description {
-    font-size: 0.95rem;
-  }
-
-  .about-hero-btn {
-    padding: 0.6rem 1.5rem;
-    font-size: 1rem;
-  }
-
-  .mission-title,
-  .vision-title {
-    font-size: 1.6rem;
-  }
-
-  .section-title {
-    font-size: 1.8rem;
-  }
-
-  .value-card,
-  .team-card {
-    padding: 1.5rem;
-  }
-}
-
 /* About Us Page Styles */
 .who-we-are-section {
   padding: 4rem 0;
@@ -1201,11 +838,6 @@ html {
 }
 
 /* Values Section */
-.values-section {
-  padding: 4rem 0;
-  background-color: #f8f9fa;
-}
-
 .values-list {
   list-style: none;
   padding: 0;
@@ -1239,106 +871,6 @@ html {
   color: #333;
   font-weight: 500;
 }
-
-/* Responsive About Us */
-@media (max-width: 992px) {
-  .who-we-are-title {
-    font-size: 3rem;
-  }
-
-  .who-we-are-description {
-    font-size: 1.1rem;
-  }
-
-  .section-header-image img {
-    max-width: 250px;
-  }
-
-  .vision-description,
-  .message-description {
-    font-size: 1rem;
-  }
-
-  .value-text {
-    font-size: 1.1rem;
-  }
-}
-
-@media (max-width: 768px) {
-  .who-we-are-section,
-  .elements-section,
-  .vision-section,
-  .message-section,
-  .values-section {
-    padding: 3rem 0;
-  }
-
-  .who-we-are-title {
-    font-size: 2.5rem;
-    text-align: center;
-  }
-
-  .who-we-are-description {
-    font-size: 1rem;
-    text-align: center;
-  }
-
-  .section-header-image img {
-    max-width: 200px;
-  }
-
-  .vision-description,
-  .message-description {
-    font-size: 0.95rem;
-  }
-
-  .value-item {
-    margin-bottom: 1rem;
-    padding: 0.8rem;
-  }
-
-  .value-text {
-    font-size: 1rem;
-  }
-
-  .value-icon {
-    font-size: 1.3rem;
-    margin-left: 0.8rem;
-  }
-}
-
-@media (max-width: 576px) {
-  .who-we-are-title {
-    font-size: 2rem;
-  }
-
-  .who-we-are-description {
-    font-size: 0.9rem;
-  }
-
-  .section-header-image img {
-    max-width: 180px;
-  }
-
-  .vision-description,
-  .message-description {
-    font-size: 0.9rem;
-  }
-
-  .value-item {
-    padding: 0.6rem;
-  }
-
-  .value-text {
-    font-size: 0.9rem;
-  }
-
-  .value-icon {
-    font-size: 1.2rem;
-    margin-left: 0.6rem;
-  }
-}
-
 /* FAQ Page Styles */
 .faq-hero-section {
   padding: 4rem 0;
@@ -1489,76 +1021,6 @@ html {
   line-height: 1.6;
   color: #666;
   margin: 0;
-}
-
-/* Responsive FAQ */
-@media (max-width: 992px) {
-  .faq-hero-title {
-    font-size: 3rem;
-  }
-
-  .faq-hero-description {
-    font-size: 1.1rem;
-  }
-}
-
-@media (max-width: 768px) {
-  .faq-hero-section,
-  .faq-questions-section {
-    padding: 3rem 0;
-  }
-
-  .faq-hero-title {
-    font-size: 2.5rem;
-    text-align: center;
-  }
-
-  .faq-hero-description {
-    font-size: 1rem;
-    text-align: center;
-  }
-
-  .faq-question {
-    padding: 1.2rem;
-  }
-
-  .faq-question h3 {
-    font-size: 1.1rem;
-  }
-
-  .faq-answer {
-    padding: 1.2rem;
-  }
-
-  .faq-answer p {
-    font-size: 0.95rem;
-  }
-}
-
-@media (max-width: 576px) {
-  .faq-hero-title {
-    font-size: 2rem;
-  }
-
-  .faq-hero-description {
-    font-size: 0.9rem;
-  }
-
-  .faq-question {
-    padding: 1rem;
-  }
-
-  .faq-question h3 {
-    font-size: 1rem;
-  }
-
-  .faq-answer {
-    padding: 1rem;
-  }
-
-  .faq-answer p {
-    font-size: 0.9rem;
-  }
 }
 
 /* Contact Page Styles */
@@ -1742,99 +1204,6 @@ html {
   margin: 0;
 }
 
-/* Responsive Contact */
-@media (max-width: 992px) {
-  .contact-title {
-    font-size: 3rem;
-  }
-
-  .contact-hero-image {
-    width: 50%;
-  }
-}
-
-@media (max-width: 768px) {
-  .contact-section {
-    padding: 3rem 0;
-  }
-
-  .contact-title {
-    font-size: 2.5rem;
-    text-align: center;
-  }
-
-  .contact-content {
-    align-items: center;
-  }
-
-  .contact-hero-image {
-    position: relative;
-    width: 100%;
-    margin-bottom: 2rem;
-  }
-
-  .contact-hero-image img {
-    max-height: 300px;
-    object-fit: contain;
-  }
-
-  .contact-form {
-    max-width: 100%;
-  }
-
-  .form-control {
-    padding: 0.8rem 1rem;
-    font-size: 0.95rem;
-  }
-
-  .contact-submit-btn {
-    padding: 0.8rem 1.5rem;
-    font-size: 0.95rem;
-  }
-
-  .social-icons-row {
-    gap: 1rem;
-  }
-
-  .social-icon {
-    width: 45px;
-    height: 45px;
-  }
-
-  .contact-email p {
-    font-size: 1rem;
-  }
-}
-
-@media (max-width: 576px) {
-  .contact-title {
-    font-size: 2rem;
-  }
-
-  .form-control {
-    padding: 0.7rem 0.8rem;
-    font-size: 0.9rem;
-  }
-
-  .contact-submit-btn {
-    padding: 0.7rem 1rem;
-    font-size: 0.9rem;
-  }
-
-  .social-icons-row {
-    gap: 0.8rem;
-  }
-
-  .social-icon {
-    width: 40px;
-    height: 40px;
-  }
-
-  .contact-email p {
-    font-size: 0.9rem;
-  }
-}
-
 /* Stats Section */
 .stats-section {
   padding: 4rem 0;
@@ -1924,101 +1293,6 @@ html {
   object-fit: contain;
   position: relative;
   z-index: 100;
-}
-
-/* Responsive Stats */
-@media (max-width: 992px) {
-  .stats-section {
-    padding: 3rem 0;
-  }
-
-  .main-stat-number {
-    font-size: 6rem;
-  }
-
-  .stat-line {
-    font-size: 1.3rem;
-  }
-
-  .stat-number {
-    font-size: 2.5rem;
-  }
-
-  .stats-content {
-    text-align: center;
-    padding: 1rem 0;
-  }
-
-  .bottom-stats {
-    justify-content: center;
-    gap: 1.5rem;
-  }
-}
-
-@media (max-width: 768px) {
-  .stats-section {
-    padding: 2rem 0;
-  }
-
-  .main-stat {
-    margin-bottom: 2rem;
-  }
-
-  .main-stat-number {
-    font-size: 5rem;
-  }
-
-  .stat-line {
-    font-size: 1.1rem;
-  }
-
-  .stat-number {
-    font-size: 2rem;
-  }
-
-  .stat-label {
-    font-size: 0.9rem;
-  }
-
-  .bottom-stats {
-    gap: 1rem;
-  }
-
-  .stat-item {
-    min-width: 100px;
-  }
-}
-
-@media (max-width: 576px) {
-  .stats-section {
-    padding: 1.5rem 0;
-  }
-
-  .main-stat-number {
-    font-size: 4rem;
-  }
-
-  .stat-line {
-    font-size: 1rem;
-  }
-
-  .stat-number {
-    font-size: 1.8rem;
-  }
-
-  .stat-label {
-    font-size: 0.85rem;
-  }
-
-  .bottom-stats {
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-  }
-
-  .stat-item {
-    min-width: auto;
-  }
 }
 
 /* Follow Our New Section */
@@ -2262,159 +1536,6 @@ html {
 .services-banner .banner-subtitle {
   color: white;
 }
-
-/* Responsive Follow New Section */
-@media (max-width: 992px) {
-  .follow-new-section {
-    padding: 3rem 0;
-  }
-
-  .section-title {
-    font-size: 2.5rem;
-  }
-
-  .banner-content {
-    height: 200px;
-    padding: 2rem;
-    margin-left: 45%;
-  }
-
-  .banner-title {
-    font-size: 2rem;
-  }
-
-  .banner-subtitle {
-    font-size: 1.2rem;
-  }
-
-  .banner-text {
-    padding-right: 2rem;
-  }
-
-  .banner-category {
-    width: 70px;
-  }
-
-  .banner-category span {
-    font-size: 1rem;
-  }
-
-  .banner-category .category-subtitle {
-    font-size: 0.75rem;
-  }
-
-  .banner-btn {
-    padding: 0.8rem 2rem;
-    font-size: 1rem;
-  }
-}
-
-@media (max-width: 768px) {
-  .follow-new-section {
-    padding: 2rem 0;
-  }
-
-  .section-title {
-    font-size: 2rem;
-  }
-
-  .banners-container {
-    gap: 1.5rem;
-  }
-
-  .banner-image {
-    width: 40%;
-  }
-
-  .banner-content {
-    height: 180px;
-    padding: 1.5rem;
-    margin-left: 40%;
-  }
-
-  .banner-title {
-    font-size: 1.8rem;
-  }
-
-  .banner-subtitle {
-    font-size: 1.1rem;
-  }
-
-  .banner-text {
-    padding-right: 1.5rem;
-  }
-
-  .banner-category {
-    width: 60px;
-  }
-
-  .banner-category span {
-    font-size: 0.9rem;
-  }
-
-  .banner-category .category-subtitle {
-    font-size: 0.7rem;
-  }
-
-  .banner-btn {
-    padding: 0.7rem 1.8rem;
-    font-size: 0.95rem;
-  }
-}
-
-@media (max-width: 576px) {
-  .follow-new-section {
-    padding: 1.5rem 0;
-  }
-
-  .section-title {
-    font-size: 1.8rem;
-  }
-
-  .banners-container {
-    gap: 1rem;
-  }
-
-  .banner-image {
-    width: 35%;
-  }
-
-  .banner-content {
-    height: 160px;
-    padding: 1rem;
-    margin-left: 35%;
-  }
-
-  .banner-title {
-    font-size: 1.5rem;
-  }
-
-  .banner-subtitle {
-    font-size: 1rem;
-  }
-
-  .banner-text {
-    padding-right: 1rem;
-  }
-
-  .banner-category {
-    width: 50px;
-  }
-
-  .banner-category span {
-    font-size: 0.8rem;
-  }
-
-  .banner-category .category-subtitle {
-    font-size: 0.65rem;
-  }
-
-  .banner-btn {
-    padding: 0.6rem 1.5rem;
-    font-size: 0.9rem;
-  }
-}
-
 /* Subscription Plans Section */
 .subscription-plans-section {
   padding: 4rem 0;
@@ -2609,93 +1730,6 @@ html {
   background-color: rgba(195, 143, 96, 0.6);
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-  .subscription-plans-section {
-    padding: 2rem 0;
-  }
-
-  .plans-grid {
-    grid-template-columns: 1fr;
-    gap: 1.5rem;
-    padding: 0 1rem;
-  }
-
-  .plan-card {
-    min-height: 350px;
-  }
-
-  .plan-header {
-    padding: 1rem 1.5rem;
-    height: 55px;
-  }
-
-  .plan-title {
-    font-size: 1.2rem;
-  }
-
-  .plan-content {
-    padding: 1.5rem;
-  }
-
-  .duration-value {
-    font-size: 1.3rem;
-  }
-
-  .current-price .price-text {
-    font-size: 1.8rem;
-  }
-
-  .plan-footer {
-    padding: 1rem 1.5rem;
-  }
-
-  .subscribe-btn {
-    padding: 0.6rem 1.5rem;
-    font-size: 0.9rem;
-  }
-}
-
-@media (max-width: 576px) {
-  .plans-grid {
-    padding: 0 0.5rem;
-  }
-
-  .plan-card {
-    min-height: 320px;
-  }
-
-  .plan-header {
-    padding: 0.8rem 1rem;
-    height: 50px;
-  }
-
-  .plan-title {
-    font-size: 1.1rem;
-  }
-
-  .plan-content {
-    padding: 1rem;
-  }
-
-  .duration-value {
-    font-size: 1.2rem;
-  }
-
-  .current-price .price-text {
-    font-size: 1.6rem;
-  }
-
-  .plan-footer {
-    padding: 0.8rem 1rem;
-  }
-
-  .subscribe-btn {
-    padding: 0.5rem 1rem;
-    font-size: 0.85rem;
-  }
-}
-
 /* Footer Styling */
 .footer {
   background-color: var(--primary-green);
@@ -2754,15 +1788,6 @@ html {
   font-size: 0.9rem;
   transition: color 0.3s ease;
   position: relative;
-  padding-right: 1rem;
-}
-
-.footer-links a::before {
-  content: ">";
-  position: absolute;
-  right: 0;
-  color: white;
-  font-weight: bold;
 }
 
 .footer-links a:hover {
@@ -2838,84 +1863,6 @@ html {
   margin-top: 2rem;
 }
 
-/* Responsive Footer */
-@media (max-width: 768px) {
-  .footer {
-    padding: 2rem 0 0 0;
-  }
-
-  .footer-section {
-    margin-bottom: 2rem;
-    text-align: center;
-  }
-
-  .footer-logo {
-    justify-content: center;
-  }
-
-  .social-icons {
-    justify-content: center;
-  }
-
-  .footer-title {
-    font-size: 1.1rem;
-  }
-
-  .footer-description {
-    font-size: 0.9rem;
-  }
-
-  .footer-logo-img {
-    height: 40px;
-  }
-
-  .logo-arabic {
-    font-size: 1.3rem;
-  }
-
-  .logo-english {
-    font-size: 0.8rem;
-  }
-}
-
-@media (max-width: 576px) {
-  .footer {
-    padding: 1.5rem 0 0 0;
-  }
-
-  .footer-section {
-    margin-bottom: 1.5rem;
-  }
-
-  .footer-title {
-    font-size: 1rem;
-    margin-bottom: 1rem;
-  }
-
-  .footer-description {
-    font-size: 0.85rem;
-    margin-bottom: 1rem;
-  }
-
-  .footer-btn {
-    padding: 0.6rem 1.2rem;
-    font-size: 0.85rem;
-  }
-
-  .footer-links a {
-    font-size: 0.85rem;
-  }
-
-  .social-icon {
-    width: 35px;
-    height: 35px;
-  }
-
-  .footer-website {
-    font-size: 0.8rem;
-  }
-}
-
 /* Training Hero Section Styles */
 .training-hero-section {
   position: relative;
@@ -2924,7 +1871,6 @@ html {
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  margin-top: 120px; /* Account for fixed navbar */
   padding: 4rem 0;
   border-radius: 50px;
   min-height: 50vh;
@@ -3002,122 +1948,6 @@ html {
   margin: 0 auto;
 }
 
-/* Responsive Design */
-@media (max-width: 1200px) {
-  .hero-main-title-ar {
-    font-size: 3.5rem;
-  }
-
-  .hero-main-title-en {
-    font-size: 2.5rem;
-  }
-
-  .hero-description {
-    font-size: 1.2rem;
-  }
-
-  .hero-text-content {
-    padding: 2.5rem 2rem;
-    max-width: 800px;
-  }
-}
-
-@media (max-width: 992px) {
-  .hero-main-title-ar {
-    font-size: 3rem;
-  }
-
-  .hero-main-title-en {
-    font-size: 2.2rem;
-    letter-spacing: 2px;
-  }
-
-  .hero-description {
-    font-size: 1.1rem;
-  }
-
-  .hero-text-content {
-    padding: 2rem 1.5rem;
-    max-width: 700px;
-  }
-}
-
-@media (max-width: 768px) {
-  .training-hero-section {
-    min-height: 80vh;
-    margin-top: 70px;
-    padding: 3rem 0;
-  }
-
-  .hero-main-title-ar {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-  }
-
-  .hero-main-title-en {
-    font-size: 1.8rem;
-    letter-spacing: 1px;
-    margin-bottom: 2rem;
-  }
-
-  .hero-description {
-    font-size: 1rem;
-    line-height: 1.6;
-  }
-
-  .hero-text-content {
-    padding: 1.5rem;
-    border-radius: 20px;
-    max-width: 600px;
-  }
-}
-
-@media (max-width: 576px) {
-  .training-hero-section {
-    min-height: 70vh;
-    margin-top: 60px;
-    padding: 2rem 0;
-  }
-
-  .hero-main-title-ar {
-    font-size: 2rem;
-  }
-
-  .hero-main-title-en {
-    font-size: 1.5rem;
-  }
-
-  .hero-description {
-    font-size: 0.9rem;
-    line-height: 1.5;
-  }
-
-  .hero-text-content {
-    padding: 1rem;
-    border-radius: 15px;
-    max-width: 500px;
-  }
-}
-
-@media (max-width: 400px) {
-  .hero-main-title-ar {
-    font-size: 1.8rem;
-  }
-
-  .hero-main-title-en {
-    font-size: 1.3rem;
-  }
-
-  .hero-description {
-    font-size: 0.85rem;
-  }
-
-  .hero-text-content {
-    padding: 0.8rem;
-    border-radius: 12px;
-  }
-}
-
 /* Courses Content Section Styles */
 .courses-content-section {
   padding: 4rem 0;
@@ -3140,7 +1970,7 @@ html {
   border: 3px solid var(--primary-green);
 }
 
-.search-input {
+.courses-content-section .search-input {
   flex: 1;
   padding: 1rem 1.5rem;
   border: none;
@@ -3150,12 +1980,12 @@ html {
   color: #333;
 }
 
-.search-input::placeholder {
+.courses-content-section .search-input::placeholder {
   color: #999;
   font-size: 1rem;
 }
 
-.search-btn {
+.courses-content-section .search-btn {
   background: var(--primary-green);
   border: none;
   padding: 1rem 1.5rem;
@@ -3224,6 +2054,8 @@ html {
   gap: 1rem;
   color: #999;
   font-size: 0.9rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
 }
 
 .meta-item {
@@ -3270,8 +2102,8 @@ html {
   color: white;
   border: none;
   border-radius: 12px;
-  font-size: 1rem;
-  font-weight: 500;
+  font-size: 1.5rem;
+  font-weight: bold;
   cursor: pointer;
   transition: all 0.3s ease;
   flex-grow: 1;
@@ -3312,111 +2144,6 @@ html {
   position: relative;
 }
 
-/* Responsive Design */
-@media (max-width: 992px) {
-  .courses-content-section {
-    padding: 3rem 0;
-  }
-
-  .search-bar {
-    border-radius: 12px;
-  }
-
-  .search-btn {
-    border-radius: 0 12px 12px 0;
-    padding: 0.8rem 1.2rem;
-  }
-
-  .course-card {
-    border-radius: 15px;
-  }
-
-  .course-image img {
-    border-radius: 15px 15px 0 0;
-  }
-}
-
-@media (max-width: 768px) {
-  .courses-content-section {
-    padding: 2rem 0;
-  }
-
-  .search-input {
-    padding: 0.8rem 1rem;
-    font-size: 0.9rem;
-  }
-
-  .search-input::placeholder {
-    font-size: 0.9rem;
-  }
-
-  .search-btn {
-    padding: 0.8rem 1rem;
-    min-width: 50px;
-  }
-
-  .course-image img {
-    height: 180px;
-  }
-
-  .course-meta {
-    padding: 0.8rem 1rem 0.3rem;
-    font-size: 0.8rem;
-  }
-
-  .course-title {
-    padding: 0 1rem;
-    font-size: 1.1rem;
-  }
-
-  .course-price {
-    padding: 0 1rem;
-  }
-
-  .course-details-btn {
-    margin: 0 1rem 1rem;
-    padding: 0.7rem 1.2rem;
-    font-size: 0.9rem;
-  }
-
-  .cta-button {
-    padding: 1rem 2rem;
-    font-size: 1rem;
-  }
-}
-
-@media (max-width: 576px) {
-  .search-bar {
-    border-radius: 10px;
-  }
-
-  .search-btn {
-    border-radius: 0 10px 10px 0;
-  }
-
-  .course-card {
-    border-radius: 12px;
-  }
-
-  .course-image img {
-    border-radius: 12px 12px 0 0;
-    height: 160px;
-  }
-
-  .course-meta {
-    flex-direction: column;
-    gap: 0.5rem;
-  }
-
-  .course-title {
-    font-size: 1rem;
-  }
-
-  .current-price {
-    font-size: 1.1rem;
-  }
-}
-
 /* Course Details Section Styles */
 .course-details-section {
   padding: 4rem 0;
@@ -3442,35 +2169,6 @@ html {
   line-height: 1.6;
   max-width: 600px;
   margin: 0 auto;
-}
-
-/* Responsive Design for Course Details */
-@media (max-width: 768px) {
-  .course-details-section {
-    padding: 3rem 0;
-  }
-
-  .course-details-title {
-    font-size: 2.5rem;
-  }
-
-  .course-details-description {
-    font-size: 1.1rem;
-  }
-}
-
-@media (max-width: 576px) {
-  .course-details-section {
-    padding: 2rem 0;
-  }
-
-  .course-details-title {
-    font-size: 2rem;
-  }
-
-  .course-details-description {
-    font-size: 1rem;
-  }
 }
 
 /* Course Details Content Section Styles */
@@ -3667,10 +2365,6 @@ html {
   color: inherit;
 }
 
-.description-text:last-child {
-  margin-bottom: 0;
-}
-
 .description-list {
   margin: 0;
   padding-right: 1.5rem;
@@ -3684,168 +2378,6 @@ html {
 
 .description-list li:last-child {
   margin-bottom: 0;
-}
-
-/* Responsive Design */
-@media (max-width: 992px) {
-  .course-details-content-section {
-    padding: 3rem 0;
-  }
-
-  .course-info-card {
-    border-radius: 15px;
-  }
-
-  .course-info-image img {
-    height: 200px;
-  }
-
-  .course-tabs-container {
-    border-radius: 15px;
-  }
-
-  .description-box {
-    border-radius: 12px;
-  }
-
-  .green-box {
-    border-radius: 12px 12px 0 0;
-  }
-
-  .white-box {
-    border-radius: 0 0 12px 12px;
-  }
-}
-
-@media (max-width: 768px) {
-  .course-details-content-section {
-    padding: 2rem 0;
-  }
-
-  .course-info-image img {
-    height: 180px;
-  }
-
-  .course-info-details {
-    padding: 1rem;
-  }
-
-  .info-item {
-    padding: 0.8rem 0;
-  }
-
-  .current-price {
-    font-size: 1.3rem;
-  }
-
-  .old-price {
-    font-size: 1.1rem;
-  }
-
-  .info-value {
-    font-size: 1.2rem;
-  }
-
-  .info-icon svg {
-    width: 20px;
-    height: 20px;
-  }
-
-  .info-label {
-    font-size: 0.8rem;
-  }
-
-  .buy-now-btn {
-    padding: 0.8rem 1.5rem;
-    font-size: 1rem;
-    margin: 1rem;
-    margin-top: 0;
-  }
-
-  .course-tabs .nav-link {
-    padding: 0.8rem 1rem;
-    font-size: 0.9rem;
-  }
-
-  .tab-content-wrapper {
-    padding: 1.5rem;
-  }
-
-  .description-box {
-    padding: 1rem;
-  }
-
-  .description-title {
-    font-size: 1.1rem;
-  }
-
-  .description-text {
-    font-size: 0.9rem;
-  }
-}
-
-@media (max-width: 576px) {
-  .course-info-image img {
-    height: 160px;
-  }
-
-  .course-info-details {
-    padding: 0.8rem;
-  }
-
-  .info-item {
-    flex-direction: column;
-    gap: 0.5rem;
-    text-align: center;
-  }
-
-  .info-content {
-    justify-content: center;
-  }
-
-  .current-price {
-    font-size: 1.2rem;
-  }
-
-  .old-price {
-    font-size: 1rem;
-  }
-
-  .info-value {
-    font-size: 1.1rem;
-  }
-
-  .buy-now-btn {
-    padding: 0.7rem 1rem;
-    font-size: 0.9rem;
-    margin: 0.8rem;
-    margin-top: 0;
-  }
-
-  .course-tabs .nav-link {
-    padding: 0.7rem 0.5rem;
-    font-size: 0.8rem;
-  }
-
-  .tab-content-wrapper {
-    padding: 1rem;
-  }
-
-  .description-box {
-    padding: 0.8rem;
-  }
-
-  .description-title {
-    font-size: 1rem;
-  }
-
-  .description-text {
-    font-size: 0.85rem;
-  }
-
-  .description-list {
-    padding-right: 1rem;
-  }
 }
 
 /* Discussions Container Styles */
@@ -3893,48 +2425,6 @@ html {
   color: #666;
   margin: 0;
   font-weight: 400;
-}
-
-/* Responsive Design for Discussions */
-@media (max-width: 768px) {
-  .discussions-container {
-    padding: 2rem 1.5rem;
-    min-height: 250px;
-  }
-
-  .discussions-title {
-    font-size: 1.8rem;
-  }
-
-  .discussions-icon svg {
-    width: 28px;
-    height: 28px;
-  }
-
-  .no-comments-message p {
-    font-size: 1rem;
-  }
-}
-
-@media (max-width: 576px) {
-  .discussions-container {
-    padding: 1.5rem 1rem;
-    min-height: 200px;
-  }
-
-  .discussions-header {
-    gap: 0.8rem;
-    margin-bottom: 1.5rem;
-  }
-
-  .discussions-title {
-    font-size: 1.6rem;
-  }
-
-  .discussions-icon svg {
-    width: 24px;
-    height: 24px;
-  }
 }
 /* Course Sections Container Styles */
 .course-sections-container {
@@ -4061,106 +2551,6 @@ html {
   height: 20px;
   color: white;
 }
-
-/* Responsive Design for Course Sections */
-@media (max-width: 768px) {
-  .course-sections-container {
-    padding: 1.5rem;
-  }
-
-  .section-title {
-    font-size: 1.2rem;
-  }
-
-  .lesson-item {
-    padding: 0.8rem 1rem;
-  }
-
-  .lesson-content {
-    padding-left: 5rem;
-    gap: 0.8rem;
-  }
-
-  .lesson-title {
-    font-size: 0.9rem;
-  }
-
-  .lesson-play-btn {
-    width: 35px;
-    height: 35px;
-  }
-
-  .lesson-play-btn svg {
-    width: 18px;
-    height: 18px;
-  }
-
-  .lesson-access-label {
-    font-size: 0.7rem;
-    padding: 0.2rem 0.6rem;
-  }
-}
-
-@media (max-width: 576px) {
-  .course-sections-container {
-    padding: 1rem;
-  }
-
-  .course-section {
-    margin-bottom: 1.5rem;
-  }
-
-  .section-header {
-    margin-bottom: 0.8rem;
-  }
-
-  .section-title {
-    font-size: 1.1rem;
-  }
-
-  .section-icon svg {
-    width: 20px;
-    height: 20px;
-  }
-
-  .lessons-list {
-    gap: 0.6rem;
-  }
-
-  .lesson-item {
-    padding: 0.7rem 0.8rem;
-    flex-direction: column;
-    align-items: stretch;
-    gap: 0.5rem;
-  }
-
-  .lesson-access-label {
-    position: static;
-    transform: none;
-    align-self: flex-start;
-    margin-bottom: 0.5rem;
-  }
-
-  .lesson-content {
-    padding-left: 0;
-    justify-content: space-between;
-  }
-
-  .lesson-title {
-    font-size: 0.85rem;
-  }
-
-  .lesson-play-btn {
-    width: 30px;
-    height: 30px;
-  }
-
-  .lesson-play-btn svg {
-    width: 16px;
-    height: 16px;
-  }
-}
-
 /* Privacy Policy Styles */
 .privacy-policy-main {
   padding-top: 100px;
@@ -4280,85 +2670,6 @@ html {
   color: var(--primary-green);
   display: inline-block;
   min-width: 120px;
-}
-
-/* Responsive Design for Privacy Policy */
-@media (max-width: 768px) {
-  .privacy-policy-main {
-    padding-top: 80px;
-    padding-bottom: 3rem;
-  }
-
-  .privacy-policy-content {
-    padding: 2rem;
-    margin: 0 1rem;
-  }
-
-  .privacy-intro p {
-    font-size: 1rem;
-  }
-
-  .privacy-section h2 {
-    font-size: 1.3rem;
-  }
-
-  .privacy-section p {
-    font-size: 0.95rem;
-  }
-
-  .subsection h3 {
-    font-size: 1.1rem;
-  }
-
-  .contact-item strong {
-    min-width: 100px;
-  }
-}
-
-@media (max-width: 576px) {
-  .privacy-policy-main {
-    padding-top: 70px;
-    padding-bottom: 2rem;
-  }
-
-  .privacy-policy-content {
-    padding: 1.5rem;
-    margin: 0 0.5rem;
-  }
-
-  .privacy-intro {
-    margin-bottom: 2rem;
-  }
-
-  .privacy-section {
-    margin-bottom: 2rem;
-  }
-
-  .privacy-section h2 {
-    font-size: 1.2rem;
-  }
-
-  .privacy-section p {
-    font-size: 0.9rem;
-  }
-
-  .subsection h3 {
-    font-size: 1rem;
-  }
-
-  .contact-info {
-    padding: 1rem;
-  }
-
-  .contact-item {
-    font-size: 0.9rem;
-  }
-
-  .contact-item strong {
-    min-width: 80px;
-    display: block;
-    margin-bottom: 0.3rem;
-  }
 }
 
 .search-close {
@@ -4485,7 +2796,7 @@ html {
   font-weight: 500;
 }
 
-.action-buttons {
+.profile-info-section .action-buttons {
   display: flex;
   gap: 1rem;
   justify-content: center;
@@ -4656,157 +2967,6 @@ html {
   color: #f0f0f0;
 }
 
-/* Responsive Design for Profile Section */
-@media (max-width: 768px) {
-  .profile-info-section {
-    padding: 3rem 0;
-  }
-
-  .info-block {
-    padding: 1.2rem 1.5rem;
-    margin-bottom: 0.8rem;
-  }
-
-  .info-text {
-    font-size: 1rem;
-  }
-
-  .info-icon {
-    width: 45px;
-    height: 45px;
-    margin-left: 0.8rem;
-    border: 2px solid #a0b364;
-  }
-
-  .action-buttons {
-    flex-direction: column;
-    gap: 0.8rem;
-  }
-
-  .action-btn {
-    max-width: none;
-    padding: 1rem 1.5rem;
-  }
-
-  .subscriptions-btn {
-    padding: 1rem 2rem;
-    font-size: 1rem;
-  }
-
-  .last-login-block {
-    padding: 1.2rem;
-  }
-
-  .last-login-text {
-    font-size: 0.9rem;
-  }
-
-  .newsletter-subscription-section {
-    padding: 1.5rem;
-    margin-top: 1.5rem;
-  }
-
-  .newsletter-title {
-    font-size: 1.2rem;
-  }
-
-  .newsletter-options {
-    gap: 0.8rem;
-  }
-
-  .newsletter-option {
-    min-width: 100px;
-  }
-
-  .newsletter-label {
-    font-size: 0.9rem;
-  }
-}
-
-@media (max-width: 576px) {
-  .profile-info-section {
-    padding: 2rem 0;
-  }
-
-  .info-block {
-    padding: 1rem 1.2rem;
-    margin-bottom: 0.6rem;
-  }
-
-  .info-text {
-    font-size: 0.95rem;
-  }
-
-  .info-icon {
-    width: 40px;
-    height: 40px;
-    margin-left: 0.6rem;
-    border: 2px solid #a0b364;
-  }
-
-  .info-icon i {
-    font-size: 20px;
-  }
-
-  .edit-text {
-    font-size: 0.95rem;
-  }
-
-  .action-btn {
-    padding: 0.8rem 1.2rem;
-    font-size: 0.95rem;
-  }
-
-  .subscriptions-btn {
-    padding: 0.9rem 1.5rem;
-    font-size: 0.95rem;
-  }
-
-  .last-login-block {
-    padding: 1rem;
-  }
-
-  .last-login-text {
-    font-size: 0.85rem;
-  }
-
-  .newsletter-subscription-section {
-    padding: 1.2rem;
-    margin-top: 1.2rem;
-  }
-
-  .newsletter-header {
-    flex-direction: column;
-    text-align: center;
-    gap: 0.8rem;
-  }
-
-  .newsletter-title {
-    font-size: 1.1rem;
-    text-align: center;
-  }
-
-  .newsletter-options {
-    flex-direction: column;
-    gap: 0.6rem;
-  }
-
-  .newsletter-option {
-    justify-content: flex-start;
-    min-width: auto;
-  }
-
-  .newsletter-label {
-    font-size: 0.85rem;
-    text-align: right;
-  }
-
-  .newsletter-checkbox {
-    width: 16px;
-    height: 16px;
-  }
-}
-
 /* Personal Information Modal Styles */
 .personal-info-modal {
   background: #f8f9fa;
@@ -4955,125 +3115,6 @@ html {
   background: #5a6268;
   color: #e9ecef;
 }
-
-.personal-info-save {
-  margin-right: 1rem;
-}
-
-.personal-info-cancel {
-  margin-left: 1rem;
-}
-
-/* Personal Information Modal Responsive Styles */
-@media (max-width: 768px) {
-  .personal-info-modal {
-    margin: 1rem;
-  }
-
-  .personal-info-header {
-    padding: 1rem 1.5rem 0.5rem 1.5rem;
-  }
-
-  .personal-info-title {
-    font-size: 1.3rem;
-  }
-
-  .personal-info-close {
-    right: 1rem;
-    top: 1rem;
-    font-size: 1rem;
-  }
-
-  .personal-info-body {
-    padding: 1.5rem;
-  }
-
-  .personal-info-field {
-    padding: 0.8rem 1rem;
-    margin-bottom: 1rem;
-  }
-
-  .field-icon {
-    width: 35px;
-    height: 35px;
-    margin-left: 0.8rem;
-  }
-
-  .field-icon i {
-    font-size: 14px;
-  }
-
-  .personal-info-input {
-    font-size: 0.9rem;
-  }
-
-  .personal-info-footer {
-    padding: 1rem 1.5rem 1.5rem 1.5rem;
-    flex-direction: column;
-    gap: 0.8rem;
-  }
-
-  .personal-info-btn {
-    max-width: 100%;
-    padding: 0.8rem 1.5rem;
-  }
-
-  .personal-info-save {
-    margin-right: 0;
-    margin-bottom: 0.5rem;
-  }
-
-  .personal-info-cancel {
-    margin-left: 0;
-  }
-}
-
-@media (max-width: 576px) {
-  .personal-info-modal {
-    margin: 0.5rem;
-  }
-
-  .personal-info-header {
-    padding: 0.8rem 1rem 0.3rem 1rem;
-  }
-
-  .personal-info-title {
-    font-size: 1.2rem;
-  }
-
-  .personal-info-body {
-    padding: 1rem;
-  }
-
-  .personal-info-field {
-    padding: 0.6rem 0.8rem;
-    margin-bottom: 0.8rem;
-  }
-
-  .field-icon {
-    width: 30px;
-    height: 30px;
-    margin-left: 0.6rem;
-  }
-
-  .field-icon i {
-    font-size: 12px;
-  }
-
-  .personal-info-input {
-    font-size: 0.85rem;
-  }
-
-  .personal-info-footer {
-    padding: 0.8rem 1rem 1rem 1rem;
-  }
-
-  .personal-info-btn {
-    padding: 0.7rem 1.2rem;
-    font-size: 0.9rem;
-  }
-}
-
 /* User Subscriptions Section */
 .user-subscriptions-section {
   background: #f8f9fa;
@@ -5120,10 +3161,6 @@ html {
   font-size: 1rem;
   position: relative;
   border: 2px solid #a1b23c;
-}
-
-.tab-item:last-child {
-  border-right: none;
 }
 
 .tab-item:hover {
@@ -5185,106 +3222,8 @@ html {
   margin: 0;
 }
 
-/* Responsive Design for User Subscriptions */
-@media (max-width: 768px) {
-  .subscription-section-title h2 {
-    font-size: 1.3rem;
-    padding: 0.8rem 1.5rem;
-  }
-
-  .subscription-tabs {
-    flex-direction: column;
-    border-radius: 15px;
-    border-bottom: 2px solid #a1b23c;
-  }
-
-  .tab-item {
-    border-radius: 0;
-    border-right: none;
-    border-bottom: 2px solid #a1b23c;
-  }
-
-  .tab-item:first-child {
-    border-radius: 15px 15px 0 0;
-  }
-
-  .tab-item:last-child {
-    border-radius: 0 0 15px 15px;
-    border-bottom: none;
-  }
-
-  .tab-item.active {
-    border-radius: 0;
-  }
-
-  .subscription-table-container {
-    border-radius: 0 0 15px 15px;
-    border-top: 2px solid #a1b23c;
-  }
-
-  .table-row {
-    grid-template-columns: 1fr;
-    gap: 0;
-  }
-
-  .table-cell {
-    border-right: none;
-    border-bottom: 2px solid #a1b23c;
-    padding: 0.8rem 1rem;
-  }
-
-  .table-cell:last-child {
-    border-bottom: none;
-  }
-
-  .table-content {
-    padding: 1.5rem;
-  }
-
-  .empty-state {
-    padding: 2rem 1rem;
-  }
-
-  .empty-state p {
-    font-size: 1.1rem;
-  }
-}
-
-@media (max-width: 576px) {
-  .user-subscriptions-section {
-    padding: 2rem 0;
-  }
-
-  .subscription-section-title {
-    margin-bottom: 1.5rem;
-  }
-
-  .subscription-section-title h2 {
-    font-size: 1.1rem;
-    padding: 0.7rem 1.2rem;
-  }
-
-  .subscription-tabs {
-    margin-bottom: 1.5rem;
-  }
-
-  .tab-item {
-    padding: 1rem 0.8rem;
-    font-size: 0.9rem;
-  }
-
-  .table-content {
-    padding: 1rem;
-  }
-
-  .empty-state {
-    padding: 1.5rem 0.5rem;
-  }
-}
-
 /* Login Page Styles */
 .login-main {
-  padding-top: 80px;
   min-height: 100vh;
   background-image: url("../assets/profile-bg.png");
   background-size: cover;
@@ -5464,78 +3403,6 @@ html {
   background: rgba(161, 178, 60, 0.1);
 }
 
-/* Responsive Design for Login */
-@media (max-width: 768px) {
-  .login-main {
-    padding-top: 70px;
-  }
-
-  .user-icon {
-    width: 70px;
-    height: 70px;
-    margin-bottom: -35px;
-  }
-
-  .user-icon i {
-    font-size: 1.8rem;
-  }
-
-  .login-container {
-    padding: 2.5rem 1.5rem 1.5rem 1.5rem;
-    margin: 0 1rem;
-  }
-
-  .options-row {
-    flex-direction: column;
-    gap: 1rem;
-    align-items: flex-start;
-  }
-
-  .forgot-password {
-    align-self: flex-end;
-  }
-}
-
-@media (max-width: 576px) {
-  .login-main {
-    padding-top: 60px;
-  }
-
-  .user-icon {
-    width: 60px;
-    height: 60px;
-    margin-bottom: -30px;
-  }
-
-  .user-icon i {
-    font-size: 1.5rem;
-  }
-
-  .login-container {
-    padding: 2rem 1rem 1rem 1rem;
-    margin: 0 0.5rem;
-  }
-
-  .input-group-text {
-    width: 45px;
-    padding: 0.6rem 0.8rem;
-  }
-
-  .form-control {
-    font-size: 0.9rem;
-    padding: 0.6rem 0.8rem;
-  }
-
-  .btn-login {
-    font-size: 1rem;
-  }
-
-  .new-user-link {
-    padding: 0.6rem 1.5rem;
-    font-size: 0.8rem;
-  }
-}
-
 /* Register Page Styles */
 .register-main {
   padding-top: 80px;
@@ -5680,59 +3547,6 @@ html {
   text-decoration: none;
 }
 
-/* Responsive Design for Register */
-@media (max-width: 768px) {
-  .register-main {
-    padding-top: 70px;
-  }
-
-  .register-container {
-    padding: 2.5rem 1.5rem 1.5rem 1.5rem;
-    margin: 0 1rem;
-  }
-
-  .form-title h2 {
-    font-size: 1.5rem;
-  }
-
-  .register-container .input-group-text {
-    width: 45px;
-    padding: 0.6rem 0.8rem;
-  }
-
-  .register-input {
-    font-size: 0.9rem;
-    padding: 0.6rem 0.8rem;
-  }
-}
-
-@media (max-width: 576px) {
-  .register-main {
-    padding-top: 60px;
-  }
-
-  .register-container {
-    padding: 2rem 1rem 1rem 1rem;
-    margin: 0 0.5rem;
-  }
-
-  .form-title h2 {
-    font-size: 1.3rem;
-  }
-
-  .register-input {
-    font-size: 0.9rem;
-  }
-
-  .btn-register-submit {
-    font-size: 1rem;
-  }
-
-  .login-link-container p {
-    font-size: 0.8rem;
-  }
-}
-
 /* Verification Code Page Styles */
 .verification-main {
   padding-top: 80px;
@@ -5836,74 +3650,6 @@ html {
   text-decoration: underline;
 }
 
-/* Responsive Design for Verification */
-@media (max-width: 768px) {
-  .verification-main {
-    padding-top: 70px;
-  }
-
-  .verification-container {
-    padding: 2.5rem 1.5rem;
-    margin: 0 1rem;
-  }
-
-  .verification-title h1 {
-    font-size: 2.5rem;
-  }
-
-  .code-inputs {
-    gap: 0.8rem;
-    margin-bottom: 2.5rem;
-  }
-
-  .code-input {
-    width: 50px;
-    height: 50px;
-    font-size: 1.3rem;
-  }
-
-  .btn-confirm {
-    font-size: 1rem;
-    min-width: 180px;
-  }
-}
-
-@media (max-width: 576px) {
-  .verification-main {
-    padding-top: 60px;
-  }
-
-  .verification-container {
-    padding: 2rem 1rem;
-    margin: 0 0.5rem;
-  }
-
-  .verification-title h1 {
-    font-size: 2rem;
-  }
-
-  .code-inputs {
-    gap: 0.6rem;
-    margin-bottom: 2rem;
-  }
-
-  .code-input {
-    width: 45px;
-    height: 45px;
-    font-size: 1.2rem;
-  }
-
-  .btn-confirm {
-    font-size: 0.9rem;
-    min-width: 160px;
-    padding: 0.6rem 1.5rem;
-  }
-
-  .resend-link {
-    font-size: 0.9rem;
-  }
-}
-
 .forget-password-container {
   background-color: #f9be32 !important;
 }
@@ -5954,51 +3700,6 @@ html {
   color: white !important;
   font-size: 2rem !important;
   margin-bottom: 2rem;
-}
-
-/* Responsive Design for Success Icon */
-@media (max-width: 768px) {
-  .success-icon {
-    width: 100px;
-    height: 100px;
-  }
-
-  .success-icon::before {
-    width: 120px;
-    height: 120px;
-    top: -10px;
-    left: -10px;
-  }
-
-  .success-icon i {
-    font-size: 2.5rem;
-  }
-
-  .success-container .verification-title h1 {
-    font-size: 1.5rem !important;
-  }
-}
-
-@media (max-width: 576px) {
-  .success-icon {
-    width: 80px;
-    height: 80px;
-  }
-
-  .success-icon::before {
-    width: 100px;
-    height: 100px;
-    top: -10px;
-    left: -10px;
-  }
-
-  .success-icon i {
-    font-size: 2rem;
-  }
-
-  .success-container .verification-title h1 {
-    font-size: 1.3rem !important;
-  }
 }
 
 /* Newsletters Page Styles */
@@ -6119,13 +3820,13 @@ html {
   width: 100%;
 }
 
-.search-input-group {
+.newsletter-search-section .search-input-group {
   position: relative;
   display: flex;
   width: 100%;
 }
 
-.search-input {
+.newsletter-search-section .search-input {
   flex: 1;
   padding: 1rem 1.5rem;
   border: 2px solid #f9be32;
@@ -6136,12 +3837,12 @@ html {
   transition: all 0.3s ease;
 }
 
-.search-input:focus {
+.newsletter-search-section .search-input:focus {
   border-color: #a1b23c;
   box-shadow: 0 0 0 3px rgba(161, 178, 60, 0.1);
 }
 
-.search-btn {
+.newsletter-search-section .search-btn {
   background: #f9be32;
   border: 2px solid #f9be32;
   border-radius: 0 25px 25px 0;
@@ -6153,7 +3854,7 @@ html {
   min-width: 60px;
 }
 
-.search-btn:hover {
+.newsletter-search-section .search-btn:hover {
   background: #a1b23c;
   border-color: #a1b23c;
 }
@@ -6239,12 +3940,11 @@ html {
   top: 15px;
   right: 15px;
   background: rgba(255, 255, 255, 0.9);
-  color: #333;
+  color: #e6c200;
+  font-weight: bold;
   padding: 0.5rem 1rem;
   border-radius: 20px;
   font-size: 0.9rem;
-  font-weight: 500;
-  backdrop-filter: blur(10px);
   z-index: 3;
 }
 
@@ -6281,7 +3981,6 @@ html {
   font-size: 1rem;
   line-height: 1.6;
   margin-bottom: 1.5rem;
-  flex-grow: 1;
 }
 
 .card-dates {
@@ -6328,205 +4027,6 @@ html {
 .read-btn:hover {
   background: #a1b23c;
   transform: translateY(-2px);
-}
-
-/* Responsive Design for Newsletters */
-@media (max-width: 768px) {
-  .newsletters-visual-container {
-    min-height: auto;
-  }
-
-  .speaker-section {
-    height: 300px;
-  }
-
-  .speaker-image {
-    min-height: 300px;
-  }
-
-  .yellow-panel {
-    height: 100%;
-    padding: 1rem;
-  }
-
-  .panel-text {
-    font-size: 2rem;
-    writing-mode: horizontal-tb;
-    transform: none;
-  }
-
-  .newsletters-description {
-    padding: 1.5rem;
-  }
-
-  .newsletters-description p {
-    font-size: 1rem;
-  }
-
-  /* Newsletter Search and Filter Responsive */
-  .newsletter-search-section {
-    margin: 2rem 0;
-  }
-
-  .search-input-group {
-    flex-direction: column;
-    gap: 1rem;
-  }
-
-  .search-input {
-    border-radius: 25px;
-    text-align: center;
-  }
-
-  .search-btn {
-    border-radius: 25px;
-    width: 100%;
-  }
-
-  .filter-group {
-    flex-direction: column;
-    gap: 0.5rem;
-  }
-
-  .filter-select {
-    width: 100%;
-  }
-
-  /* Newsletter Cards Responsive */
-  .newsletter-cards-section {
-    margin-top: 2rem;
-  }
-
-  .newsletter-card-wrapper {
-    gap: 0.8rem;
-  }
-
-  .newsletter-card {
-    height: 350px;
-  }
-
-  .card-content {
-    padding: 1.5rem;
-    height: 50%;
-  }
-
-  .card-title {
-    font-size: 1.3rem;
-  }
-
-  .card-description {
-    font-size: 0.9rem;
-  }
-
-  .read-btn {
-    padding: 0.7rem 1.5rem;
-    font-size: 0.9rem;
-  }
-}
-
-@media (max-width: 576px) {
-  .newsletters-main {
-    padding-top: 70px;
-  }
-
-  .newsletters-section {
-    padding: 2rem 0;
-  }
-
-  .newsletters-visual-container {
-    margin-bottom: 2rem;
-  }
-
-  .speaker-section {
-    height: 250px;
-  }
-
-  .speaker-image {
-    min-height: 250px;
-  }
-
-  .yellow-panel {
-    height: 100%;
-    padding: 0.8rem;
-  }
-
-  .panel-text {
-    font-size: 1.5rem;
-  }
-
-  .newsletters-description {
-    padding: 1rem;
-  }
-
-  .newsletters-description p {
-    font-size: 0.9rem;
-    line-height: 1.6;
-  }
-
-  /* Mobile Newsletter Search and Filter */
-  .newsletter-search-section {
-    margin: 1.5rem 0;
-  }
-
-  .search-input {
-    padding: 0.8rem 1rem;
-    font-size: 0.9rem;
-  }
-
-  .search-btn {
-    padding: 0.8rem 1rem;
-    font-size: 0.9rem;
-  }
-
-  .filter-select {
-    padding: 0.8rem 1rem;
-    font-size: 0.9rem;
-  }
-
-  /* Mobile Newsletter Cards */
-  .newsletter-cards-section {
-    margin-top: 1.5rem;
-  }
-
-  .newsletter-card-wrapper {
-    gap: 0.6rem;
-  }
-
-  .newsletter-card {
-    height: 300px;
-  }
-
-  .card-content {
-    padding: 1rem;
-    height: 50%;
-  }
-
-  .card-title {
-    font-size: 1.1rem;
-    margin-bottom: 0.8rem;
-  }
-
-  .card-description {
-    font-size: 0.8rem;
-    margin-bottom: 1rem;
-  }
-
-  .date-item {
-    font-size: 0.8rem;
-    margin-bottom: 0.3rem;
-  }
-
-  .read-btn {
-    padding: 0.6rem 1rem;
-    font-size: 0.8rem;
-  }
-
-  .category-tag {
-    padding: 0.3rem 0.8rem;
-    font-size: 0.8rem;
-    top: 10px;
-    right: 10px;
-  }
 }
 
 .forget-password-container h1 {
@@ -6832,64 +4332,6 @@ html {
   background-color: var(--primary-green);
   margin: 0 2rem;
 }
-
-/* Responsive Design for Services Hero Section */
-@media (max-width: 1200px) {
-  .services-hero-title {
-    font-size: 3.5rem;
-  }
-
-  .services-hero-subtitle {
-    font-size: 1.3rem;
-  }
-}
-
-@media (max-width: 992px) {
-  .services-hero-title {
-    font-size: 3rem;
-  }
-
-  .services-hero-subtitle {
-    font-size: 1.2rem;
-  }
-}
-
-@media (max-width: 768px) {
-  .services-hero-section {
-    min-height: 80vh;
-    margin-top: 70px;
-    padding: 3rem 0;
-  }
-
-  .services-hero-title {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-  }
-
-  .services-hero-subtitle {
-    font-size: 1.1rem;
-    padding: 0 1rem;
-  }
-}
-
-@media (max-width: 576px) {
-  .services-hero-section {
-    min-height: 70vh;
-    margin-top: 60px;
-    padding: 2rem 0;
-  }
-
-  .services-hero-title {
-    font-size: 2rem;
-    margin-bottom: 0.8rem;
-  }
-
-  .services-hero-subtitle {
-    font-size: 1rem;
-    padding: 0 1.5rem;
-  }
-}
-
 /* Lecture Page Styles */
 .lecture-content-section {
   padding: 4rem 0;
@@ -7382,140 +4824,6 @@ html {
   font-size: 1.2rem;
 }
 
-/* Responsive Design for Lecture Page */
-@media (max-width: 992px) {
-  .lecture-content-section .lecture-main-content {
-    padding-right: 0;
-    margin-bottom: 2rem;
-  }
-
-  .lecture-content-section .lecture-sidebar {
-    padding-left: 0;
-  }
-
-  .lecture-content-section .lecture-main-content .lecture-title h1 {
-    font-size: 2rem;
-  }
-
-  .lecture-content-section .lecture-main-content .lecture-video-player {
-    height: 300px;
-  }
-
-  .lecture-content-section
-    .lecture-main-content
-    .lecture-video-player
-    .lecture-video {
-    height: 100%;
-  }
-}
-
-@media (max-width: 768px) {
-  .lecture-content-section {
-    padding: 3rem 0;
-  }
-
-  .lecture-content-section .lecture-main-content .lecture-title h1 {
-    font-size: 1.8rem;
-  }
-
-  .lecture-content-section .lecture-main-content .lecture-description h3,
-  .lecture-content-section .lecture-main-content .lecture-content-details h3 {
-    font-size: 1.3rem;
-  }
-
-  .lecture-content-section .lecture-main-content .lecture-video-player {
-    height: 250px;
-  }
-
-  .lecture-content-section
-    .lecture-main-content
-    .lecture-video-player
-    .lecture-video {
-    height: 100%;
-  }
-
-  .lecture-content-section
-    .lecture-main-content
-    .lecture-video-player
-    .video-placeholder
-    i {
-    font-size: 3rem;
-  }
-
-  .lecture-content-section
-    .lecture-sidebar
-    .lecture-discussions-card
-    .lecture-card-header,
-  .lecture-content-section
-    .lecture-sidebar
-    .lecture-sections-card
-    .lecture-card-header {
-    padding: 1rem;
-  }
-
-  .lecture-content-section
-    .lecture-sidebar
-    .lecture-discussions-card
-    .lecture-card-content,
-  .lecture-content-section
-    .lecture-sidebar
-    .lecture-sections-card
-    .lecture-card-content {
-    padding: 1rem;
-  }
-}
-
-@media (max-width: 576px) {
-  .lecture-content-section .lecture-main-content .lecture-title h1 {
-    font-size: 1.5rem;
-  }
-
-  .lecture-content-section .lecture-main-content .lecture-video-player {
-    height: 200px;
-  }
-
-  .lecture-content-section
-    .lecture-main-content
-    .lecture-video-player
-    .lecture-video {
-    height: 100%;
-  }
-
-  .lecture-content-section
-    .lecture-main-content
-    .lecture-video-player
-    .video-placeholder
-    i {
-    font-size: 2.5rem;
-  }
-
-  .lecture-content-section
-    .lecture-sidebar
-    .lecture-discussions-card
-    .lecture-card-content
-    .lecture-comments-toggle
-    .lecture-toggle-buttons {
-    flex-direction: column;
-  }
-
-  .lecture-content-section
-    .lecture-sidebar
-    .lecture-discussions-card
-    .lecture-card-content
-    .lecture-comment-form {
-    flex-direction: column;
-  }
-
-  .lecture-content-section
-    .lecture-sidebar
-    .lecture-discussions-card
-    .lecture-card-content
-    .lecture-comment-form
-    .lecture-comment-input {
-    width: 100%;
-  }
-}
-
 /* Newsletter Details Page Styles */
 .newsletter-details-section {
   padding: 4rem 0;
@@ -7662,118 +4970,6 @@ html {
   font-weight: bold;
 }
 
-/* Responsive Design for Newsletter Details */
-@media (max-width: 992px) {
-  .newsletter-details-section
-    .newsletter-details-card
-    .newsletter-details-card-top {
-    height: 350px;
-  }
-
-  .newsletter-details-section
-    .newsletter-details-card
-    .newsletter-details-card-bottom
-    .newsletter-details-title-container
-    .newsletter-details-title {
-    font-size: 1.8rem;
-  }
-}
-
-@media (max-width: 768px) {
-  .newsletter-details-section {
-    padding: 3rem 0;
-  }
-
-  .newsletter-details-section
-    .newsletter-details-card
-    .newsletter-details-card-top {
-    height: 300px;
-  }
-
-  .newsletter-details-section
-    .newsletter-details-card
-    .newsletter-details-card-bottom {
-    padding: 1.5rem;
-  }
-
-  .newsletter-details-section
-    .newsletter-details-card
-    .newsletter-details-card-bottom
-    .newsletter-details-title-container
-    .newsletter-details-title {
-    font-size: 1.6rem;
-  }
-
-  .newsletter-details-section .newsletter-details-dates-container {
-    flex-direction: column;
-    gap: 1rem;
-    align-items: center;
-    padding: 1rem 1.5rem;
-    max-width: 500px;
-  }
-}
-
-@media (max-width: 576px) {
-  .newsletter-details-section
-    .newsletter-details-card
-    .newsletter-details-card-top {
-    height: 250px;
-  }
-
-  .newsletter-details-section
-    .newsletter-details-card
-    .newsletter-details-card-bottom {
-    padding: 1rem;
-  }
-
-  .newsletter-details-section
-    .newsletter-details-card
-    .newsletter-details-card-bottom
-    .newsletter-details-title-container
-    .newsletter-details-title {
-    font-size: 1.4rem;
-  }
-
-  .newsletter-details-section
-    .newsletter-details-card
-    .newsletter-details-card-top
-    .newsletter-details-category-tag {
-    top: 1rem;
-    right: 1rem;
-    padding: 0.4rem 0.8rem;
-  }
-
-  .newsletter-details-section
-    .newsletter-details-card
-    .newsletter-details-card-top
-    .newsletter-details-category-tag
-    .newsletter-details-category-text {
-    font-size: 0.8rem;
-  }
-
-  .newsletter-details-section .newsletter-details-dates-container {
-    padding: 1rem;
-    max-width: 100%;
-    margin-top: 1.5rem;
-  }
-
-  .newsletter-details-section
-    .newsletter-details-dates-container
-    .newsletter-details-date-item
-    .newsletter-details-date-text {
-    font-size: 0.85rem;
-  }
-
-  .newsletter-details-section
-    .newsletter-details-dates-container
-    .newsletter-details-date-item
-    .newsletter-details-date-icon {
-    width: 20px;
-    height: 20px;
-    font-size: 1rem;
-  }
-}
-
 /* Newsletter Content Section Styles */
 .newsletter-content-section {
   padding: 4rem 0;
@@ -7839,97 +5035,6 @@ html {
   p:last-child {
   margin-bottom: 0;
 }
-
-/* Responsive Design for Newsletter Content Section */
-@media (max-width: 992px) {
-  .newsletter-content-section {
-    padding: 3rem 0;
-  }
-
-  .newsletter-content-section .newsletter-description-card {
-    padding: 1.5rem;
-    margin-bottom: 1.5rem;
-  }
-
-  .newsletter-content-section
-    .newsletter-description-card
-    .newsletter-description-content
-    .newsletter-description-text {
-    font-size: 1rem;
-  }
-
-  .newsletter-content-section .newsletter-content-card {
-    padding: 2rem;
-  }
-}
-
-@media (max-width: 768px) {
-  .newsletter-content-section {
-    padding: 2.5rem 0;
-  }
-
-  .newsletter-content-section .newsletter-description-card {
-    padding: 1.2rem;
-    margin-bottom: 1.2rem;
-  }
-
-  .newsletter-content-section
-    .newsletter-description-card
-    .newsletter-description-content
-    .newsletter-description-text {
-    font-size: 0.95rem;
-  }
-
-  .newsletter-content-section .newsletter-content-card {
-    padding: 1.5rem;
-  }
-
-  .newsletter-content-section
-    .newsletter-content-card
-    .newsletter-content-text
-    p {
-    font-size: 0.9rem;
-    margin-bottom: 1.2rem;
-  }
-}
-
-@media (max-width: 576px) {
-  .newsletter-content-section {
-    padding: 2rem 0;
-  }
-
-  .newsletter-content-section .newsletter-description-card {
-    padding: 1rem;
-    margin-bottom: 1rem;
-  }
-
-  .newsletter-content-section
-    .newsletter-description-card
-    .newsletter-description-content
-    .newsletter-description-text {
-    font-size: 0.9rem;
-  }
-
-  .newsletter-content-section .newsletter-content-card {
-    padding: 1.2rem;
-  }
-
-  .newsletter-content-section
-    .newsletter-content-card
-    .newsletter-content-text
-    p {
-    font-size: 0.85rem;
-    margin-bottom: 1rem;
-  }
-
-  .newsletter-content-section
-    .newsletter-description-card
-    .newsletter-description-corner {
-    border-top: 20px solid white;
-    border-left: 20px solid transparent;
-  }
-}
-
 /* Newsletter Additional Info Section Styles */
 .newsletter-additional-info-section {
   background-color: white;
@@ -8218,151 +5323,6 @@ html {
   margin: 0;
 }
 
-/* Responsive Design for Newsletter Additional Info Section */
-@media (max-width: 992px) {
-  .newsletter-additional-info-section {
-    padding: 3rem 0;
-  }
-
-  .newsletter-additional-info-section .newsletter-info-card {
-    padding: 1.5rem;
-    margin-bottom: 1rem;
-  }
-
-  .newsletter-additional-info-section .newsletter-info-title,
-  .newsletter-additional-info-section .newsletter-keywords-title,
-  .newsletter-additional-info-section .newsletter-social-share-title {
-    font-size: 1.2rem;
-  }
-
-  .newsletter-additional-info-section .newsletter-keywords-title,
-  .newsletter-additional-info-section .newsletter-social-share-title {
-    margin-top: 2rem;
-  }
-}
-
-@media (max-width: 768px) {
-  .newsletter-additional-info-section {
-    padding: 2.5rem 0;
-  }
-
-  .newsletter-additional-info-section .newsletter-info-card {
-    padding: 1.2rem;
-  }
-
-  .newsletter-additional-info-section .newsletter-info-title,
-  .newsletter-additional-info-section .newsletter-keywords-title,
-  .newsletter-additional-info-section .newsletter-social-share-title {
-    font-size: 1.1rem;
-  }
-
-  .newsletter-additional-info-section .newsletter-keywords-title,
-  .newsletter-additional-info-section .newsletter-social-share-title {
-    margin-top: 1.5rem;
-  }
-
-  .newsletter-additional-info-section .newsletter-social-share {
-    gap: 0.8rem;
-  }
-
-  .newsletter-additional-info-section
-    .newsletter-social-share
-    .newsletter-social-icon {
-    width: 45px;
-    height: 45px;
-    font-size: 1.1rem;
-  }
-
-  .newsletter-contact-banner {
-    padding: 1.5rem 0;
-  }
-
-  .newsletter-contact-banner
-    .newsletter-contact-content
-    .newsletter-contact-text {
-    font-size: 1rem;
-  }
-}
-
-@media (max-width: 576px) {
-  .newsletter-additional-info-section {
-    padding: 2rem 0;
-  }
-
-  .newsletter-additional-info-section .newsletter-info-card {
-    padding: 1rem;
-  }
-
-  .newsletter-additional-info-section .newsletter-info-title,
-  .newsletter-additional-info-section .newsletter-keywords-title,
-  .newsletter-additional-info-section .newsletter-social-share-title {
-    font-size: 1rem;
-  }
-
-  .newsletter-additional-info-section .newsletter-keywords-title,
-  .newsletter-additional-info-section .newsletter-social-share-title {
-    margin-top: 1rem;
-  }
-
-  .newsletter-additional-info-section
-    .newsletter-info-card
-    .newsletter-attachment-item
-    .newsletter-attachment-text {
-    font-size: 0.9rem;
-  }
-
-  .newsletter-additional-info-section
-    .newsletter-info-card
-    .newsletter-section-item
-    .newsletter-section-content
-    .newsletter-section-text {
-    font-size: 0.9rem;
-  }
-
-  .newsletter-additional-info-section .newsletter-social-share {
-    gap: 0.6rem;
-  }
-
-  .newsletter-additional-info-section
-    .newsletter-social-share
-    .newsletter-social-icon {
-    width: 40px;
-    height: 40px;
-    font-size: 1rem;
-  }
-
-  .newsletter-additional-info-section
-    .newsletter-keywords
-    .newsletter-keyword-tag {
-    font-size: 0.8rem;
-    padding: 0.3rem 0.6rem;
-  }
-
-  .newsletter-contact-banner {
-    padding: 1rem 0;
-  }
-
-  .newsletter-contact-banner .newsletter-contact-content {
-    flex-direction: column;
-    gap: 0.8rem;
-  }
-
-  .newsletter-contact-banner
-    .newsletter-contact-content
-    .newsletter-contact-icon {
-    width: 45px;
-    height: 45px;
-    font-size: 1.1rem;
-  }
-
-  .newsletter-contact-banner
-    .newsletter-contact-content
-    .newsletter-contact-text {
-    font-size: 0.9rem;
-    text-align: center;
-  }
-}
-
 /* Practical Applications Modal Styles */
 .practical-applications-clickable {
   cursor: pointer;
@@ -8528,107 +5488,6 @@ html {
   transform: translateY(-2px);
 }
 
-/* Responsive Design for Practical Applications Modal */
-@media (max-width: 992px) {
-  .practical-applications-modal-header {
-    padding: 1.5rem 1.5rem 1rem 1.5rem;
-  }
-
-  .practical-applications-modal-body {
-    padding: 0 1.5rem 1.5rem 1.5rem;
-  }
-
-  .practical-applications-modal-footer {
-    padding: 1rem 1.5rem 1.5rem 1.5rem;
-  }
-
-  .practical-applications-title {
-    font-size: 1.2rem;
-  }
-}
-
-@media (max-width: 768px) {
-  .practical-applications-modal-header {
-    padding: 1.2rem 1.2rem 0.8rem 1.2rem;
-  }
-
-  .practical-applications-modal-body {
-    padding: 0 1.2rem 1.2rem 1.2rem;
-  }
-
-  .practical-applications-modal-footer {
-    padding: 0.8rem 1.2rem 1.2rem 1.2rem;
-  }
-
-  .practical-applications-title {
-    font-size: 1.1rem;
-  }
-
-  .practical-applications-dates {
-    flex-direction: column;
-    gap: 0.5rem;
-    align-items: flex-start;
-  }
-
-  .practical-applications-description-box {
-    padding: 1.2rem;
-  }
-
-  .practical-applications-content-block {
-    padding: 1.2rem;
-  }
-
-  .practical-applications-description-text,
-  .practical-applications-content-text {
-    font-size: 0.9rem;
-  }
-}
-
-@media (max-width: 576px) {
-  .practical-applications-modal-header {
-    padding: 1rem 1rem 0.6rem 1rem;
-  }
-
-  .practical-applications-modal-body {
-    padding: 0 1rem 1rem 1rem;
-  }
-
-  .practical-applications-modal-footer {
-    padding: 0.6rem 1rem 1rem 1rem;
-  }
-
-  .practical-applications-title {
-    font-size: 1rem;
-  }
-
-  .practical-applications-title-section {
-    gap: 0.8rem;
-  }
-
-  .practical-applications-badge {
-    font-size: 0.7rem;
-    padding: 0.2rem 0.6rem;
-  }
-
-  .practical-applications-description-box {
-    padding: 1rem;
-  }
-
-  .practical-applications-content-block {
-    padding: 1rem;
-  }
-
-  .practical-applications-description-text,
-  .practical-applications-content-text {
-    font-size: 0.85rem;
-  }
-
-  .practical-applications-close-button {
-    padding: 0.6rem 1.5rem;
-    font-size: 0.9rem;
-  }
-}
-
 /* Login Required Modal Styles */
 .premium-clickable {
   cursor: pointer;
@@ -8737,57 +5596,6 @@ html {
 .login-required-close-button:hover {
   background-color: #dee2e6;
   transform: translateY(-2px);
-}
-
-/* Responsive Design for Login Required Modal */
-@media (max-width: 768px) {
-  .login-required-modal-body {
-    padding: 1.5rem 1.5rem 1rem 1.5rem;
-  }
-
-  .login-required-modal-footer {
-    padding: 0 1.5rem 1.5rem 1.5rem;
-  }
-
-  .login-required-error-text {
-    font-size: 1rem;
-  }
-
-  .login-required-action-buttons {
-    flex-direction: column;
-    gap: 0.8rem;
-  }
-
-  .login-required-login-btn,
-  .login-required-register-btn {
-    padding: 0.7rem 1.2rem;
-    font-size: 0.9rem;
-  }
-}
-
-@media (max-width: 576px) {
-  .login-required-modal-body {
-    padding: 1.2rem 1.2rem 0.8rem 1.2rem;
-  }
-
-  .login-required-modal-footer {
-    padding: 0 1.2rem 1.2rem 1.2rem;
-  }
-
-  .login-required-error-text {
-    font-size: 0.9rem;
-  }
-
-  .login-required-login-btn,
-  .login-required-register-btn {
-    padding: 0.6rem 1rem;
-    font-size: 0.85rem;
-  }
-
-  .login-required-close-button {
-    padding: 0.6rem 1.5rem;
-    font-size: 0.9rem;
-  }
 }
 
 /* Image Attachment Modal Styles */
@@ -8953,8 +5761,99 @@ html {
   transform: translateY(-2px);
 }
 
+.user-subscriptions-section .subscription-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.user-subscriptions-section .subscription-buttons .subscription-btn {
+  background-color: #f1c924;
+  color: white;
+  border: none;
+  border-radius: 40px;
+  padding: 1rem 3rem;
+  font-size: 1.6rem;
+  font-weight: bold;
+  box-shadow: 0 6px 20px rgba(249, 190, 50, 0.4);
+}
+
+.user-subscriptions-section .subscription-buttons .subscription-btn:hover {
+  background-color: #e6a829;
+  transform: translateY(-2px);
+}
+
+/* Course Details Icons */
+.course-details-content-section .section-icon i {
+  color: #a1b23c;
+  font-size: 24px;
+}
+
+.course-details-content-section .lesson-play-btn i {
+  color: white;
+  font-size: 20px;
+}
+
+.course-details-content-section .discussions-icon i {
+  color: #a1b23c;
+  font-size: 32px;
+}
+
+.course-details-content-section .info-icon i {
+  color: #a1b23c;
+  font-size: 24px;
+}
+
 /* Responsive Design for Image Attachment Modal */
 @media (max-width: 992px) {
+  .about-us-section {
+    padding: 3rem 0;
+  }
+
+  .about-title {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .about-description {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .about-content {
+    padding: 1rem 0;
+    text-align: center;
+  }
+
+  .about-buttons {
+    justify-content: center;
+  }
+
+  .what-we-offer-section {
+    padding: 3rem 0;
+  }
+
+  .what-we-offer-section .section-title {
+    font-size: 3rem;
+  }
+
+  .about-hero-title {
+    font-size: 3rem;
+  }
+
+  .about-hero-description {
+    font-size: 1.1rem;
+  }
+
+  .mission-title,
+  .vision-title {
+    font-size: 2rem;
+  }
+
+  .section-title {
+    font-size: 2.5rem;
+  }
+
   .image-attachment-modal-header {
     padding: 1.5rem 1.5rem 1rem 1.5rem;
   }
@@ -8970,6 +5869,268 @@ html {
   .image-attachment-title {
     font-size: 1.6rem;
   }
+
+  .who-we-are-title {
+    font-size: 3rem;
+  }
+
+  .who-we-are-description {
+    font-size: 1.1rem;
+  }
+
+  .section-header-image img {
+    max-width: 250px;
+  }
+
+  .vision-description,
+  .message-description {
+    font-size: 1rem;
+  }
+
+  .value-text {
+    font-size: 1.1rem;
+  }
+
+  .faq-hero-title {
+    font-size: 3rem;
+  }
+
+  .faq-hero-description {
+    font-size: 1.1rem;
+  }
+
+  .contact-title {
+    font-size: 3rem;
+  }
+
+  .contact-hero-image {
+    width: 50%;
+  }
+
+  .stats-section {
+    padding: 3rem 0;
+  }
+
+  .main-stat-number {
+    font-size: 6rem;
+  }
+
+  .stat-line {
+    font-size: 1.3rem;
+  }
+
+  .stat-number {
+    font-size: 2.5rem;
+  }
+
+  .stats-content {
+    text-align: center;
+    padding: 1rem 0;
+  }
+
+  .bottom-stats {
+    justify-content: center;
+    gap: 1.5rem;
+  }
+
+  .follow-new-section {
+    padding: 3rem 0;
+  }
+
+  .section-title {
+    font-size: 2.5rem;
+  }
+
+  .banner-content {
+    height: 200px;
+    padding: 2rem;
+    margin-left: 45%;
+  }
+
+  .banner-title {
+    font-size: 2rem;
+  }
+
+  .banner-subtitle {
+    font-size: 1.2rem;
+  }
+
+  .banner-text {
+    padding-right: 2rem;
+  }
+
+  .banner-category {
+    width: 70px;
+  }
+
+  .banner-category span {
+    font-size: 1rem;
+  }
+
+  .banner-category .category-subtitle {
+    font-size: 0.75rem;
+  }
+
+  .banner-btn {
+    padding: 0.8rem 2rem;
+    font-size: 1rem;
+  }
+
+  .hero-main-title-ar {
+    font-size: 3rem;
+  }
+
+  .hero-text-content {
+    padding: 2rem 1.5rem;
+    max-width: 700px;
+  }
+
+  .courses-content-section {
+    padding: 3rem 0;
+  }
+
+  .search-btn {
+    border-radius: 0 12px 12px 0;
+    padding: 0.8rem 1.2rem;
+  }
+
+  .course-card {
+    border-radius: 15px;
+  }
+
+  .course-image img {
+    border-radius: 15px 15px 0 0;
+  }
+
+  .course-details-content-section {
+    padding: 3rem 0;
+  }
+
+  .course-info-card {
+    border-radius: 15px;
+  }
+
+  .course-info-image img {
+    height: 200px;
+  }
+
+  .course-tabs-container {
+    border-radius: 15px;
+  }
+
+  .description-box {
+    border-radius: 12px;
+  }
+
+  .green-box {
+    border-radius: 12px 12px 0 0;
+  }
+
+  .white-box {
+    border-radius: 0 0 12px 12px;
+  }
+
+  .services-hero-title {
+    font-size: 3rem;
+  }
+
+  .services-hero-subtitle {
+    font-size: 1.2rem;
+  }
+
+  .lecture-content-section .lecture-main-content {
+    padding-right: 0;
+    margin-bottom: 2rem;
+  }
+
+  .lecture-content-section .lecture-sidebar {
+    padding-left: 0;
+  }
+
+  .lecture-content-section .lecture-main-content .lecture-title h1 {
+    font-size: 2rem;
+  }
+
+  .lecture-content-section .lecture-main-content .lecture-video-player {
+    height: 300px;
+  }
+
+  .lecture-content-section
+    .lecture-main-content
+    .lecture-video-player
+    .lecture-video {
+    height: 100%;
+  }
+
+  .newsletter-details-section
+    .newsletter-details-card
+    .newsletter-details-card-top {
+    height: 350px;
+  }
+
+  .newsletter-details-section
+    .newsletter-details-card
+    .newsletter-details-card-bottom
+    .newsletter-details-title-container
+    .newsletter-details-title {
+    font-size: 1.8rem;
+  }
+
+  .newsletter-content-section {
+    padding: 3rem 0;
+  }
+
+  .newsletter-content-section .newsletter-description-card {
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .newsletter-content-section
+    .newsletter-description-card
+    .newsletter-description-content
+    .newsletter-description-text {
+    font-size: 1rem;
+  }
+
+  .newsletter-content-section .newsletter-content-card {
+    padding: 2rem;
+  }
+
+  .newsletter-additional-info-section {
+    padding: 3rem 0;
+  }
+
+  .newsletter-additional-info-section .newsletter-info-card {
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .newsletter-additional-info-section .newsletter-info-title,
+  .newsletter-additional-info-section .newsletter-keywords-title,
+  .newsletter-additional-info-section .newsletter-social-share-title {
+    font-size: 1.2rem;
+  }
+
+  .newsletter-additional-info-section .newsletter-keywords-title,
+  .newsletter-additional-info-section .newsletter-social-share-title {
+    margin-top: 2rem;
+  }
+
+  .practical-applications-modal-header {
+    padding: 1.5rem 1.5rem 1rem 1.5rem;
+  }
+
+  .practical-applications-modal-body {
+    padding: 0 1.5rem 1.5rem 1.5rem;
+  }
+
+  .practical-applications-modal-footer {
+    padding: 1rem 1.5rem 1.5rem 1.5rem;
+  }
+
+  .practical-applications-title {
+    font-size: 1.2rem;
+  }
 }
 
 @media (max-width: 768px) {
@@ -8979,6 +6140,10 @@ html {
 
   .image-attachment-modal-body {
     padding: 0 1.2rem 1.2rem 1.2rem;
+  }
+
+  footer {
+    font-weight: bold;
   }
 
   .image-attachment-modal-footer {
@@ -9007,11 +6172,1188 @@ html {
     padding: 0.8rem 1.5rem;
     font-size: 1rem;
   }
+
+  .navbar {
+    margin-top: 0.7rem;
+    border-radius: 30px;
+    max-width: 95%;
+    padding: 1rem 1.5rem;
+  }
+
+  .navbar-toggler {
+    color: white !important;
+    font-size: 2rem;
+    padding: 0;
+    border: none;
+  }
+
+  .navbar-nav .vertical-line {
+    display: none;
+  }
+
+  .navbar-nav {
+    align-items: unset !important;
+  }
+
+  .navbar .search-icon {
+    display: none !important;
+  }
+
+  .navbar .btn-register {
+    display: none;
+  }
+
+  .navbar-nav .nav-item {
+    margin: 0.5rem 0rem;
+    border-bottom: 1px solid white;
+  }
+
+  .navbar-brand {
+    font-size: 1.2rem;
+  }
+
+  .navbar-brand img {
+    height: 50px;
+  }
+
+  .nav-link {
+    margin: 0 0.5rem;
+    font-size: 0.9rem;
+  }
+
+  .btn-register {
+    padding: 0.6rem 1.5rem;
+    font-size: 0.9rem;
+  }
+  .display-3 {
+    font-size: 2.5rem;
+  }
+
+  .fs-4 {
+    font-size: 1.2rem !important;
+  }
+
+  .btn-lg {
+    padding: 0.75rem 2rem !important;
+    font-size: 1rem;
+  }
+
+  .hero-slide {
+    height: 80vh;
+  }
+
+  .about-us-section {
+    padding: 2rem 0;
+  }
+
+  .about-title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .about-description {
+    font-size: 0.95rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+
+  .about-btn {
+    padding: 0.6rem 1.5rem;
+    font-size: 0.9rem;
+  }
+
+  .about-buttons {
+    gap: 0.75rem;
+  }
+
+  .what-we-offer-section {
+    padding: 2rem 0;
+  }
+
+  .what-we-offer-section .section-title {
+    font-size: 2.5rem;
+  }
+
+  .service-category {
+    font-size: 0.9rem;
+    padding: 0.6rem 1rem;
+    width: 160px;
+    top: -18px;
+    box-shadow: 0 5px 18px rgba(141, 160, 74, 0.4);
+  }
+
+  .service-image {
+    padding: 1.5rem 1rem 0.8rem 1rem;
+  }
+
+  .service-image img {
+    max-height: 150px;
+  }
+
+  .service-description {
+    font-size: 0.85rem;
+    padding: 0 1rem 0.8rem 1rem;
+  }
+
+  .service-action {
+    padding: 0 1rem 1rem 1rem;
+  }
+
+  .service-btn {
+    padding: 0.5rem 1.2rem;
+    font-size: 0.85rem;
+  }
+
+  .right-arrow,
+  .left-arrow {
+    width: 80px;
+    height: 160px;
+  }
+
+  .right-arrow {
+    right: 8%;
+  }
+
+  .left-arrow {
+    left: 8%;
+  }
+
+  .about-hero-section {
+    padding: 6rem 0 3rem 0;
+  }
+
+  .about-hero-title {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+
+  .about-hero-description {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .about-hero-buttons {
+    justify-content: center;
+  }
+
+  .mission-title,
+  .vision-title {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .section-subtitle {
+    font-size: 1rem;
+  }
+
+  .value-card,
+  .team-card {
+    margin-bottom: 2rem;
+  }
+
+  .who-we-are-section,
+  .elements-section,
+  .vision-section,
+  .message-section {
+    padding: 3rem 0;
+  }
+
+  .who-we-are-title {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+
+  .who-we-are-description {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .section-header-image img {
+    max-width: 200px;
+  }
+
+  .vision-description,
+  .message-description {
+    font-size: 0.95rem;
+  }
+
+  .value-item {
+    margin-bottom: 1rem;
+    padding: 0.8rem;
+  }
+
+  .value-text {
+    font-size: 1rem;
+  }
+
+  .value-icon {
+    font-size: 1.3rem;
+    margin-left: 0.8rem;
+  }
+
+  .faq-hero-section,
+  .faq-questions-section {
+    padding: 3rem 0;
+  }
+
+  .faq-hero-title {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+
+  .faq-hero-description {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .faq-question {
+    padding: 1.2rem;
+  }
+
+  .faq-question h3 {
+    font-size: 1.1rem;
+  }
+
+  .faq-answer {
+    padding: 1.2rem;
+  }
+
+  .faq-answer p {
+    font-size: 0.95rem;
+  }
+
+  .contact-section {
+    padding: 3rem 0;
+  }
+
+  .contact-title {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+
+  .contact-content {
+    align-items: center;
+  }
+
+  .contact-hero-image {
+    position: relative;
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  .contact-hero-image img {
+    max-height: 300px;
+    object-fit: contain;
+  }
+
+  .contact-form {
+    max-width: 100%;
+  }
+
+  .form-control {
+    padding: 0.8rem 1rem;
+    font-size: 0.95rem;
+  }
+
+  .contact-submit-btn {
+    padding: 0.8rem 1.5rem;
+    font-size: 0.95rem;
+  }
+
+  .social-icons-row {
+    gap: 1rem;
+  }
+
+  .social-icon {
+    width: 45px;
+    height: 45px;
+  }
+
+  .contact-email p {
+    font-size: 1rem;
+  }
+
+  .stats-section {
+    padding: 2rem 0;
+  }
+
+  .main-stat {
+    margin-bottom: 2rem;
+  }
+
+  .main-stat-number {
+    font-size: 5rem;
+  }
+
+  .stat-line {
+    font-size: 1.1rem;
+  }
+
+  .stat-number {
+    font-size: 2rem;
+  }
+
+  .stat-label {
+    font-size: 0.9rem;
+  }
+
+  .bottom-stats {
+    gap: 1rem;
+  }
+
+  .stat-item {
+    min-width: 100px;
+  }
+
+  .follow-new-section {
+    padding: 2rem 0;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .banners-container {
+    gap: 1.5rem;
+  }
+
+  .banner-image {
+    width: 40%;
+  }
+
+  .banner-content {
+    height: 180px;
+    padding: 1.5rem;
+    margin-left: 40%;
+  }
+
+  .banner-title {
+    font-size: 1.8rem;
+  }
+
+  .banner-subtitle {
+    font-size: 1.1rem;
+  }
+
+  .banner-text {
+    padding-right: 1.5rem;
+  }
+
+  .banner-category {
+    width: 60px;
+  }
+
+  .banner-category span {
+    font-size: 0.9rem;
+  }
+
+  .banner-category .category-subtitle {
+    font-size: 0.7rem;
+  }
+
+  .banner-btn {
+    padding: 0.7rem 1.8rem;
+    font-size: 0.95rem;
+  }
+
+  .subscription-plans-section {
+    padding: 2rem 0;
+  }
+
+  .plans-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    padding: 0 1rem;
+  }
+
+  .plan-card {
+    min-height: 350px;
+  }
+
+  .plan-header {
+    padding: 1rem 1.5rem;
+    height: 55px;
+  }
+
+  .plan-title {
+    font-size: 1.2rem;
+  }
+
+  .plan-content {
+    padding: 1.5rem;
+  }
+
+  .duration-value {
+    font-size: 1.3rem;
+  }
+
+  .current-price .price-text {
+    font-size: 1.8rem;
+  }
+
+  .footer {
+    padding: 2rem 0 0 0;
+  }
+
+  .footer-section {
+    margin-bottom: 2rem;
+  }
+
+  .footer-title {
+    font-size: 1.1rem;
+  }
+
+  .footer-description {
+    font-size: 0.9rem;
+  }
+
+  .logo-arabic {
+    font-size: 1.3rem;
+  }
+
+  .logo-english {
+    font-size: 0.8rem;
+  }
+  .hero-text-content {
+    padding: 1.5rem;
+    border-radius: 20px;
+    max-width: 600px;
+  }
+
+  .courses-content-section {
+    padding: 2rem 0;
+  }
+
+  .search-input {
+    padding: 0.8rem 1rem;
+    font-size: 0.9rem;
+  }
+
+  .search-input::placeholder {
+    font-size: 0.9rem;
+  }
+
+  .search-btn {
+    padding: 0.8rem 1rem;
+    min-width: 50px;
+  }
+
+  .course-image img {
+    height: 180px;
+  }
+
+  .course-title {
+    padding: 0 1rem;
+    font-size: 1.1rem;
+  }
+
+  .course-price {
+    padding: 0 1rem;
+  }
+
+  .cta-button {
+    padding: 1rem 2rem;
+    font-size: 1rem;
+  }
+  .course-details-content-section {
+    padding: 2rem 0;
+  }
+
+  .course-info-image img {
+    height: 180px;
+  }
+
+  .course-info-details {
+    padding: 1rem;
+  }
+
+  .current-price {
+    font-size: 1.3rem;
+  }
+
+  .old-price {
+    font-size: 1.1rem;
+  }
+
+  .info-value {
+    font-size: 1.2rem;
+  }
+
+  .info-label {
+    font-size: 0.8rem;
+  }
+
+  .buy-now-btn {
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    margin: 1rem;
+    margin-top: 0;
+  }
+
+  .course-tabs .nav-link {
+    padding: 0.8rem 1rem;
+    font-size: 0.9rem;
+  }
+
+  .tab-content-wrapper {
+    padding: 1.5rem;
+  }
+
+  .description-box {
+    padding: 1rem;
+  }
+
+  .description-title {
+    font-size: 1.1rem;
+  }
+
+  .description-text {
+    font-size: 0.9rem;
+  }
+
+  .course-details-section {
+    padding: 3rem 0;
+  }
+
+  .course-details-title {
+    font-size: 2.5rem;
+  }
+
+  .course-details-description {
+    font-size: 1.1rem;
+  }
+
+  .discussions-container {
+    padding: 2rem 1.5rem;
+    min-height: 250px;
+  }
+
+  .discussions-title {
+    font-size: 1.8rem;
+  }
+
+  .discussions-icon svg {
+    width: 28px;
+    height: 28px;
+  }
+
+  .no-comments-message p {
+    font-size: 1rem;
+  }
+
+  .course-sections-container {
+    padding: 1.5rem;
+  }
+
+  .section-title {
+    font-size: 1.2rem;
+  }
+
+  .lesson-item {
+    padding: 0.8rem 1rem;
+  }
+
+  .lesson-content {
+    padding-left: 5rem;
+    gap: 0.8rem;
+  }
+
+  .lesson-title {
+    font-size: 0.9rem;
+  }
+
+  .lesson-play-btn {
+    width: 35px;
+    height: 35px;
+  }
+
+  .lesson-play-btn svg {
+    width: 18px;
+    height: 18px;
+  }
+
+  .lesson-access-label {
+    font-size: 0.7rem;
+    padding: 0.2rem 0.6rem;
+  }
+
+  .privacy-policy-main {
+    padding-top: 80px;
+    padding-bottom: 3rem;
+  }
+
+  .privacy-policy-content {
+    padding: 2rem;
+    margin: 0 1rem;
+  }
+
+  .privacy-intro p {
+    font-size: 1rem;
+  }
+
+  .privacy-section h2 {
+    font-size: 1.3rem;
+  }
+
+  .privacy-section p {
+    font-size: 0.95rem;
+  }
+
+  .subsection h3 {
+    font-size: 1.1rem;
+  }
+
+  .contact-item strong {
+    min-width: 100px;
+  }
+
+  .profile-info-section {
+    padding: 3rem 0;
+  }
+
+  .info-block {
+    padding: 1.2rem 1.5rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .info-text {
+    font-size: 1rem;
+  }
+
+  .action-btn {
+    max-width: none;
+    padding: 1rem 1.5rem;
+  }
+
+  .subscriptions-btn {
+    padding: 1rem 2rem;
+    font-size: 1rem;
+  }
+
+  .last-login-block {
+    padding: 1.2rem;
+  }
+
+  .last-login-text {
+    font-size: 0.9rem;
+  }
+
+  .newsletter-subscription-section {
+    padding: 1.5rem;
+    margin-top: 1.5rem;
+  }
+
+  .newsletter-title {
+    font-size: 1.2rem;
+  }
+
+  .newsletter-options {
+    gap: 0.8rem;
+  }
+
+  .newsletter-option {
+    min-width: 100px;
+  }
+
+  .newsletter-label {
+    font-size: 0.9rem;
+  }
+
+  .personal-info-modal {
+    margin: 1rem;
+  }
+
+  .personal-info-header {
+    padding: 1rem 1.5rem 0.5rem 1.5rem;
+  }
+
+  .personal-info-title {
+    font-size: 1.3rem;
+  }
+
+  .personal-info-close {
+    right: 1rem;
+    top: 1rem;
+    font-size: 1rem;
+  }
+
+  .personal-info-body {
+    padding: 1.5rem;
+  }
+
+  .personal-info-field {
+    padding: 0.8rem 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .field-icon {
+    width: 35px;
+    height: 35px;
+    margin-left: 0.8rem;
+  }
+
+  .field-icon i {
+    font-size: 14px;
+  }
+
+  .personal-info-input {
+    font-size: 0.9rem;
+  }
+
+  .personal-info-save {
+    margin-right: 0;
+    margin-bottom: 0.5rem;
+  }
+
+  .subscription-section-title h2 {
+    font-size: 1.3rem;
+    padding: 0.8rem 1.5rem;
+  }
+
+  .subscription-tabs {
+    flex-direction: column;
+  }
+
+  .table-cell {
+    border-right: none;
+    padding: 0.8rem 1rem;
+  }
+
+  .table-cell:last-child {
+    border-bottom: none;
+  }
+
+  .table-content {
+    padding: 1.5rem;
+  }
+
+  .empty-state {
+    padding: 2rem 1rem;
+  }
+
+  .empty-state p {
+    font-size: 1.1rem;
+  }
+
+  .login-container {
+    padding: 2.5rem 1.5rem 1.5rem 1.5rem;
+    margin: 0 1rem;
+  }
+
+  .options-row {
+    flex-direction: column;
+    gap: 1rem;
+    align-items: flex-start;
+  }
+
+  .forgot-password {
+    align-self: flex-end;
+  }
+  .register-main {
+    padding-top: 70px;
+  }
+
+  .register-container {
+    padding: 2.5rem 1.5rem 1.5rem 1.5rem;
+    margin: 0 1rem;
+  }
+
+  .form-title h2 {
+    font-size: 1.5rem;
+  }
+
+  .register-container .input-group-text {
+    width: 45px;
+    padding: 0.6rem 0.8rem;
+  }
+
+  .register-input {
+    font-size: 0.9rem;
+    padding: 0.6rem 0.8rem;
+  }
+  .verification-main {
+    padding-top: 70px;
+  }
+
+  .verification-container {
+    padding: 2.5rem 1.5rem;
+    margin: 0 1rem;
+  }
+
+  .verification-title h1 {
+    font-size: 2.5rem;
+  }
+
+  .code-inputs {
+    gap: 0.8rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .code-input {
+    width: 50px;
+    height: 50px;
+    font-size: 1.3rem;
+  }
+
+  .btn-confirm {
+    font-size: 1rem;
+    min-width: 180px;
+  }
+
+  .success-icon {
+    width: 100px;
+    height: 100px;
+  }
+
+  .success-icon::before {
+    width: 120px;
+    height: 120px;
+    top: -10px;
+    left: -10px;
+  }
+
+  .success-icon i {
+    font-size: 2.5rem;
+  }
+
+  .success-container .verification-title h1 {
+    font-size: 1.5rem !important;
+  }
+
+  .newsletters-visual-container {
+    min-height: auto;
+  }
+
+  .speaker-section {
+    height: 300px;
+  }
+
+  .speaker-image {
+    min-height: 300px;
+  }
+
+  .newsletters-description {
+    padding: 1.5rem;
+  }
+
+  .newsletters-description p {
+    font-size: 1rem;
+  }
+
+  /* Newsletter Search and Filter Responsive */
+  .newsletter-search-section {
+    margin: 2rem 0;
+  }
+
+  .search-input {
+    border-radius: 25px;
+    text-align: center;
+  }
+
+  .search-btn {
+    border-radius: 25px;
+    width: 100%;
+  }
+
+  .filter-select {
+    width: 100%;
+  }
+
+  /* Newsletter Cards Responsive */
+  .newsletter-cards-section {
+    margin-top: 2rem;
+  }
+
+  .newsletter-card-wrapper {
+    gap: 0.8rem;
+  }
+
+  .newsletter-card {
+    height: 350px;
+  }
+
+  .card-content {
+    padding: 1.5rem;
+    height: 50%;
+  }
+
+  .card-title {
+    font-size: 1.3rem;
+  }
+
+  .card-description {
+    font-size: 0.9rem;
+  }
+
+  .services-hero-section {
+    min-height: 80vh;
+    margin-top: 70px;
+    padding: 3rem 0;
+  }
+
+  .services-hero-title {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .services-hero-subtitle {
+    font-size: 1.1rem;
+    padding: 0 1rem;
+  }
+
+  .lecture-content-section {
+    padding: 3rem 0;
+  }
+
+  .lecture-content-section .lecture-main-content .lecture-title h1 {
+    font-size: 1.8rem;
+  }
+
+  .lecture-content-section .lecture-main-content .lecture-description h3,
+  .lecture-content-section .lecture-main-content .lecture-content-details h3 {
+    font-size: 1.3rem;
+  }
+
+  .lecture-content-section .lecture-main-content .lecture-video-player {
+    height: 250px;
+  }
+
+  .lecture-content-section
+    .lecture-main-content
+    .lecture-video-player
+    .lecture-video {
+    height: 100%;
+  }
+
+  .lecture-content-section
+    .lecture-main-content
+    .lecture-video-player
+    .video-placeholder
+    i {
+    font-size: 3rem;
+  }
+
+  .lecture-content-section
+    .lecture-sidebar
+    .lecture-discussions-card
+    .lecture-card-header,
+  .lecture-content-section
+    .lecture-sidebar
+    .lecture-sections-card
+    .lecture-card-header {
+    padding: 1rem;
+  }
+
+  .lecture-content-section
+    .lecture-sidebar
+    .lecture-discussions-card
+    .lecture-card-content,
+  .lecture-content-section
+    .lecture-sidebar
+    .lecture-sections-card
+    .lecture-card-content {
+    padding: 1rem;
+  }
+
+  .newsletter-details-section {
+    padding: 3rem 0;
+  }
+
+  .newsletter-details-section
+    .newsletter-details-card
+    .newsletter-details-card-top {
+    height: 300px;
+  }
+
+  .newsletter-details-section
+    .newsletter-details-card
+    .newsletter-details-card-bottom {
+    padding: 1.5rem;
+  }
+
+  .newsletter-details-section
+    .newsletter-details-card
+    .newsletter-details-card-bottom
+    .newsletter-details-title-container
+    .newsletter-details-title {
+    font-size: 1.6rem;
+  }
+
+  .newsletter-details-section .newsletter-details-dates-container {
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    max-width: 500px;
+  }
+  .newsletter-content-section {
+    padding: 2.5rem 0;
+  }
+
+  .newsletter-content-section .newsletter-description-card {
+    padding: 1.2rem;
+    margin-bottom: 1.2rem;
+  }
+
+  .newsletter-content-section
+    .newsletter-description-card
+    .newsletter-description-content
+    .newsletter-description-text {
+    font-size: 0.95rem;
+  }
+
+  .newsletter-content-section .newsletter-content-card {
+    padding: 1.5rem;
+  }
+
+  .newsletter-content-section
+    .newsletter-content-card
+    .newsletter-content-text
+    p {
+    font-size: 0.9rem;
+    margin-bottom: 1.2rem;
+  }
+
+  .newsletter-additional-info-section {
+    padding: 2.5rem 0;
+  }
+
+  .newsletter-additional-info-section .newsletter-info-card {
+    padding: 1.2rem;
+  }
+
+  .newsletter-additional-info-section .newsletter-info-title,
+  .newsletter-additional-info-section .newsletter-keywords-title,
+  .newsletter-additional-info-section .newsletter-social-share-title {
+    font-size: 1.1rem;
+  }
+
+  .newsletter-additional-info-section .newsletter-keywords-title,
+  .newsletter-additional-info-section .newsletter-social-share-title {
+    margin-top: 1.5rem;
+  }
+
+  .newsletter-additional-info-section .newsletter-social-share {
+    gap: 0.8rem;
+  }
+
+  .newsletter-additional-info-section
+    .newsletter-social-share
+    .newsletter-social-icon {
+    width: 45px;
+    height: 45px;
+    font-size: 1.1rem;
+  }
+
+  .newsletter-contact-banner {
+    padding: 1.5rem 0;
+  }
+
+  .newsletter-contact-banner
+    .newsletter-contact-content
+    .newsletter-contact-text {
+    font-size: 1rem;
+  }
+
+  .practical-applications-modal-header {
+    padding: 1.2rem 1.2rem 0.8rem 1.2rem;
+  }
+
+  .practical-applications-modal-body {
+    padding: 0 1.2rem 1.2rem 1.2rem;
+  }
+
+  .practical-applications-modal-footer {
+    padding: 0.8rem 1.2rem 1.2rem 1.2rem;
+  }
+
+  .practical-applications-title {
+    font-size: 1.1rem;
+  }
+
+  .practical-applications-dates {
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: flex-start;
+  }
+
+  .practical-applications-description-box {
+    padding: 1.2rem;
+  }
+
+  .practical-applications-content-block {
+    padding: 1.2rem;
+  }
+
+  .practical-applications-description-text,
+  .practical-applications-content-text {
+    font-size: 0.9rem;
+  }
+  .login-required-modal-body {
+    padding: 1.5rem 1.5rem 1rem 1.5rem;
+  }
+
+  .login-required-modal-footer {
+    padding: 0 1.5rem 1.5rem 1.5rem;
+  }
+
+  .login-required-error-text {
+    font-size: 1rem;
+  }
+
+  .login-required-action-buttons {
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+
+  .login-required-login-btn,
+  .login-required-register-btn {
+    padding: 0.7rem 1.2rem;
+    font-size: 0.9rem;
+  }
+
+  .hero-section .hero-title {
+    font-size: 4.2rem;
+  }
+
+  .hero-section .hero-subtitle {
+    font-size: 1.5rem;
+    color: #fff;
+  }
 }
 
 @media (max-width: 576px) {
   .image-attachment-modal-header {
     padding: 1rem 1rem 0.6rem 1rem;
+  }
+
+  .profile-info-blocks .info-text {
+    font-size: 1rem;
+  }
+
+  .values-section {
+    margin-top: 0 !important;
+  }
+
+  .what-we-offer-section .section-header {
+    justify-content: center;
+  }
+
+  .what-we-offer-section .carousel-inner {
+    padding: 0;
+  }
+
+  .what-we-offer-section .service-category {
+    top: -33px;
+    font-size: 0.6rem;
+  }
+
+  .what-we-offer-section .row {
+    gap: 20px;
   }
 
   .image-attachment-modal-body {
@@ -9051,5 +7393,1357 @@ html {
   .image-attachment-close-button {
     padding: 0.6rem 1.5rem;
     font-size: 0.9rem;
+  }
+
+  .display-3 {
+    font-size: 2rem;
+  }
+
+  .fs-4 {
+    font-size: 1rem !important;
+  }
+
+  .btn-lg {
+    padding: 0.6rem 1.5rem !important;
+    font-size: 0.9rem;
+  }
+
+  .navbar-brand {
+    font-size: 1.2rem;
+  }
+
+  .hero-slide {
+    height: 70vh;
+  }
+
+  .about-us-section .about-image {
+    width: 100%;
+    position: relative;
+    z-index: -1;
+  }
+
+  .about-us-section {
+    padding: 0;
+  }
+
+  .about-title {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
+
+  .about-description {
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .about-btn {
+    padding: 0.5rem 1.2rem;
+    font-size: 0.85rem;
+  }
+
+  .about-image {
+    border-radius: 8px;
+  }
+  .what-we-offer-section .section-title {
+    font-size: 2rem;
+  }
+
+  .service-category {
+    font-size: 0.8rem;
+    padding: 0.5rem 0.8rem;
+    width: 140px;
+    top: -16px;
+    box-shadow: 0 4px 16px rgba(141, 160, 74, 0.4);
+  }
+
+  .service-image {
+    padding: 1.2rem 0.8rem 0.6rem 0.8rem;
+  }
+
+  .service-image img {
+    max-height: 120px;
+  }
+
+  .service-description {
+    font-size: 0.8rem;
+    padding: 0 0.8rem 0.6rem 0.8rem;
+  }
+
+  .service-action {
+    padding: 0 0.8rem 0.8rem 0.8rem;
+  }
+
+  .service-btn {
+    padding: 0.4rem 1rem;
+    font-size: 0.8rem;
+  }
+
+  .right-arrow,
+  .left-arrow {
+    width: 60px;
+    height: 120px;
+  }
+
+  .right-arrow {
+    right: 5%;
+  }
+
+  .left-arrow {
+    left: 5%;
+  }
+  .about-hero-title {
+    font-size: 2rem;
+  }
+
+  .about-hero-description {
+    font-size: 0.95rem;
+  }
+
+  .about-hero-btn {
+    padding: 0.6rem 1.5rem;
+    font-size: 1rem;
+  }
+
+  .mission-title,
+  .vision-title {
+    font-size: 1.6rem;
+  }
+
+  .section-title {
+    font-size: 1.8rem;
+  }
+
+  .value-card,
+  .team-card {
+    padding: 1.5rem;
+  }
+
+  .filter-container {
+    margin-bottom: 1rem;
+  }
+
+  .who-we-are-title {
+    font-size: 2rem;
+  }
+
+  .who-we-are-description {
+    font-size: 0.9rem;
+  }
+
+  .section-header-image img {
+    max-width: 180px;
+  }
+
+  .vision-description,
+  .message-description {
+    font-size: 0.9rem;
+  }
+
+  .value-item {
+    padding: 0.6rem;
+  }
+
+  .value-text {
+    font-size: 0.9rem;
+  }
+
+  .value-icon {
+    font-size: 1.2rem;
+    margin-left: 0.6rem;
+  }
+  .faq-hero-title {
+    font-size: 2rem;
+  }
+
+  .faq-hero-description {
+    font-size: 0.9rem;
+  }
+
+  .faq-question {
+    padding: 1rem;
+  }
+
+  .faq-question h3 {
+    font-size: 1rem;
+  }
+
+  .faq-answer {
+    padding: 1rem;
+  }
+
+  .faq-answer p {
+    font-size: 0.9rem;
+  }
+
+  .contact-title {
+    font-size: 2rem;
+  }
+
+  .form-control {
+    padding: 0.7rem 0.8rem;
+    font-size: 0.9rem;
+  }
+
+  .contact-submit-btn {
+    padding: 0.7rem 1rem;
+    font-size: 0.9rem;
+  }
+
+  .social-icons-row {
+    gap: 0.8rem;
+  }
+
+  .social-icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .contact-email p {
+    font-size: 0.9rem;
+  }
+
+  .stats-section {
+    padding: 1.5rem 0;
+  }
+
+  .main-stat-number {
+    font-size: 7rem;
+    text-align: center;
+    left: 0;
+  }
+
+  .stat-line {
+    font-size: 1rem;
+  }
+
+  .stat-number {
+    font-size: 1.8rem;
+  }
+
+  .stat-label {
+    font-size: 0.85rem;
+  }
+
+  .follow-new-section .section-title {
+    font-size: 4rem;
+  }
+
+  .follow-new-section .banner-image {
+    width: 60%;
+  }
+
+  .follow-new-section .category-title {
+    font-size: 1rem;
+  }
+
+  .follow-new-section .banner-category {
+    height: 110px;
+    margin-right: 5px;
+  }
+
+  .stat-item {
+    min-width: auto;
+  }
+
+  .follow-new-section {
+    padding: 1.5rem 0;
+  }
+
+  .section-title {
+    font-size: 1.8rem;
+  }
+
+  .banners-container {
+    gap: 1rem;
+  }
+
+  .banner-image {
+    width: 35%;
+  }
+
+  .banner-content {
+    height: 160px;
+    padding: 1rem;
+    margin-left: 35%;
+  }
+
+  .banner-title {
+    font-size: 1.5rem;
+  }
+
+  .banner-subtitle {
+    font-size: 1rem;
+  }
+
+  .banner-text {
+    padding-right: 1rem;
+  }
+
+  .banner-category {
+    width: 50px;
+  }
+
+  .banner-category span {
+    font-size: 0.8rem;
+  }
+
+  .banner-category .category-subtitle {
+    font-size: 0.65rem;
+  }
+
+  .banner-btn {
+    padding: 0.6rem 1.5rem;
+    font-size: 0.9rem;
+  }
+
+  .plans-grid {
+    padding: 0 0.5rem;
+  }
+
+  .plan-card {
+    min-height: 320px;
+  }
+
+  .plan-header {
+    padding: 0.8rem 1rem;
+    height: 50px;
+  }
+
+  .plan-title {
+    font-size: 1.1rem;
+  }
+
+  .plan-content {
+    padding: 1rem;
+  }
+
+  .duration-value {
+    font-size: 1.2rem;
+  }
+
+  .current-price .price-text {
+    font-size: 1.6rem;
+  }
+
+  .plan-footer {
+    padding: 0.8rem 1rem;
+  }
+
+  .footer {
+    padding: 1.5rem 0 0 0;
+  }
+
+  .footer-section {
+    margin-bottom: 1.5rem;
+  }
+
+  .footer-title {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .footer-description {
+    font-size: 0.85rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    padding: 0 1rem;
+  }
+
+  .footer-btn {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.85rem;
+    display: block;
+    margin: 0 auto;
+    width: fit-content;
+  }
+
+  .footer-links a {
+    font-size: 0.85rem;
+    display: inline-block;
+    margin-bottom: 0.5rem;
+  }
+
+  footer .social-icons {
+    margin-bottom: 1rem;
+  }
+
+  .social-icon {
+    width: 35px;
+    height: 35px;
+  }
+
+  footer .footer-website {
+    font-size: 0.8rem;
+    margin-top: 0.5rem;
+  }
+
+  /* Mobile footer layout - reorder sections */
+
+  .footer .col-lg-3:nth-child(4) {
+    order: -1; /* Platform description first */
+  }
+
+  .footer .col-lg-3:nth-child(1) {
+    order: 4; /* Logo and contact second */
+  }
+
+  .footer .col-lg-3:nth-child(2) {
+    order: 2; /* Information third */
+  }
+
+  .footer .col-lg-3:nth-child(3) {
+    order: 3; /* Links fourth */
+  }
+
+  /* Additional mobile footer adjustments */
+  .footer-links li {
+    margin-bottom: 0.5rem;
+  }
+
+  /* Ensure proper spacing for mobile */
+  .footer .container {
+    padding: 0 1rem;
+  }
+
+  .hero-description {
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+
+  .hero-text-content {
+    padding: 1rem;
+    border-radius: 15px;
+    max-width: 500px;
+  }
+
+  .search-btn {
+    border-radius: 0 10px 10px 0;
+  }
+
+  .course-card {
+    border-radius: 12px;
+  }
+
+  .course-image img {
+    border-radius: 12px 12px 0 0;
+    height: 160px;
+  }
+
+  .course-title {
+    font-size: 1rem;
+  }
+
+  .current-price {
+    font-size: 1.1rem;
+  }
+
+  .course-details-section {
+    padding: 2rem 0;
+  }
+
+  .course-details-title {
+    font-size: 2rem;
+  }
+
+  .course-details-description {
+    font-size: 1rem;
+  }
+
+  .course-info-image img {
+    height: 160px;
+  }
+
+  .course-info-details {
+    padding: 0.8rem;
+  }
+
+  .info-content {
+    justify-content: center;
+  }
+
+  .current-price {
+    font-size: 1.2rem;
+  }
+
+  .old-price {
+    font-size: 1rem;
+  }
+
+  .info-value {
+    font-size: 1.1rem;
+  }
+
+  .buy-now-btn {
+    padding: 0.7rem 1rem;
+    font-size: 0.9rem;
+    margin: 0.8rem;
+    margin-top: 0;
+  }
+
+  .course-tabs .nav-link {
+    padding: 0.7rem 0.5rem;
+    font-size: 0.8rem;
+  }
+
+  .tab-content-wrapper {
+    padding: 1rem;
+  }
+
+  .description-box {
+    padding: 0.8rem;
+  }
+
+  .description-title {
+    font-size: 1rem;
+  }
+
+  .description-text {
+    font-size: 0.85rem;
+  }
+
+  .description-list {
+    padding-right: 1rem;
+  }
+
+  .discussions-container {
+    padding: 1.5rem 1rem;
+    min-height: 200px;
+  }
+
+  .discussions-header {
+    gap: 0.8rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .discussions-title {
+    font-size: 1.6rem;
+  }
+
+  .discussions-icon svg {
+    width: 24px;
+    height: 24px;
+  }
+
+  .course-sections-container {
+    padding: 1rem;
+  }
+
+  .course-section {
+    margin-bottom: 1.5rem;
+  }
+
+  .section-header {
+    margin-bottom: 0.8rem;
+  }
+
+  .section-title {
+    font-size: 1.1rem;
+  }
+
+  .section-icon svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  .lessons-list {
+    gap: 0.6rem;
+  }
+
+  .lesson-item {
+    padding: 0.7rem 0.8rem;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.5rem;
+  }
+
+  .lesson-access-label {
+    position: static;
+    transform: none;
+    align-self: flex-start;
+    margin-bottom: 0.5rem;
+  }
+
+  .lesson-content {
+    padding-left: 0;
+    justify-content: space-between;
+  }
+
+  .lesson-title {
+    font-size: 0.85rem;
+  }
+
+  .lesson-play-btn {
+    width: 30px;
+    height: 30px;
+  }
+
+  .lesson-play-btn svg {
+    width: 16px;
+    height: 16px;
+  }
+
+  .privacy-policy-main {
+    padding-top: 70px;
+    padding-bottom: 2rem;
+  }
+
+  .privacy-policy-content {
+    padding: 1.5rem;
+    margin: 0 0.5rem;
+  }
+
+  .privacy-intro {
+    margin-bottom: 2rem;
+  }
+
+  .privacy-section {
+    margin-bottom: 2rem;
+  }
+
+  .privacy-section h2 {
+    font-size: 1.2rem;
+  }
+
+  .privacy-section p {
+    font-size: 0.9rem;
+  }
+
+  .subsection h3 {
+    font-size: 1rem;
+  }
+
+  .contact-info {
+    padding: 1rem;
+  }
+
+  .contact-item {
+    font-size: 0.9rem;
+  }
+
+  .contact-item strong {
+    min-width: 80px;
+    display: block;
+    margin-bottom: 0.3rem;
+  }
+
+  .profile-info-section {
+    padding: 2rem 0;
+  }
+
+  .info-block {
+    padding: 1rem 1.2rem;
+    margin-bottom: 0.6rem;
+  }
+
+  .info-text {
+    font-size: 0.95rem;
+  }
+
+  .edit-text {
+    font-size: 0.95rem;
+  }
+
+  .action-btn {
+    padding: 0.8rem 1.2rem;
+    font-size: 0.95rem;
+  }
+
+  .subscriptions-btn {
+    padding: 0.9rem 1.5rem;
+    font-size: 0.95rem;
+  }
+
+  .last-login-block {
+    padding: 1rem;
+  }
+
+  .last-login-text {
+    font-size: 0.85rem;
+  }
+
+  .newsletter-subscription-section {
+    padding: 1.2rem;
+    margin-top: 1.2rem;
+  }
+
+  .newsletter-header {
+    flex-direction: column;
+    text-align: center;
+    gap: 0.8rem;
+  }
+
+  .newsletter-title {
+    font-size: 1.1rem;
+    text-align: center;
+  }
+
+  .newsletter-option {
+    justify-content: flex-start;
+    min-width: auto;
+  }
+
+  .newsletter-label {
+    font-size: 0.85rem;
+    text-align: right;
+  }
+
+  .newsletter-checkbox {
+    width: 16px;
+    height: 16px;
+  }
+
+  .personal-info-modal {
+    margin: 0.5rem;
+  }
+
+  .personal-info-header {
+    padding: 0.8rem 1rem 0.3rem 1rem;
+  }
+
+  .personal-info-title {
+    font-size: 1.2rem;
+  }
+
+  .personal-info-body {
+    padding: 1rem;
+  }
+
+  .personal-info-field {
+    padding: 0.6rem 0.8rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .field-icon {
+    width: 30px;
+    height: 30px;
+    margin-left: 0.6rem;
+  }
+
+  .field-icon i {
+    font-size: 12px;
+  }
+
+  .personal-info-input {
+    font-size: 0.85rem;
+  }
+
+  .personal-info-footer {
+    padding: 0.8rem 1rem 1rem 1rem;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 0.6rem;
+  }
+
+  .personal-info-footer .personal-info-save {
+    background-color: var(--primary-green);
+    color: white;
+  }
+
+  .personal-info-btn {
+    font-size: 0.9rem;
+  }
+  .user-subscriptions-section {
+    padding: 2rem 0;
+  }
+
+  .subscription-section-title {
+    margin-bottom: 1.5rem;
+  }
+
+  .subscription-section-title h2 {
+    font-size: 1.1rem;
+    padding: 0.7rem 1.2rem;
+  }
+
+  .subscription-tabs {
+    margin-bottom: 1.5rem;
+  }
+
+  .tab-item {
+    padding: 1rem 0.8rem;
+    font-size: 0.9rem;
+  }
+
+  .table-content {
+    padding: 1rem;
+  }
+
+  .empty-state {
+    padding: 1.5rem 0.5rem;
+  }
+
+  .user-icon {
+    width: 70px;
+    height: 70px;
+  }
+
+  .user-icon-container {
+    top: -10%;
+  }
+
+  .user-icon i {
+    font-size: 1.7rem;
+  }
+
+  .login-container {
+    padding: 2rem 1rem 1rem 1rem;
+    margin: 0 0.5rem;
+  }
+
+  .input-group-text {
+    width: 45px;
+    padding: 0.6rem 0.8rem;
+  }
+
+  .form-control {
+    font-size: 0.9rem;
+    padding: 0.6rem 0.8rem;
+  }
+
+  .btn-login {
+    font-size: 1rem;
+  }
+
+  .new-user-link {
+    padding: 0.6rem 1.5rem;
+    font-size: 0.8rem;
+  }
+
+  .register-main {
+    padding-top: 60px;
+  }
+
+  .register-container {
+    padding: 2rem 1rem 1rem 1rem;
+    margin: 0 0.5rem;
+  }
+
+  .form-title h2 {
+    font-size: 1.3rem;
+  }
+
+  .register-input {
+    font-size: 0.9rem;
+  }
+
+  .btn-register-submit {
+    font-size: 1rem;
+  }
+
+  .login-link-container p {
+    font-size: 0.8rem;
+  }
+
+  .verification-main {
+    padding-top: 60px;
+  }
+
+  .verification-container {
+    padding: 2rem 1rem;
+    margin: 0 0.5rem;
+  }
+
+  .verification-title h1 {
+    font-size: 2rem;
+  }
+
+  .code-inputs {
+    gap: 0.6rem;
+    margin-bottom: 2rem;
+  }
+
+  .code-input {
+    width: 45px;
+    height: 45px;
+    font-size: 1.2rem;
+  }
+
+  .btn-confirm {
+    font-size: 0.9rem;
+    min-width: 160px;
+    padding: 0.6rem 1.5rem;
+  }
+
+  .resend-link {
+    font-size: 0.9rem;
+  }
+  .success-icon {
+    width: 80px;
+    height: 80px;
+  }
+
+  .success-icon::before {
+    width: 100px;
+    height: 100px;
+    top: -10px;
+    left: -10px;
+  }
+
+  .success-icon i {
+    font-size: 2rem;
+  }
+
+  .success-container .verification-title h1 {
+    font-size: 1.3rem !important;
+  }
+
+  .newsletters-main {
+    padding-top: 70px;
+  }
+
+  .newsletters-section {
+    padding: 2rem 0;
+  }
+
+  .newsletters-visual-container {
+    margin-bottom: 2rem;
+  }
+
+  .speaker-section {
+    height: 250px;
+  }
+
+  .speaker-image {
+    min-height: 250px;
+  }
+
+  .yellow-panel {
+    background: linear-gradient(
+      to top,
+      #ffd700 0%,
+      #ffd700 25%,
+      rgba(182, 179, 40, 0) 40%,
+      rgba(182, 179, 40, 0) 100%
+    );
+  }
+
+  .panel-text {
+    font-size: 4rem;
+    writing-mode: horizontal-tb;
+    transform: none;
+    bottom: 0;
+    right: 50%;
+    transform: translateX(50%);
+  }
+
+  .newsletters-description {
+    padding: 1rem;
+  }
+
+  .newsletters-description p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+  }
+
+  /* Mobile Newsletter Search and Filter */
+  .newsletter-search-section {
+    margin: 1.5rem 0;
+  }
+
+  .search-input {
+    padding: 0.8rem 1rem;
+    font-size: 0.9rem;
+  }
+
+  .search-btn {
+    padding: 0.8rem 1rem;
+    font-size: 0.9rem;
+  }
+
+  .filter-select {
+    font-size: 0.8rem;
+  }
+
+  /* Mobile Newsletter Cards */
+  .newsletter-cards-section {
+    margin-top: 1.5rem;
+  }
+
+  .newsletter-card-wrapper {
+    gap: 0.6rem;
+  }
+
+  .newsletter-card {
+    height: 300px;
+  }
+
+  .card-content {
+    padding: 1rem;
+    height: 50%;
+  }
+
+  .card-title {
+    font-size: 1.1rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .card-description {
+    font-size: 0.8rem;
+    margin-bottom: 1rem;
+  }
+
+  .date-item {
+    font-size: 0.8rem;
+    margin-bottom: 0.3rem;
+  }
+
+  .category-tag {
+    padding: 0.3rem 0.8rem;
+    font-size: 0.8rem;
+    top: 10px;
+    right: 10px;
+  }
+
+  .services-hero-section {
+    min-height: 70vh;
+    margin-top: 60px;
+    padding: 2rem 0;
+  }
+
+  .services-hero-title {
+    font-size: 2rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .services-hero-subtitle {
+    font-size: 1rem;
+    padding: 0 1.5rem;
+  }
+
+  .lecture-content-section .lecture-main-content .lecture-title h1 {
+    font-size: 1.5rem;
+  }
+
+  .lecture-content-section .lecture-main-content .lecture-video-player {
+    height: 200px;
+  }
+
+  .lecture-content-section
+    .lecture-main-content
+    .lecture-video-player
+    .lecture-video {
+    height: 100%;
+  }
+
+  .lecture-content-section
+    .lecture-main-content
+    .lecture-video-player
+    .video-placeholder
+    i {
+    font-size: 2.5rem;
+  }
+
+  .lecture-content-section
+    .lecture-sidebar
+    .lecture-discussions-card
+    .lecture-card-content
+    .lecture-comments-toggle
+    .lecture-toggle-buttons {
+    flex-direction: column;
+  }
+
+  .lecture-content-section
+    .lecture-sidebar
+    .lecture-discussions-card
+    .lecture-card-content
+    .lecture-comment-form {
+    flex-direction: column;
+  }
+
+  .lecture-content-section
+    .lecture-sidebar
+    .lecture-discussions-card
+    .lecture-card-content
+    .lecture-comment-form
+    .lecture-comment-input {
+    width: 100%;
+  }
+
+  .newsletter-details-section
+    .newsletter-details-card
+    .newsletter-details-card-top {
+    height: 250px;
+  }
+
+  .newsletter-details-section
+    .newsletter-details-card
+    .newsletter-details-card-bottom {
+    padding: 1rem;
+  }
+
+  .newsletter-details-section
+    .newsletter-details-card
+    .newsletter-details-card-bottom
+    .newsletter-details-title-container
+    .newsletter-details-title {
+    font-size: 1.4rem;
+  }
+
+  .newsletter-details-section
+    .newsletter-details-card
+    .newsletter-details-card-top
+    .newsletter-details-category-tag {
+    top: 1rem;
+    right: 1rem;
+    padding: 0.4rem 0.8rem;
+    color: #e6c200;
+    font-weight: bold;
+  }
+
+  .newsletter-details-section
+    .newsletter-details-card
+    .newsletter-details-card-top
+    .newsletter-details-category-tag
+    .newsletter-details-category-text {
+    font-size: 0.8rem;
+  }
+
+  .newsletter-details-section .newsletter-details-dates-container {
+    padding: 1rem;
+    max-width: 100%;
+    margin-top: 1.5rem;
+  }
+
+  .newsletter-details-section
+    .newsletter-details-dates-container
+    .newsletter-details-date-item
+    .newsletter-details-date-text {
+    font-size: 0.85rem;
+  }
+
+  .newsletter-details-section
+    .newsletter-details-dates-container
+    .newsletter-details-date-item
+    .newsletter-details-date-icon {
+    width: 20px;
+    height: 20px;
+    font-size: 1rem;
+  }
+
+  .newsletter-content-section {
+    padding: 2rem 0;
+  }
+
+  .newsletter-content-section .newsletter-description-card {
+    padding: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .newsletter-content-section
+    .newsletter-description-card
+    .newsletter-description-content
+    .newsletter-description-text {
+    font-size: 0.9rem;
+  }
+
+  .newsletter-content-section .newsletter-content-card {
+    padding: 1.2rem;
+  }
+
+  .newsletter-content-section
+    .newsletter-content-card
+    .newsletter-content-text
+    p {
+    font-size: 0.85rem;
+    margin-bottom: 1rem;
+  }
+
+  .newsletter-content-section
+    .newsletter-description-card
+    .newsletter-description-corner {
+    border-top: 20px solid white;
+    border-left: 20px solid transparent;
+  }
+
+  .newsletter-additional-info-section {
+    padding: 2rem 0;
+  }
+
+  .newsletter-additional-info-section .newsletter-info-card {
+    padding: 1rem;
+  }
+
+  .newsletter-additional-info-section .newsletter-info-title,
+  .newsletter-additional-info-section .newsletter-keywords-title,
+  .newsletter-additional-info-section .newsletter-social-share-title {
+    font-size: 1rem;
+  }
+
+  .newsletter-additional-info-section .newsletter-keywords-title,
+  .newsletter-additional-info-section .newsletter-social-share-title {
+    margin-top: 1rem;
+  }
+
+  .newsletter-additional-info-section
+    .newsletter-info-card
+    .newsletter-attachment-item
+    .newsletter-attachment-text {
+    font-size: 0.9rem;
+  }
+
+  .newsletter-additional-info-section
+    .newsletter-info-card
+    .newsletter-section-item
+    .newsletter-section-content
+    .newsletter-section-text {
+    font-size: 0.9rem;
+  }
+
+  .newsletter-additional-info-section .newsletter-social-share {
+    gap: 0.6rem;
+  }
+
+  .newsletter-additional-info-section
+    .newsletter-social-share
+    .newsletter-social-icon {
+    width: 40px;
+    height: 40px;
+    font-size: 1rem;
+  }
+
+  .newsletter-additional-info-section
+    .newsletter-keywords
+    .newsletter-keyword-tag {
+    font-size: 0.8rem;
+    padding: 0.3rem 0.6rem;
+  }
+
+  .newsletter-contact-banner {
+    padding: 1rem 0;
+  }
+
+  .newsletter-contact-banner .newsletter-contact-content {
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+
+  .newsletter-contact-banner
+    .newsletter-contact-content
+    .newsletter-contact-icon {
+    width: 45px;
+    height: 45px;
+    font-size: 1.1rem;
+  }
+
+  .newsletter-contact-banner
+    .newsletter-contact-content
+    .newsletter-contact-text {
+    font-size: 0.9rem;
+    text-align: center;
+  }
+
+  .practical-applications-modal-header {
+    padding: 1rem 1rem 0.6rem 1rem;
+  }
+
+  .practical-applications-modal-body {
+    padding: 0 1rem 1rem 1rem;
+  }
+
+  .practical-applications-modal-footer {
+    padding: 0.6rem 1rem 1rem 1rem;
+  }
+
+  .practical-applications-title {
+    font-size: 1rem;
+  }
+
+  .practical-applications-title-section {
+    gap: 0.8rem;
+  }
+
+  .practical-applications-badge {
+    font-size: 0.7rem;
+    padding: 0.2rem 0.6rem;
+  }
+
+  .practical-applications-description-box {
+    padding: 1rem;
+  }
+
+  .practical-applications-content-block {
+    padding: 1rem;
+  }
+
+  .practical-applications-description-text,
+  .practical-applications-content-text {
+    font-size: 0.85rem;
+  }
+
+  .practical-applications-close-button {
+    padding: 0.6rem 1.5rem;
+    font-size: 0.9rem;
+  }
+
+  .login-required-modal-body {
+    padding: 1.2rem 1.2rem 0.8rem 1.2rem;
+  }
+
+  .login-required-modal-footer {
+    padding: 0 1.2rem 1.2rem 1.2rem;
+  }
+
+  .login-required-error-text {
+    font-size: 0.9rem;
+  }
+
+  .login-required-login-btn,
+  .login-required-register-btn {
+    padding: 0.6rem 1rem;
+    font-size: 0.85rem;
+  }
+
+  .login-required-close-button {
+    padding: 0.6rem 1.5rem;
+    font-size: 0.9rem;
+  }
+
+  .faq-hero-image {
+    display: none;
+  }
+  .faq-hero-content {
+    padding: 0;
+  }
+
+  .training-hero-section .hero-main-title-ar {
+    font-size: 2.5rem;
+  }
+
+  .hero-main-title-en {
+    font-size: 1.3rem;
+  }
+
+  .login-main {
+    background-image: url("../assets/auth-mobile-bg.png");
+  }
+
+  .left-courses-image {
+    display: none;
+  }
+
+  .courses-content-section .search-input {
+    padding: 1rem 2.5rem;
+    font-size: 1.2rem;
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .hero-main-title-ar {
+    font-size: 3.5rem;
+  }
+
+  .hero-text-content {
+    padding: 2.5rem 2rem;
+    max-width: 800px;
+  }
+
+  .services-hero-title {
+    font-size: 3.5rem;
+  }
+
+  .services-hero-subtitle {
+    font-size: 1.3rem;
   }
 }
