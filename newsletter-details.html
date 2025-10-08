@@ -412,57 +412,65 @@
       aria-hidden="true"
     >
       <div class="modal-dialog modal-lg modal-dialog-centered">
-        <div class="modal-content image-attachment-modal">
+        <div class="modal-content practical-applications-modal">
           <!-- Modal Header -->
-          <div class="modal-header image-attachment-modal-header">
+          <div class="modal-header practical-applications-modal-header">
+            <div class="practical-applications-title-section">
+              <span class="practical-applications-badge free">مجاني</span>
+              <h5 class="practical-applications-title">صورة لمرفق</h5>
+            </div>
             <button
               type="button"
-              class="btn-close image-attachment-close-btn"
+              class="btn-close practical-applications-close-btn"
               data-bs-dismiss="modal"
               aria-label="Close"
             >
               <i class="fas fa-times"></i>
             </button>
-            <div class="image-attachment-title-section">
-              <h5 class="image-attachment-title">صورة لمرفق</h5>
-              <span class="image-attachment-badge free">مجاني</span>
-            </div>
-            <div class="image-attachment-dates">
-              <div class="image-attachment-date-item">
-                <i class="fas fa-calendar-alt image-attachment-date-icon"></i>
-                <span class="image-attachment-date-text"
-                  >تاريخ النشر: 2025-09-09</span
-                >
-              </div>
-              <div class="image-attachment-date-item">
-                <i class="fas fa-calendar-alt image-attachment-date-icon"></i>
-                <span class="image-attachment-date-text"
-                  >آخر تحديث: 10-09-2025</span
-                >
-              </div>
-            </div>
           </div>
 
+          <div class="practical-applications-separator"></div>
           <!-- Modal Body -->
-          <div class="modal-body image-attachment-modal-body">
+          <div class="modal-body practical-applications-modal-body">
+            <div class="practical-applications-dates">
+              <div class="practical-applications-date-item">
+                <i
+                  class="fas fa-calendar-alt practical-applications-date-icon"
+                ></i>
+                <span class="practical-applications-date-text"
+                  >تاريخ النشر: 09-09-2025</span
+                >
+              </div>
+              <div class="practical-applications-date-item">
+                <i
+                  class="fas fa-calendar-alt practical-applications-date-icon"
+                ></i>
+                <span class="practical-applications-date-text"
+                  >آخر تحديث: 2025-09-10</span
+                >
+              </div>
+            </div>
             <!-- Description Box -->
-            <div class="image-attachment-description-box">
-              <p class="image-attachment-description-text">
+            <div class="practical-applications-description-box">
+              <p class="practical-applications-description-text">
                 وصف لطيف بيحكي عن تطبيقات عملية جديدة للنشرات الإخبارية، بشكل
                 مبسط ولطيف وجميل، هنا فقط ك تست لعرض البيانات لكتابة المحتوى في
                 الثيم الجديد
               </p>
             </div>
+
+            <center>
+              <button class="practical-applications-view-attachment-btn">
+                عرض المرفقات
+              </button>
+            </center>
           </div>
 
           <!-- Modal Footer -->
-          <div class="modal-footer image-attachment-modal-footer">
-            <button type="button" class="btn image-attachment-view-btn">
-              عرض ملف المرفق
-            </button>
+          <div class="modal-footer practical-applications-modal-footer">
             <button
               type="button"
-              class="btn image-attachment-close-button"
+              class="btn practical-applications-close-button"
               data-bs-dismiss="modal"
             >
               إغلاق
@@ -480,13 +488,13 @@
       aria-labelledby="loginRequiredModalLabel"
       aria-hidden="true"
     >
-      <div class="modal-dialog modal-md modal-dialog-centered">
-        <div class="modal-content login-required-modal">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content practical-applications-modal">
           <!-- Modal Header -->
-          <div class="modal-header login-required-modal-header">
+          <div class="modal-header practical-applications-modal-header">
             <button
               type="button"
-              class="btn-close login-required-close-btn"
+              class="btn-close practical-applications-close-btn"
               data-bs-dismiss="modal"
               aria-label="Close"
             >
@@ -494,39 +502,29 @@
             </button>
           </div>
 
+          <div class="practical-applications-separator"></div>
           <!-- Modal Body -->
-          <div class="modal-body login-required-modal-body">
-            <!-- Error Message -->
-            <div class="login-required-error-message">
+          <div class="modal-body practical-applications-modal-body">
+            <center>
               <p class="login-required-error-text">
                 عذرًا لابد من تسجيل الدخول أولاً حتى يمكنك من عرض المرفق
               </p>
-            </div>
-
-            <!-- Action Buttons -->
-            <div class="login-required-action-buttons">
-              <button
-                type="button"
-                class="btn login-required-login-btn"
-                onclick="window.location.href='login.html'"
-              >
+            </center>
+            <div class="d-flex gap-2 justify-content-center">
+              <button class="practical-applications-view-attachment-btn">
                 تسجيل الدخول
               </button>
-              <button
-                type="button"
-                class="btn login-required-register-btn"
-                onclick="window.location.href='register.html'"
-              >
-                سجل الآن
+              <button class="practical-applications-view-attachment-btn">
+                إنشاء حساب
               </button>
             </div>
           </div>
 
           <!-- Modal Footer -->
-          <div class="modal-footer login-required-modal-footer">
+          <div class="modal-footer practical-applications-modal-footer">
             <button
               type="button"
-              class="btn login-required-close-button"
+              class="btn practical-applications-close-button"
               data-bs-dismiss="modal"
             >
               إغلاق
@@ -548,6 +546,10 @@
         <div class="modal-content practical-applications-modal">
           <!-- Modal Header -->
           <div class="modal-header practical-applications-modal-header">
+            <div class="practical-applications-title-section">
+              <span class="practical-applications-badge free">مجاني</span>
+              <h5 class="practical-applications-title">تطبيقات عملية</h5>
+            </div>
             <button
               type="button"
               class="btn-close practical-applications-close-btn"
@@ -556,11 +558,11 @@
             >
               <i class="fas fa-times"></i>
             </button>
-            <div class="practical-applications-title-section">
-              <span class="practical-applications-badge free">مجاني</span>
-              <h5 class="practical-applications-title">تطبيقات عملية</h5>
-            </div>
-            <div class="practical-applications-separator"></div>
+          </div>
+
+          <div class="practical-applications-separator"></div>
+          <!-- Modal Body -->
+          <div class="modal-body practical-applications-modal-body">
             <div class="practical-applications-dates">
               <div class="practical-applications-date-item">
                 <i
@@ -579,10 +581,6 @@
                 >
               </div>
             </div>
-          </div>
-
-          <!-- Modal Body -->
-          <div class="modal-body practical-applications-modal-body">
             <!-- Description Box -->
             <div class="practical-applications-description-box">
               <p class="practical-applications-description-text">
@@ -593,28 +591,12 @@
             </div>
 
             <!-- Content Paragraphs -->
-            <div class="practical-applications-content-paragraphs">
-              <div class="practical-applications-content-block">
-                <p class="practical-applications-content-text">
-                  محتوى لطيف بيحكي عن تطبيقات عملية جديدة للنشرات الإخبارية،
-                  بشكل مبسط ولطيف وجميل، هنا فقط ك تست لعرض البيانات لكتابة
-                  المحتوى في الثيم الجديد
-                </p>
-              </div>
-              <div class="practical-applications-content-block">
-                <p class="practical-applications-content-text">
-                  محتوى لطيف بيحكي عن تطبيقات عملية جديدة للنشرات الإخبارية،
-                  بشكل مبسط ولطيف وجميل، هنا فقط ك تست لعرض البيانات لكتابة
-                  المحتوى في الثيم الجديد
-                </p>
-              </div>
-              <div class="practical-applications-content-block">
-                <p class="practical-applications-content-text">
-                  محتوى لطيف بيحكي عن تطبيقات عملية جديدة للنشرات الإخبارية،
-                  بشكل مبسط ولطيف وجميل، هنا فقط ك تست لعرض البيانات لكتابة
-                  المحتوى في الثيم الجديد
-                </p>
-              </div>
+            <div class="practical-applications-content-block">
+              <p class="practical-applications-content-text">
+                محتوى لطيف بيحكي عن تطبيقات عملية جديدة للنشرات الإخبارية، بشكل
+                مبسط ولطيف وجميل، هنا فقط ك تست لعرض البيانات لكتابة المحتوى في
+                الثيم الجديد
+              </p>
             </div>
           </div>
 

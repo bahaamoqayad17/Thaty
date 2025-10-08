@@ -747,7 +747,6 @@ html {
 /* About Us Page Styles */
 .who-we-are-section {
   padding: 4rem 0;
-  background-color: #fafafa;
   position: relative;
 }
 
@@ -1090,23 +1089,6 @@ html {
   font-size: 1rem;
   font-weight: 500;
   color: #333;
-}
-
-.form-control {
-  width: 100%;
-  padding: 1rem 1.2rem;
-  border: 1px solid #e0e0e0;
-  border-radius: 15px;
-  font-size: 1rem;
-  transition: all 0.3s ease;
-  background: white;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-}
-
-.form-control:focus {
-  outline: none;
-  border-color: #8da04a;
-  box-shadow: 0 4px 12px rgba(141, 160, 74, 0.15);
 }
 
 .message-textarea {
@@ -1552,10 +1534,7 @@ html {
 
 .plan-card {
   position: relative;
-  background: white;
-  border-radius: 25px;
   overflow: hidden;
-  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   min-height: 400px;
   display: flex;
@@ -1564,18 +1543,18 @@ html {
 
 .plan-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
 }
 
 .plan-background {
   position: absolute;
   top: 0;
-  left: 0;
-  right: 0;
+  left: 50%;
+  transform: translate(-50%);
   bottom: 0;
   z-index: 1;
-  overflow: hidden;
   border-radius: 25px;
+  width: 90%;
+  overflow: hidden;
 }
 
 .plan-bg-image {
@@ -1598,17 +1577,16 @@ html {
   position: relative;
   z-index: 3;
   padding: 1.2rem 2rem;
-  border-radius: 25px 25px 0 0;
+  border-radius: 25px;
   margin-bottom: 0;
-  height: 60px;
+  height: 75px;
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
 }
 
 .plan-title {
-  font-size: 1.3rem;
+  font-size: 1.8rem;
   font-weight: bold;
   margin: 0;
   color: white;
@@ -5342,32 +5320,29 @@ html {
 }
 
 .practical-applications-modal-header {
-  background-color: #f5f5f5;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   border-bottom: none;
   padding: 2rem 2rem 1rem 2rem;
   position: relative;
 }
 
 .practical-applications-close-btn {
-  position: absolute;
-  top: 1rem;
-  right: 1rem;
   background: none;
   border: none;
   font-size: 1.2rem;
-  color: #333;
+  color: #000;
   padding: 0.5rem;
   cursor: pointer;
   z-index: 10;
+  font-weight: bolder;
 }
 
 .practical-applications-title-section {
   display: flex;
   align-items: center;
   gap: 1rem;
-  margin-bottom: 1rem;
-  width: 100%;
-  justify-content: flex-end;
 }
 
 .practical-applications-badge {
@@ -5376,7 +5351,6 @@ html {
   font-size: 0.8rem;
   font-weight: bold;
   color: white;
-  font-family: "noor", sans-serif;
 }
 
 .practical-applications-badge.free {
@@ -5388,7 +5362,6 @@ html {
   font-weight: bold;
   color: #333;
   margin: 0;
-  font-family: "noor", sans-serif;
 }
 
 .practical-applications-separator {
@@ -5400,8 +5373,9 @@ html {
 
 .practical-applications-dates {
   display: flex;
-  justify-content: space-between;
   width: 100%;
+  gap: 1rem;
+  margin-bottom: 1rem;
 }
 
 .practical-applications-date-item {
@@ -5412,13 +5386,12 @@ html {
 
 .practical-applications-date-icon {
   font-size: 0.9rem;
-  color: #999;
+  color: #e6c200;
 }
 
 .practical-applications-date-text {
   font-size: 0.9rem;
   color: #666;
-  font-family: "noor", sans-serif;
 }
 
 .practical-applications-modal-body {
@@ -5436,11 +5409,10 @@ html {
 
 .practical-applications-description-text {
   font-size: 1rem;
-  color: #333;
+  color: #fff;
   margin: 0;
-  text-align: center;
+  font-weight: bold;
   line-height: 1.6;
-  font-family: "noor", sans-serif;
 }
 
 .practical-applications-content-paragraphs {
@@ -5449,26 +5421,17 @@ html {
   gap: 1rem;
 }
 
-.practical-applications-content-block {
-  background-color: #e9ecef;
-  border-radius: 10px;
-  padding: 1.5rem;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
-}
-
 .practical-applications-content-text {
   font-size: 1rem;
-  color: #333;
+  color: #000;
   margin: 0;
   line-height: 1.6;
-  font-family: "noor", sans-serif;
+  font-weight: bold;
 }
 
 .practical-applications-modal-footer {
-  background-color: #f5f5f5;
   border-top: none;
   padding: 1rem 2rem 2rem 2rem;
-  justify-content: center;
 }
 
 .practical-applications-close-button {
@@ -5498,104 +5461,14 @@ html {
   background-color: #f8f9fa;
   transform: translateY(-2px);
 }
-
-.login-required-modal {
-  border-radius: 20px;
-  border: none;
-  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
-  background-color: #f5f5f5;
-}
-
-.login-required-modal-header {
-  background-color: #f5f5f5;
-  border-bottom: 1px solid #ddd;
-  padding: 1rem 1rem 0.5rem 1rem;
-  position: relative;
-}
-
-.login-required-close-btn {
-  position: absolute;
-  top: 0.5rem;
-  right: 0.5rem;
-  background: none;
-  border: none;
-  font-size: 1.2rem;
-  color: #333;
-  padding: 0.5rem;
-  cursor: pointer;
-  z-index: 10;
-}
-
-.login-required-modal-body {
-  padding: 2rem 2rem 1rem 2rem;
-  background-color: #f5f5f5;
-  text-align: center;
-}
-
-.login-required-error-message {
-  margin-bottom: 2rem;
-}
-
 .login-required-error-text {
   font-size: 1.1rem;
   color: #dc3545;
   margin: 0;
   font-weight: bold;
-  font-family: "noor", sans-serif;
   line-height: 1.5;
-}
-
-.login-required-action-buttons {
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-  margin-bottom: 2rem;
-}
-
-.login-required-login-btn,
-.login-required-register-btn {
-  background: linear-gradient(135deg, #ffd700 0%, #ffed4e 100%);
-  color: #333;
-  border: none;
-  border-radius: 15px;
-  padding: 0.8rem 1.5rem;
-  font-size: 1rem;
-  font-weight: bold;
-  font-family: "noor", sans-serif;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 15px rgba(255, 215, 0, 0.3);
-}
-
-.login-required-login-btn:hover,
-.login-required-register-btn:hover {
-  background: linear-gradient(135deg, #e6c200 0%, #ffd700 100%);
-  transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(255, 215, 0, 0.4);
-  color: #333;
-}
-
-.login-required-modal-footer {
-  background-color: #f5f5f5;
-  border-top: none;
-  padding: 0 2rem 2rem 2rem;
-  justify-content: center;
-}
-
-.login-required-close-button {
-  background-color: #e9ecef;
-  color: #333;
-  border: none;
-  border-radius: 10px;
-  padding: 0.8rem 2rem;
-  font-size: 1rem;
-  font-weight: bold;
-  font-family: "noor", sans-serif;
-  transition: all 0.3s ease;
-}
-
-.login-required-close-button:hover {
-  background-color: #dee2e6;
-  transform: translateY(-2px);
+  margin-bottom: 1.5rem;
+  margin-top: 1.5rem;
 }
 
 /* Image Attachment Modal Styles */
@@ -5609,118 +5482,7 @@ html {
   transform: translateY(-2px);
 }
 
-.image-attachment-modal {
-  border-radius: 20px;
-  border: none;
-  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
-  background-color: #f5f5f5;
-}
-
-.image-attachment-modal-header {
-  background-color: #f5f5f5;
-  border-bottom: none;
-  padding: 2rem 2rem 1rem 2rem;
-  position: relative;
-  text-align: center;
-}
-
-.image-attachment-close-btn {
-  position: absolute;
-  top: 1rem;
-  right: 1rem;
-  background: none;
-  border: none;
-  font-size: 1.2rem;
-  color: #333;
-  padding: 0.5rem;
-  cursor: pointer;
-  z-index: 10;
-}
-
-.image-attachment-title-section {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 1rem;
-  margin-bottom: 1.5rem;
-}
-
-.image-attachment-title {
-  font-size: 1.8rem;
-  font-weight: bold;
-  color: #333;
-  margin: 0;
-  font-family: "noor", sans-serif;
-}
-
-.image-attachment-badge {
-  padding: 0.4rem 1rem;
-  border-radius: 20px;
-  font-size: 0.9rem;
-  font-weight: bold;
-  color: white;
-  font-family: "noor", sans-serif;
-}
-
-.image-attachment-badge.free {
-  background-color: #28a745;
-}
-
-.image-attachment-dates {
-  display: flex;
-  justify-content: center;
-  gap: 2rem;
-  width: 100%;
-}
-
-.image-attachment-date-item {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-.image-attachment-date-icon {
-  font-size: 0.9rem;
-  color: #999;
-}
-
-.image-attachment-date-text {
-  font-size: 0.9rem;
-  color: #666;
-  font-family: "noor", sans-serif;
-}
-
-.image-attachment-modal-body {
-  padding: 0 2rem 2rem 2rem;
-  background-color: #f5f5f5;
-}
-
-.image-attachment-description-box {
-  background-color: #ffd700;
-  border-radius: 15px;
-  padding: 2rem;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-}
-
-.image-attachment-description-text {
-  font-size: 1rem;
-  color: #333;
-  margin: 0;
-  text-align: right;
-  line-height: 1.6;
-  font-family: "noor", sans-serif;
-}
-
-.image-attachment-modal-footer {
-  background-color: #f5f5f5;
-  border-top: none;
-  padding: 1rem 2rem 2rem 2rem;
-  flex-direction: column;
-  gap: 1rem;
-  align-items: center;
-}
-
-.image-attachment-view-btn {
+.practical-applications-view-attachment-btn {
   background-color: #ffd700;
   color: white;
   border: none;
@@ -5728,7 +5490,6 @@ html {
   padding: 1rem 2rem;
   font-size: 1.1rem;
   font-weight: bold;
-  font-family: "noor", sans-serif;
   transition: all 0.3s ease;
   box-shadow: 0 4px 15px rgba(255, 215, 0, 0.3);
   width: 100%;
@@ -5804,6 +5565,23 @@ html {
   font-size: 24px;
 }
 
+.contact-form .form-control {
+  width: 100%;
+  padding: 1rem 1.2rem;
+  border: 1px solid #e0e0e0;
+  border-radius: 15px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  background: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.contact-form .form-control:focus {
+  outline: none;
+  border-color: #8da04a;
+  box-shadow: 0 4px 12px rgba(141, 160, 74, 0.15);
+}
+
 /* Responsive Design for Image Attachment Modal */
 @media (max-width: 992px) {
   .about-us-section {
@@ -5868,10 +5646,6 @@ html {
 
   .image-attachment-title {
     font-size: 1.6rem;
-  }
-
-  .who-we-are-title {
-    font-size: 3rem;
   }
 
   .who-we-are-description {
@@ -6146,6 +5920,10 @@ html {
     font-weight: bold;
   }
 
+  .contact-hero-image {
+    display: none;
+  }
+
   .image-attachment-modal-footer {
     padding: 0.8rem 1.2rem 1.2rem 1.2rem;
   }
@@ -6362,11 +6140,6 @@ html {
     padding: 3rem 0;
   }
 
-  .who-we-are-title {
-    font-size: 2.5rem;
-    text-align: center;
-  }
-
   .who-we-are-description {
     font-size: 1rem;
     text-align: center;
@@ -6572,15 +6345,6 @@ html {
 
   .plan-card {
     min-height: 350px;
-  }
-
-  .plan-header {
-    padding: 1rem 1.5rem;
-    height: 55px;
-  }
-
-  .plan-title {
-    font-size: 1.2rem;
   }
 
   .plan-content {
@@ -7275,12 +7039,6 @@ html {
     font-size: 1.1rem;
   }
 
-  .practical-applications-dates {
-    flex-direction: column;
-    gap: 0.5rem;
-    align-items: flex-start;
-  }
-
   .practical-applications-description-box {
     padding: 1.2rem;
   }
@@ -7323,6 +7081,28 @@ html {
   .hero-section .hero-subtitle {
     font-size: 1.5rem;
     color: #fff;
+  }
+
+  .who-we-are-image {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    z-index: -1;
+  }
+
+  .who-we-are-content {
+    padding-top: 17rem;
+  }
+
+  .who-we-are-title {
+    font-size: 5rem;
+    text-align: center;
+  }
+
+  .section-header-image {
+    margin-bottom: 0;
   }
 }
 
@@ -7522,10 +7302,6 @@ html {
     margin-bottom: 1rem;
   }
 
-  .who-we-are-title {
-    font-size: 2rem;
-  }
-
   .who-we-are-description {
     font-size: 0.9rem;
   }
@@ -7698,19 +7474,6 @@ html {
 
   .plans-grid {
     padding: 0 0.5rem;
-  }
-
-  .plan-card {
-    min-height: 320px;
-  }
-
-  .plan-header {
-    padding: 0.8rem 1rem;
-    height: 50px;
-  }
-
-  .plan-title {
-    font-size: 1.1rem;
   }
 
   .plan-content {
@@ -8725,6 +8488,71 @@ html {
   .courses-content-section .search-input {
     padding: 1rem 2.5rem;
     font-size: 1.2rem;
+  }
+
+  .services-section .service-item-wrapper {
+    flex-direction: column-reverse;
+  }
+
+  .services-section .service-content-container {
+    max-width: 90%;
+    margin-top: -20px;
+    border-radius: 20px;
+  }
+
+  .services-section .service-action {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .services-section .service-content-container .service-title {
+    font-size: 2rem;
+  }
+
+  .services-section .service-content-container .service-description {
+    font-size: 1rem;
+  }
+
+  .services-section .service-action-icon span {
+    font-size: 0.7rem;
+  }
+
+  .service-details-content-section .service-image-bg .service-name {
+    right: 50%;
+    transform: translateX(50%);
+    width: 80%;
+    font-size: 1.2rem;
+  }
+
+  .service-details-content-section .service-details-description {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .service-details-content-section .vertical-line {
+    width: 100%;
+    height: 1px;
+  }
+
+  .service-details-content-section .service-details-purchase-card {
+    width: 100%;
+  }
+  .service-details-content-section
+    .service-details-description
+    .service-details-text {
+    font-size: 1.1rem;
+  }
+
+  .plan-footer .subscribe-btn {
+    width: 80%;
+  }
+
+  .practical-applications-dates,
+  .practical-applications-date-text span {
+    font-size: 0.8rem;
   }
 }
 
