@@ -5632,18 +5632,6 @@ html {
     font-size: 2.5rem;
   }
 
-  .image-attachment-modal-header {
-    padding: 1.5rem 1.5rem 1rem 1.5rem;
-  }
-
-  .image-attachment-modal-body {
-    padding: 0 1.5rem 1.5rem 1.5rem;
-  }
-
-  .image-attachment-modal-footer {
-    padding: 1rem 1.5rem 1.5rem 1.5rem;
-  }
-
   .image-attachment-title {
     font-size: 1.6rem;
   }
@@ -5908,47 +5896,12 @@ html {
 }
 
 @media (max-width: 768px) {
-  .image-attachment-modal-header {
-    padding: 1.2rem 1.2rem 0.8rem 1.2rem;
-  }
-
-  .image-attachment-modal-body {
-    padding: 0 1.2rem 1.2rem 1.2rem;
-  }
-
   footer {
     font-weight: bold;
   }
 
   .contact-hero-image {
     display: none;
-  }
-
-  .image-attachment-modal-footer {
-    padding: 0.8rem 1.2rem 1.2rem 1.2rem;
-  }
-
-  .image-attachment-title {
-    font-size: 1.4rem;
-  }
-
-  .image-attachment-dates {
-    flex-direction: column;
-    gap: 0.8rem;
-    align-items: center;
-  }
-
-  .image-attachment-description-box {
-    padding: 1.5rem;
-  }
-
-  .image-attachment-description-text {
-    font-size: 0.9rem;
-  }
-
-  .image-attachment-view-btn {
-    padding: 0.8rem 1.5rem;
-    font-size: 1rem;
   }
 
   .navbar {
@@ -7107,10 +7060,6 @@ html {
 }
 
 @media (max-width: 576px) {
-  .image-attachment-modal-header {
-    padding: 1rem 1rem 0.6rem 1rem;
-  }
-
   .profile-info-blocks .info-text {
     font-size: 1rem;
   }
@@ -7134,45 +7083,6 @@ html {
 
   .what-we-offer-section .row {
     gap: 20px;
-  }
-
-  .image-attachment-modal-body {
-    padding: 0 1rem 1rem 1rem;
-  }
-
-  .image-attachment-modal-footer {
-    padding: 0.6rem 1rem 1rem 1rem;
-  }
-
-  .image-attachment-title {
-    font-size: 1.2rem;
-  }
-
-  .image-attachment-title-section {
-    gap: 0.8rem;
-  }
-
-  .image-attachment-badge {
-    font-size: 0.8rem;
-    padding: 0.3rem 0.8rem;
-  }
-
-  .image-attachment-description-box {
-    padding: 1.2rem;
-  }
-
-  .image-attachment-description-text {
-    font-size: 0.85rem;
-  }
-
-  .image-attachment-view-btn {
-    padding: 0.7rem 1.2rem;
-    font-size: 0.9rem;
-  }
-
-  .image-attachment-close-button {
-    padding: 0.6rem 1.5rem;
-    font-size: 0.9rem;
   }
 
   .display-3 {
