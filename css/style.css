@@ -29,6 +29,7 @@ body {
   font-family: "noor", sans-serif;
   color: #333;
   line-height: 1.5;
+  overflow-x: hidden;
 }
 
 main {
@@ -49,7 +50,7 @@ main {
   margin: 0 auto;
   margin-top: 2rem;
   border-radius: 50px;
-  max-width: 90%;
+  max-width: 95%;
   position: fixed;
   padding-top: 0;
   padding-bottom: 0;
@@ -69,9 +70,9 @@ main {
 
 .nav-link {
   font-weight: 600;
-  margin: 0 1.5rem;
+  margin: 0 0.9rem;
   color: white !important;
-  font-size: 1rem;
+  font-size: 0.6rem;
   position: relative;
 }
 
@@ -86,9 +87,8 @@ main {
   border: none;
   font-weight: 600;
   border-radius: 25px;
-  font-size: 1rem;
-  margin-left: 1.5rem;
-  padding: 0.75rem 6rem;
+  font-size: 0.7rem;
+  padding: 0.5rem 2.2rem !important;
 }
 
 .btn-register:hover {
@@ -263,7 +263,7 @@ html {
   background-color: #ffd700;
   color: white;
   border: none;
-  padding: 0.75rem 4rem;
+  padding: 0.75rem 3rem;
   border-radius: 25px;
   font-weight: 600;
   font-size: 2rem;
@@ -1176,7 +1176,7 @@ html {
 
 .social-icon:hover {
   transform: translateY(-3px);
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  /* box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); */
 }
 
 .contact-email p {
@@ -1218,7 +1218,7 @@ html {
 }
 
 .main-stat-number {
-  font-size: 25rem;
+  font-size: 20rem;
   font-weight: bold;
   color: #ffd700;
   line-height: 0.8;
@@ -1822,7 +1822,7 @@ html {
   transition: all 0.3s ease;
 }
 
-.social-icon:hover {
+footer .social-icon:hover {
   background-color: rgba(255, 255, 255, 0.2);
   transform: translateY(-2px);
 }
@@ -2816,7 +2816,9 @@ html {
 }
 
 .subscriptions-section {
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .subscriptions-btn {
@@ -2831,7 +2833,6 @@ html {
   transition: all 0.3s ease;
   display: flex;
   align-items: center;
-  justify-content: center;
   gap: 0.5rem;
   margin: 0 auto;
   box-shadow: 0 4px 15px rgba(249, 190, 50, 0.3);
@@ -3213,7 +3214,7 @@ html {
 }
 
 .login-section {
-  padding: 2rem 0;
+  padding: 7.5rem 0;
   width: 100%;
 }
 
@@ -5582,6 +5583,18 @@ html {
   box-shadow: 0 4px 12px rgba(141, 160, 74, 0.15);
 }
 
+/* @media (min-width: 768px) and (max-width: 1024px) {
+  .navbar-nav .nav-link {
+    font-size: 0.5rem !important;
+    margin: 0 1rem !important;
+  }
+
+  .btn-register {
+    font-size: 0.9rem !important;
+    padding: 0.5rem 1.2rem !important;
+  }
+} */
+
 /* Responsive Design for Image Attachment Modal */
 @media (max-width: 992px) {
   .about-us-section {
@@ -6780,7 +6793,6 @@ html {
     width: 100%;
   }
 
-  /* Newsletter Cards Responsive */
   .newsletter-cards-section {
     margin-top: 2rem;
   }
@@ -7450,30 +7462,26 @@ html {
     margin-top: 0.5rem;
   }
 
-  /* Mobile footer layout - reorder sections */
-
   .footer .col-lg-3:nth-child(4) {
-    order: -1; /* Platform description first */
+    order: -1;
   }
 
   .footer .col-lg-3:nth-child(1) {
-    order: 4; /* Logo and contact second */
+    order: 4;
   }
 
   .footer .col-lg-3:nth-child(2) {
-    order: 2; /* Information third */
+    order: 2;
   }
 
   .footer .col-lg-3:nth-child(3) {
-    order: 3; /* Links fourth */
+    order: 3;
   }
 
-  /* Additional mobile footer adjustments */
   .footer-links li {
     margin-bottom: 0.5rem;
   }
 
-  /* Ensure proper spacing for mobile */
   .footer .container {
     padding: 0 1rem;
   }
@@ -8009,7 +8017,6 @@ html {
     line-height: 1.6;
   }
 
-  /* Mobile Newsletter Search and Filter */
   .newsletter-search-section {
     margin: 1.5rem 0;
   }
@@ -8020,15 +8027,23 @@ html {
   }
 
   .search-btn {
-    padding: 0.8rem 1rem;
+    padding: 0.6rem 0.8rem;
     font-size: 0.9rem;
+    min-width: 40px;
+    width: auto;
+  }
+
+  .courses-content-section .search-btn {
+    padding: 0.6rem 0.8rem;
+    font-size: 0.9rem;
+    min-width: 50px;
+    width: auto;
   }
 
   .filter-select {
     font-size: 0.8rem;
   }
 
-  /* Mobile Newsletter Cards */
   .newsletter-cards-section {
     margin-top: 1.5rem;
   }
@@ -8466,22 +8481,33 @@ html {
   }
 }
 
-/* Responsive Design */
-@media (max-width: 1200px) {
-  .hero-main-title-ar {
-    font-size: 3.5rem;
+@media (min-width: 1320px) {
+  .navbar-nav .nav-link {
+    font-size: 1rem !important;
+    margin: 0 1.5rem !important;
   }
 
-  .hero-text-content {
-    padding: 2.5rem 2rem;
-    max-width: 800px;
+  .btn-register {
+    color: var(--primary-green) !important;
+    background-color: white !important;
+    border: none;
+    font-weight: 600;
+    border-radius: 25px;
+    font-size: 1rem !important;
+    padding: 0.75rem 6rem !important;
   }
 
-  .services-hero-title {
-    font-size: 3.5rem;
+  .about-btn {
+    padding: 0.75rem 3rem !important;
+  }
+  .main-stat-number {
+    font-size: 25rem;
+  }
+  .navbar {
+    max-width: 90%;
   }
 
-  .services-hero-subtitle {
-    font-size: 1.3rem;
+  .login-section {
+    padding: 2rem 0;
   }
 }

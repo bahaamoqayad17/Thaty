@@ -121,4 +121,25 @@ document.addEventListener("DOMContentLoaded", function () {
       // You can add service-specific logic here
     });
   });
+
+  // Lecture Toggle Buttons Functionality
+  const lectureToggleButtons = document.querySelectorAll(".lecture-toggle-btn");
+  if (lectureToggleButtons.length > 0) {
+    lectureToggleButtons.forEach((button) => {
+      button.addEventListener("click", function () {
+        // Remove active class from all buttons
+        lectureToggleButtons.forEach((btn) => btn.classList.remove("active"));
+
+        // Add active class to clicked button
+        this.classList.add("active");
+
+        // Optional: Add content switching logic here
+        const buttonText = this.textContent.trim();
+        console.log(`Lecture tab switched to: ${buttonText}`);
+
+        // You can add content switching logic here based on the active button
+        // For example, show/hide different content sections
+      });
+    });
+  }
 });
